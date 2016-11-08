@@ -85,6 +85,7 @@ h2{
 	text-align:center;
     color: deeppink;
     padding-bottom: 15px;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
     
 }
 h3{
@@ -105,6 +106,14 @@ h4{
 	font-weight:400;
 }
 
+h5{
+	font-family: 'Open Sans', sans-serif;
+	color:#fff;
+	font-size:16px;
+	margin:0 0 5px 0;
+	text-transform:uppercase;
+	font-weight:400;
+}
 
 h6{
 	font-size:16px;
@@ -117,6 +126,12 @@ h6{
 p{
 	line-height:24px;
 	margin:0;
+}
+
+p2{
+	line-height:24px;
+	margin:0;
+    color: white;
 }
 
 /* Header Styles
@@ -272,7 +287,7 @@ color: #fff;
 	overflow:hidden;	
 }
 .main-section.alabaster{
-	background:#fafafa;
+	background:black;
 }
 
 .alabaster figure {
@@ -300,6 +315,7 @@ color: #fff;
 }
 .featured-work p.padding-b{
 	padding-bottom:35px;
+    color: white;
 }
 .featured-box-col1{
 	width:60px;
@@ -393,7 +409,7 @@ color: #fff;
 	overflow:hidden;
 	float:left;
 	padding:0;
-    background-color: white;
+    background-color: #000;
 }
 .Portfolio-box img{
 	margin-bottom:25px;
@@ -658,7 +674,7 @@ border: 2px solid #fff;
 
 .main-section.contact{
 	background:url(../img/bg-map.png) left 190px no-repeat;
-    background-color: black;
+
 }
 .contact-info-box{
 	font-size:15px;
@@ -919,7 +935,8 @@ border: 2px solid #fff;
 cont {
     color:#ff00ff;
     font-family: streamster;
-    font-size: 60px
+    font-size: 60px;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
     
 }
 

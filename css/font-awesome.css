@@ -260,6 +260,7 @@ i{
 }
 .fa-clock-o:before {
   content: "\f017";
+     color: #00ffff;
 }
 .fa-road:before {
   content: "\f018";
@@ -622,6 +623,7 @@ i{
 }
 .fa-phone:before {
   content: "\f095";
+     color: #00ff00;
 }
 .fa-square-o:before {
   content: "\f096";
@@ -1575,4 +1577,5 @@ i{
 }
 .icon-map-marker:before {
     content: "\f041";
+    color: #ff00ff;
 }
