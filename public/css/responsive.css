@@ -47,7 +47,7 @@
   }
 
   h2 {
-    font-size: 30px;
+    font-size: 50px;
   }
 
   h6 {
@@ -109,6 +109,10 @@
   
   #floating-info {
     font-size: 1.0em;
+  }
+
+  #animacion > div > div > div {
+    margin-left: 15vw;
   }
 }
 
@@ -327,7 +331,12 @@
     margin-bottom: 60px;
   }
 
+  .featured-work h2 {
+    text-align: center;
+  }
+
   #floating-info {
+    text-align: center;
     font-size: 1.0em;
     left: 0;
   }
