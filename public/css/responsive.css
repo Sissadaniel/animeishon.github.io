@@ -11,7 +11,7 @@
 	.form{ margin:0 0 0 20px}
 	.main-nav{ display:block !important; }
 	/*.portfolioContainer{ width:800px; margin:0px auto !important; } */ 
-	
+
 }	
    
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -39,8 +39,10 @@
 	/*.portfolioContainer{ width:750px; margin:0px auto !important; }
 	.Portfolio-box{ height:250px;}*/
 	
-	 
-	
+  #floating-info {
+    font-size: 1.0em;
+  }
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -99,7 +101,16 @@
 	.form{ margin:0}
 	.c-logo-part ul li{ display:block;}
 	.Portfolio-box{  max-width:300px !important; width:96.4% !important; margin:0 !important}
-	.Portfolio-box img { max-width:100%;}
-	.portfolioContainer{ width:280px !important; margin:0 auto !important } 
+  .Portfolio-box img { max-width:100%;}
+  .portfolioContainer{ width:280px !important; margin:0 auto !important } 
+
+  .footer {
+    margin-bottom: 60px;
+  }
+
+  #floating-info {
+    font-size: 1.0em;
+    left: 0;
+  }
 	
 }
