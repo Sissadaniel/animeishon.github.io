@@ -161,10 +161,10 @@
     position: absolute;
     left: 0;
     width: 100%;
-    top: 74px;
+    top: 68px;
     margin: 0 auto;
     flote: none;
-    background: #fff;
+    background: #000;
   }
 
   .main-nav li {
