@@ -155,7 +155,6 @@ p2 {
   padding: 280px 0;
   background-size: cover;
   background-position: center;
-  width: 100vw;
 }
 
 .logo {
@@ -586,7 +585,7 @@ img {
 
 .c-logo-part {
   text-align: center;
-  background-color: #aa00ff;
+  background-color: #212121;
   background-image: url(../img/clientes-logos-01.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -743,11 +742,10 @@ img {
 /* Talk Business
 ---------------------------------*/
 .business-talking {
-  background: url(../img/bg_largo-01.png) top center no-repeat;
-  background-size: cover;
+  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAIUlEQVQoU2NkYGD4z0AInGFgYBxViDOUSAueM0QEONAqAJxoEfmLgUONAAAAAElFTkSuQmCC) repeat;
+  background-attachment: fixed;
   padding: 20px 10px 10px 10px;
   text-align: center;
-  background-color: rgba(255,0,0,0.5);
 }
 
 .business-talking h2 {
