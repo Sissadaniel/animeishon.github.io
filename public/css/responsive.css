@@ -111,6 +111,11 @@
     font-size: 1.0em;
   }
 
+  .featured-work h2 {
+    text-align: center;
+    margin: 30px;
+  }
+
   #animacion > div > div > div {
     margin-left: 15vw;
   }
