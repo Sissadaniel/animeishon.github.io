@@ -159,8 +159,20 @@ p2 {
   */
 }
 
+.shield {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.shield img {
+  margin-top: 10vw;
+  width: 40vw;
+}
+
 video#bgvid { 
   min-width: 100%;
+  max-width: 100%;
 }
 
 .logo {
