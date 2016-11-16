@@ -150,11 +150,17 @@ p2 {
 ---------------------------------*/
 
 .header {
+  /*
   text-align: center;
   background-image: url(../img/animeishonhero.gif);
   padding: 280px 0;
   background-size: cover;
   background-position: center;
+  */
+}
+
+video#bgvid { 
+  min-width: 100%;
 }
 
 .logo {
@@ -240,6 +246,7 @@ p2 {
   box-shadow: 0 3px 5px 3px #818181;
   position: relative;
   background: #000;
+  transform: translateY(-5%);
 }
 
 .main-nav {
