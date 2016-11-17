@@ -305,17 +305,25 @@ video#bgvid {
 
 #floating-info {
   background-color: #000;
-  color: #00ff00;
   position: fixed;
   bottom: 0;
   right: 0;
-  /* left: 0; */
   font-family: "montserrat", sans-serif;
   padding: 0.4em 1em;
   font-size: 1.8em;
   box-shadow: 0 1px 7px #00ff00;
   z-index: 2000;
 }
+
+#floating-info a {
+  color: #00ff00;
+}
+
+#floating-info a p:first-child {
+  border-bottom: 2px solid;
+  margin: 10px 0;
+}
+
 
 /* Services
 ---------------------------------*/

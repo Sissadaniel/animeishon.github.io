@@ -345,4 +345,10 @@
     font-size: 1.0em;
     left: 0;
   }
+
+  #floating-info a p:first-child {
+    width: 50%;
+    border-bottom: 2px solid;
+    margin: 5px 90px;
+  }
 }
