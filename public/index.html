@@ -96,7 +96,9 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 
     <header class="header" id="header"><!--header-start-->	   
       <div class="shield">
-        <img src="img/animeishon_logo.png" id="animeishon_logo">
+        <a href="#service">
+          <img src="img/animeishon_logo.png" id="animeishon_logo">
+        </a>
       </div>
       <video playsinline autoplay muted loop poster="img/animeishon_hero2.gif" id="bgvid">
         <source src="img/animeishon_hero.webm" type="video/webm">
@@ -120,10 +122,13 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     </nav><!--main-nav-end-->
 
     <div id="floating-info">
-      <p>Tabasco 242, Roma Norte
-      <br>  info@steed.mx 
-      <br> 55<span class="num-divisor">-</span>2259<span class="num-divisor">-</span>6898
-      </p>
+      <a href="#contact" style="color:#00ff00;">
+        <p style="width: 50%; border-bottom: 2px solid; margin: 5px 0px;">Contáctanos</p>
+        <p>Tabasco 242, Roma Norte
+          <br>info@steed.mx 
+          <br> 55<span class="num-divisor">-</span>2259<span class="num-divisor">-</span>6898
+        </p>
+      </a>
     </div>
 
     <section class="main-section" id="service"><!--main-section-start-->
@@ -483,6 +488,21 @@ wow.init();
 
     <script type="text/javascript">
 $(window).load(function(){
+
+  $('#floating-info a').bind('click',function(event){
+    var $anchor = $(this);
+
+    $('html, body').stop().animate({
+      scrollTop: $($anchor.attr('href')).offset().top - 102
+    }, 1500,'easeInOutExpo');
+    /*
+       if you don't want to use the easing effects:
+       $('html, body').stop().animate({
+       scrollTop: $($anchor.attr('href')).offset().top
+       }, 1000);
+     */
+    event.preventDefault();
+  });
 
   $('.main-nav li a').bind('click',function(event){
     var $anchor = $(this);
