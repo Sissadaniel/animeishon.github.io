@@ -95,15 +95,15 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     <!-- End Google Tag Manager (noscript) -->
 
     <header class="header" id="header"><!--header-start-->	   
-      <div class="shield">
-        <a href="#service">
-          <img src="img/animeishon_logo.png" id="animeishon_logo">
-        </a>
-      </div>
-      <video playsinline autoplay muted loop poster="img/animeishon_hero2.gif" id="bgvid">
-        <source src="img/animeishon_hero.webm" type="video/webm">
-        <source src="img/animeishon_hero.mov" type="video/mp4">
-      </video>
+      <a href="#service">
+        <div class="shield">
+            <img src="img/animeishon_logo.png" id="animeishon_logo">
+        </div>
+        <video playsinline autoplay muted loop poster="img/animeishon_hero2.gif" id="bgvid">
+          <source src="img/animeishon_hero.webm" type="video/webm">
+          <source src="img/animeishon_hero.mov" type="video/mp4">
+        </video>
+      </a>
     </header><!--header-end-->
 
     <nav class="main-nav-outer" id="test"><!--main-nav-start-->
@@ -183,7 +183,7 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
               </div>
             </div>
           </div>
-          <figure class="col-lg-8 col-sm-6  text-right wow fadeInUp delay-02s">
+          <figure class="col-lg-8 col-sm-6  text-right wow fadeInUp delay-02s center-vertically">
             <img src="img/macbook-pro.gif" alt="">
           </figure>
 
@@ -351,25 +351,6 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
       </div>
     </section><!--main-section-end-->
 
-    <!--<section class="main-section client-part" id="client">
-      <div class="container">
-      <b class="quote-right wow fadeInDown delay-03"><i class="fa-quote-right"></i></b>
-      <div class="row">
-      <div class="col-lg-12">
-      <p class="client-part-haead wow fadeInDown delay-05">It was a pleasure to work with the guys at Knight Studio. They made sure we were well fed and drunk all the time!</p>
-      </div>
-      </div>
-      <ul class="client wow fadeIn delay-05s">
-      <li><a href="#">
-      <img src="img/client-pic1.jpg" alt="">
-      <h3>James Bond</h3>
-      <span>License To Drink Inc.</span>
-      </a></li>
-      </ul>
-      </div>
-      </section>
-    -->
-
     <section class="business-talking" id="team"><!--business-talking-start-->
       <div class="Clientes">
         <cont>Clientes</cont>
@@ -487,6 +468,21 @@ wow.init();
 
     <script type="text/javascript">
 $(window).load(function(){
+
+  $('header a').bind('click',function(event){
+    var $anchor = $(this);
+
+    $('html, body').stop().animate({
+      scrollTop: $($anchor.attr('href')).offset().top - 102
+    }, 1500,'easeInOutExpo');
+    /*
+       if you don't want to use the easing effects:
+       $('html, body').stop().animate({
+       scrollTop: $($anchor.attr('href')).offset().top
+       }, 1000);
+     */
+    event.preventDefault();
+  });
 
   $('#floating-info a').bind('click',function(event){
     var $anchor = $(this);
