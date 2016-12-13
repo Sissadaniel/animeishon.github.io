@@ -1,5 +1,22 @@
 /* CSS Document */
 
+/* Explanatory gradient animation
+---------------------------------*/
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName { 
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
 
 /* Float Elements 
 ---------------------------------*/
@@ -157,22 +174,30 @@ p2 {
   background-size: cover;
   background-position: center;
   */
+  max-height: 90vh;
+  overflow: hidden;
+}
+
+#test .container {
+  width: 100%;
 }
 
 .shield {
   position: absolute;
   text-align: center;
   width: 100%;
+  z-index: 1;
+  margin-top: 10vh;
 }
 
 .shield img {
-  margin-top: 10vw;
   width: 40vw;
 }
 
 video#bgvid { 
   min-width: 100%;
   max-width: 100%;
+  opacity: 0.85;
 }
 
 .logo {
@@ -287,6 +312,9 @@ video#bgvid {
   -webkit-transition: all 0.3s ease-in-out;
 }
 
+.main-nav li.disabled a {
+}
+
 .main-nav li a:hover {
   text-decoration: none;
   color: #00ff00;
@@ -298,6 +326,21 @@ video#bgvid {
 
 .main-section {
   padding: 90px 0 110px;
+}
+
+/* Header contact form
+---------------------------------*/
+
+#header-form {
+  position: absolute;
+  bottom: 15%;
+  left: 0;
+  right: 0;
+}
+
+#header-form form{
+  display: flex;
+  justify-content: space-around;
 }
 
 /* Floating contact info
@@ -324,6 +367,30 @@ video#bgvid {
   margin: 10px 0;
 }
 
+
+/* Explanatory
+---------------------------------*/
+
+#explanatory {
+  background: linear-gradient(145deg, #00ffff, #ff00ff);
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+}
+
+#explanatory .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#explanatory img {
+  max-width: 22vw;
+  align-self: center;
+  margin: 5%;
+}
 
 /* Services
 ---------------------------------*/
