@@ -1,7 +1,7 @@
 /* CSS Document */
 
 /* Explanatory gradient animation
----------------------------------*/
+---------------------------------
 @-webkit-keyframes AnimationName {
   0%{background-position:0% 50%}
   50%{background-position:100% 50%}
@@ -16,7 +16,7 @@
   0%{background-position:0% 50%}
   50%{background-position:100% 50%}
   100%{background-position:0% 50%}
-}
+}*/
 
 /* Float Elements 
 ---------------------------------*/
@@ -111,9 +111,9 @@ h2 {
   letter-spacing: 0px;
   margin: 0 0 15px 0;
   text-align: center;
-  color: deeppink;
+  color: #ff00ff;
   padding-bottom: 15px;
-  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+
 }
 
 h3 {
@@ -136,7 +136,7 @@ h4 {
 
 h5 {
   font-family: 'Open Sans', sans-serif;
-  color: #fff;
+  color: #000;
   font-size: 16px;
   margin: 0 0 5px 0;
   text-transform: uppercase;
@@ -279,7 +279,7 @@ video#bgvid {
 ---------------------------------*/
 .main-nav-outer {
   padding: 0px;
-  border: 0px solid #00ff00;
+  border: 0px solid #00ffff;
   box-shadow: 0 3px 5px 3px #818181;
   position: relative;
   background: #000;
@@ -317,7 +317,7 @@ video#bgvid {
 
 .main-nav li a:hover {
   text-decoration: none;
-  color: #00ff00;
+  color: #00ffff;
 }
 
 .small-logo {
@@ -354,12 +354,12 @@ video#bgvid {
   font-family: "montserrat", sans-serif;
   padding: 0.4em 1em;
   font-size: 1.8em;
-  box-shadow: 0 1px 7px #00ff00;
+  box-shadow: 0 1px 7px #00ffff;
   z-index: 2000;
 }
 
 #floating-info a {
-  color: #00ff00;
+  color: #00ffff;
 }
 
 #floating-info a p:first-child {
@@ -372,12 +372,12 @@ video#bgvid {
 ---------------------------------*/
 
 #explanatory {
-  background: linear-gradient(145deg, #00ffff, #ff00ff);
-  background-size: 400% 400%;
+  background: linear-gradient(145deg, #CCFEFF, #FFCCFE);
+  background-size: 100% 100%;
 
-  -webkit-animation: AnimationName 30s ease infinite;
+  /*-webkit-animation: AnimationName 30s ease infinite;
   -moz-animation: AnimationName 30s ease infinite;
-  animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;*/
 }
 
 #explanatory .container {
@@ -420,7 +420,7 @@ video#bgvid {
 }
 
 .main-section.alabaster {
-  background: black;
+  background: #FFE2FA;
 }
 
 .alabaster figure {
@@ -575,7 +575,7 @@ video#bgvid {
 }
 
 .Portfolio-nav li a.current {
-  background: #00ff00;
+  background: #00ffff;
   color: #fff;
   text-decoration: none;
 }
@@ -955,7 +955,7 @@ img {
   display: block;
   border-radius: 4px;
   font-size: 15px;
-  color: #00ff00;
+  color: #00ffff;
   font-family: 'Open Sans', sans-serif;
   margin: 0 0 15px 0;
   transition: all 0.3s ease-in-out;
@@ -965,7 +965,7 @@ img {
 }
 
 .input-text:focus {
-  border: 1px solid #00ff00;
+  border: 1px solid #00ffff;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(124, 197, 118, 0.3);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(124, 197, 118, 0.3);
@@ -977,7 +977,7 @@ img {
   resize: none;
   overflow: auto;
   background: #000000;
-  color: #00ff00;
+  color: #00ffff;
 }
 
 .input-btn {
@@ -985,7 +985,7 @@ img {
   height: 50px;
   background: #ff00ff;
   border-radius: 4px;
-  color: #00ff00;
+  color: #00ffff;
   font-size: 14px;
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
@@ -997,7 +997,7 @@ img {
 }
 
 .input-btn:hover {
-  background: #00ff00;
+  background: #00ffff;
   color: #ff00ff;
 }
 
@@ -1047,14 +1047,14 @@ img {
 }
 
 .copyright, .credits {
-  color: #27ff00;
+  color: #00ffff;
   font-size: 14px;
   display: block;
   text-align: center;
 }
 
 .copyright a, .credits a {
-  color: #ff00d8;
+  color: #ffffff;
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
@@ -1071,7 +1071,7 @@ img {
   font-family: 'FontAwesome';
   font-size: 38px;
   text-decoration: none !important;
-  color: #00ff00;
+  color: #00ffff;
   font-style: normal;
   display: none;
   width: 42px;

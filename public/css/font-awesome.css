@@ -260,7 +260,7 @@ i{
 }
 .fa-clock-o:before {
   content: "\f017";
-     color: #00ffff;
+     color: #ff00ff;
 }
 .fa-road:before {
   content: "\f018";
@@ -379,6 +379,7 @@ i{
 }
 .fa-pencil:before {
   content: "\f040";
+    color: #ff00ff;
 }
 .fa-map-marker:before {
   content: "\f041";
@@ -623,7 +624,7 @@ i{
 }
 .fa-phone:before {
   content: "\f095";
-     color: #00ff00;
+     color: #ff00ff;
 }
 .fa-square-o:before {
   content: "\f096";
@@ -1083,6 +1084,7 @@ i{
 }
 .fa-bullseye:before {
   content: "\f140";
+    color: #ff00ff;
 }
 .fa-ellipsis-h:before {
   content: "\f141";
