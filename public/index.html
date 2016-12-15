@@ -85,21 +85,20 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
   <!-- Facebook Pixel Code -->
   <script> fbq('track', 'Search');</script>
   <!-- End Facebook Pixel Code --> 
-    
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5850784f3d413a0ca0a544ce/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
-
+      
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/5850784f3d413a0ca0a544ce/default';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
 
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -108,34 +107,38 @@ s0.parentNode.insertBefore(s1,s0);
     <!-- End Google Tag Manager (noscript) -->
 
     <header class="header" id="header"><!--header-start-->	   
-      <a href="#service">
-        <div class="shield">
-            <img src="img/animeishon_logo.png" id="animeishon_logo">
+      <div id="header-content">
+        <a href="#service">
+          <div class="shield">
+              <img src="img/animeishon_logo.png" id="animeishon_logo">
+          </div>
+          <video playsinline autoplay muted loop poster="img/animeishon_hero2.gif" id="bgvid">
+            <source src="img/animeishon_hero.webm" type="video/webm">
+            <source src="img/animeishon_hero.mov" type="video/mp4">
+          </video>
+        </a>
+
+        <div id="header-form">
+          <form action="/contacto" method="post" role="form" class="contactForm">
+            <div class="header-text">
+              <p>Platícanos tu proyecto. Déjanos tu contacto o llamanos al <br><span>55 22 59 68 98</span></p>
+            </div>
+            <div class="form-group">
+              <input type="text" name="name" class="form-control input-text" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control input-text" name="email" id="email" placeholder="E-Mail o teléfono" data-rule="email" data-msg="Please enter a valid email" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control input-text" name="subject" id="subject" placeholder="Cupón (opcional)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validation"></div>
+            </div>
+            <div class="text-center"><button onclick="goog_report_conversion('')" type="submit" class="input-btn">Enviar</button></div>
+          </form>
         </div>
-        <video playsinline autoplay muted loop poster="img/animeishon_hero2.gif" id="bgvid">
-          <source src="img/animeishon_hero.webm" type="video/webm">
-          <source src="img/animeishon_hero.mov" type="video/mp4">
-        </video>
-      </a>
-
-      <div id="header-form">
-        <form action="/contacto" method="post" role="form" class="contactForm">
-          <div class="form-group">
-            <input type="text" name="name" class="form-control input-text" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-            <div class="validation"></div>
-          </div>
-          <div class="form-group">
-            <input type="email" class="form-control input-text" name="email" id="email" placeholder="E-Mail o teléfono" data-rule="email" data-msg="Please enter a valid email" />
-            <div class="validation"></div>
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control input-text" name="subject" id="subject" placeholder="Cupón (opcional)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-            <div class="validation"></div>
-          </div>
-          <div class="text-center"><button onclick="goog_report_conversion('')" type="submit" class="input-btn">Enviar</button></div>
-        </form>
       </div>
-
     </header><!--header-end-->
 
     <nav class="main-nav-outer" id="test"><!--main-nav-start-->
