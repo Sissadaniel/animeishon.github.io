@@ -1149,3 +1149,34 @@ cont {
   font-size: 60px;
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
+
+
+
+
+.ver {
+  font-size: 20px;
+  font-family: 'streamster';
+  letter-spacing: 0px;
+  margin: 0 0 15px 0;
+  text-align: right;
+  color: #ff00ff;
+  padding-bottom: 15px;
+}
+
+.megafooter {
+    background-color: #212121;
+    color: #ff00ff;
+    padding-top: 3%;
+}
+
+#padimg {
+    padding: 0% 20% 5% 20%;
+}
+
+
+
+
+
+
+
+
