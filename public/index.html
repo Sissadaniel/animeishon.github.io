@@ -118,7 +118,7 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         </video>
       </a>
       
-        <div id="header-form">
+        <div id="header-form" class="collapse in">
           <form action="/contacto" method="post" role="form" class="contactForm">
             <div class="header-text">
               <p>Platícanos tu proyecto. Déjanos tu contacto o llámanos al <span> (55)22596898</span></p>
@@ -137,6 +137,11 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
             </div>
             <div class="text-center"><button onclick="goog_report_conversion('')" type="submit" class="input-btn">Enviar</button></div>
           </form>
+        </div>
+        <div>
+            <button type="button" class="closeform" data-toggle="collapse" data-target="#header-form"> X </button>
+                <div id="header-form" class="collapse in"> 
+                </div>
         </div>
     </header><!--header-end-->
 
@@ -431,7 +436,7 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
             <img src="img/animeishon_logo.png" class="img-responsive" id="padimg">
             <p>Animeishon Studio es una Agencia especializada en Diseño digital y animación.
               Proveemos distintos servicios enfocados a la creatividad, con fundamentos
-              técnicos sólidos y experiencia.<br>hello@animeishon.studio&nbsp; <br>55 22 59 68 98</p>
+              técnicos sólidos y experiencia.<br><br>hello@animeishon.studio&nbsp;</p>
           </div>
           <div class="col-sm-3">
             <h4 contenteditable="true">¿Por qué con nosotros?</h4>
@@ -442,18 +447,24 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
             <p>Para cualquiera de nuestros servicios, ofrecemos soporte técnico 24/7.
                 Descuida, nosotros te cuidamos.</p>
             <p>Baila Tu cuerpo alegría macarena.</p>
-               <br>
-              <br>
-              <br>
+
           </div>
           <div class="col-sm-3">
             <h4 contenteditable="true">Instagram Feed</h4>
+              <div><!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/3ffba35e93f75718836990d834d66458.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe></div>
           </div>
           <div class="col-sm-3">
             <h4>Nuestras Oficinas</h4>
             <p>Nos encontramos en We Are Todos, un espacio de coworking localizado en Tabasco 242, colonia Roma Norte.</p>
-            <h6>Tabasco 242, Roma Norte</h6>
-            <h6>Teléfono: 55 22 59 68 98</h6>
+              <div class="contact-info-box address clearfix">
+              <p><i class=" icon-map-marker"></i> Dirección:</p>
+              <span>Tabasco 242<br>Roma Norte, Ciudad de México, 06700.</span>
+            </div>
+            <div class="contact-info-box phone clearfix">
+              <p><i class="fa-phone"></i> Teléfono:</p>
+              <span>55 22 59 68 98</span>
+            </div>
+              
           </div>
         </div>
       </div>

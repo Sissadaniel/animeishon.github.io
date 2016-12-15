@@ -1094,7 +1094,7 @@ img {
 
 .footer {
   background: url(../img/pw_maze_black_2X.png) left top repeat;
-  padding: 35px 0 35px;
+  padding: 20px 0 20px;
 }
 
 .footer-logo {
@@ -1226,7 +1226,7 @@ cont {
 }
 
 #padimg {
-    padding: 0% 20% 5% 20%;
+    padding: 0% 25% 5% 25%;
 }
 
 
@@ -1239,7 +1239,7 @@ cont {
 
 
 
-.megafooter p {
+.megafooter p  {
     
     margin: 0px 0px 11px 0px;
 }
@@ -1254,4 +1254,23 @@ cont {
     margin: auto;
     margin-bottom: 20px;
     
+}
+
+
+
+.closeform {
+  margin: 0 0 0 0;
+  background-color: rgba(0,0,0,.7);
+  position: fixed;
+  border-radius: 15px;
+    border-color:#ff00ff; 
+  left: 90%;
+  right: 10%;
+  bottom: 15%;
+  z-index: 1001;
+    
+}
+
+button {
+    color: #00ffff;
 }
