@@ -19,6 +19,15 @@ jQuery(document).ready(function() {
     $('#loc-section-design-appdev').text($.i18n('section-design-appdev'));
     $('#loc-section-design-appdev-content').text($.i18n('section-design-appdev-content'));
     $('#loc-section-design-branding-content').text($.i18n('section-design-branding-content'));
+    /* ANIMATION SECTION */
+    $('#loc-section-animation').text($.i18n('animation'));
+    $('#loc-section-animation-expvids-content').text($.i18n('section-animation-expvids-content'));
+    $('#loc-section-animation-3dvr').text($.i18n('section-animation-3dvr'));
+    $('#loc-section-animation-3dvr-content').text($.i18n('section-animation-3dvr-content'));
+    $('#loc-section-animation-kintypo-content').text($.i18n('section-animation-kintypo-content'));
+    $('#loc-section-animation-webcont').text($.i18n('section-animation-webcont'));
+    $('#loc-section-animation-webcont-content').text($.i18n('section-animation-webcont-content'));
+    $('#loc-section-animation-examples').text($.i18n('section-animation-examples'));
     $('#messages').text($.i18n('message_from', 'Ann', 2, 'female'));
   };
 
@@ -46,6 +55,14 @@ jQuery(document).ready(function() {
       'section-design-appdev': 'App Development',
       'section-design-appdev-content': 'User interfaces for a beautiful user experience. Our apps are clean and straightforward. Programmers love us!',
       'section-design-branding-content': 'We build brands that can be easily recognized by their desired audience. From the logo and how to use it, the look and feel of the website, the company\'s communication and the harmony among these elements.',
+      /* ANIMATION SECTION */
+      'section-animation-expvids-content': 'Let your clients know what you offer, in under 2 minutes. No. Overhead.',
+      'section-animation-3dvr': '3D & VR',
+      'section-animation-3dvr-content': 'Stereoscopic video and animations. Ocuclus Rift & Hololens ready. Even Google Cardboard.',
+      'section-animation-kintypo-content': 'Movin’ type. Express yourself with animated text. Dynamic, simple and easy.',
+      'section-animation-webcont': 'Web Content',
+      'section-animation-webcont-content': 'Original, curated and custom made posts for your Facebook, Instagram, & Twitter. PNGs, High Quality GIFs, WebMs, you call it.',
+      'section-animation-examples': 'See examples',
 
       'message_from': '$1 has send you $2 {{plural:$2|message|messages}}. {{gender:$3|He|She}} is waiting for your response!'
     },
@@ -66,6 +83,14 @@ jQuery(document).ready(function() {
       'section-design-appdev': 'Desarrollo de apps',
       'section-design-appdev-content': 'Hacemos aplicaciones funcionales y estéticas, siempre pensando en cómo se ve (UI) y cómo se siente (UX).',
       'section-design-branding-content': 'Construimos marcas con el objetivo de que sean identificadas por el público deseado. Todo desde el logo y cómo usarlo, el look que tendrá el sitio web, la comunicación de la empresa y la armonía entre todos esos elementos.',
+      /* ANIMATION SECTION */
+      'section-animation-expvids-content': 'Cada uno de los videos que hacemos explica de forma efectiva tu negocio, producto o servicio en menos de 2 minutos, creando una conexión emocional con el cliente.',
+      'section-animation-3dvr': '3D y Realidad Virtual',
+      'section-animation-3dvr-content': 'Desarrollamos animaciones y videos 3D, listos para ser utilizados por Oculus Rift, HoloLens y Google Cardboard.',
+      'section-animation-kintypo-content': 'Texto en movimiento. Es una técnica de animación que mezcla animación y texto con el propósito de transmitir una idea de manera fácil, rápida y simple.',
+      'section-animation-webcont': 'Contenido Web',
+      'section-animation-webcont-content': 'Creamos contenido para redes sociales, Facebook, Instagram y Twitter además de sitios web. Formato WEBM, GIF, MOV, etc.',
+      'section-animation-examples': "Ver ejemplos",
 
       'message_from': '$1 {{gender:$3|отправил|отправила}} вам $2 {{plural:$2|сообщение|сообщений|сообщения}}. {{gender:$3|Он|Она}} ждёт ответа!'
     }
