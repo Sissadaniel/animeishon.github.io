@@ -116,7 +116,14 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
                       height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <header class="header" id="header"><!--header-start-->	   
+    <header class="header" id="header"><!--header-start-->
+      
+      <a href="#" class="lang-switch" data-locale="en">English</a> |
+      <a href="#" class="lang-switch" data-locale="es">Español</a>
+
+      <h1 data-i18n="welcome"></h1>
+
+      <p id="messages"></p>	   
 
       <a href="#explanatory">
         <div class="shield">
@@ -131,7 +138,7 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         <div id="header-form" class="collapse in">
           <form action="/contacto" method="post" role="form" class="contactForm">
             <div class="header-text">
-              <p>Platícanos tu proyecto. Déjanos tu contacto o llámanos al <span> (55)22596898</span></p>
+              <p id="loc-action-form-text"></p>
             </div>
             <div class="form-group">
               <input type="text" name="name" class="form-control input-text" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -158,13 +165,13 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     <nav class="main-nav-outer" id="test"><!--main-nav-start-->
       <div class="container">
         <ul class="main-nav">
-          <li><a href="#explanatory">Agencia</a></li>
-          <li><a href="#service">Diseño</a></li>
-          <li><a href="#animacion">Animación</a></li>
-          <li><a href="#Portfolio">Portafolio</a></li>
+          <li><a href="#explanatory" id="loc-explanatory"></a></li>
+          <li><a href="#service" id="loc-design"></a></li>
+          <li><a href="#animacion" id="loc-animation"></a></li>
+          <li><a href="#Portfolio" id="loc-portfolio"></a></li>
           <li class="small-logo"><a href="#header"><img src="img/small-logo.png"></a></li>
-          <li><a href="#team">Clientes</a></li>
-          <li><a href="#contact">Contacto</a></li>
+          <li><a href="#team" id="loc-clients"></a></li>
+          <li><a href="#contact" id="loc-contact"></a></li>
           <li><a href="http://blog.animeishon.studio" id="link_blog" target="_blank">Blog</a></li>
           <li><a href="#contact">5535221681</a></li>
         </ul>
