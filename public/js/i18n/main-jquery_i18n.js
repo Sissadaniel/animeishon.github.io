@@ -29,6 +29,21 @@ jQuery(document).ready(function() {
     $('#loc-section-animation-webcont-content').text($.i18n('section-animation-webcont-content'));
     $('#loc-section-animation-examples').text($.i18n('section-animation-examples'));
     $('#loc-section-animation-modal').text($.i18n('section-animation-webcont'));
+    /* PORTFOLIO SECTION */
+    $('#loc-section-portfolio').text($.i18n('portfolio'));
+    $('#loc-section-portfolio-desc').text($.i18n('section-portfolio-desc'));
+    /* CLIENTS SECTION */
+    $('#loc-section-clients').text($.i18n('section-clients'));
+    /* CONTACT SECTION */
+    $('#loc-section-contact').text($.i18n('section-contact'));
+    $('#loc-section-contact-address').text($.i18n('section-contact-address'));
+    $('#loc-section-contact-phone').text($.i18n('section-contact-phone'));
+    $('#loc-section-contact-time').text($.i18n('section-contact-time'));
+    $('#loc-section-contact-time-montue').text($.i18n('section-contact-time-montue'));
+    $('#loc-section-contact-time-fri').text($.i18n('section-contact-time-fri'));
+    $('#loc-section-contact-time-fri-desc').text($.i18n('section-contact-time-fri-desc'));
+    $('#loc-section-contact-time-weekend').text($.i18n('section-contact-time-weekend'));
+    $('#loc-section-contact-time-weekend-desc').text($.i18n('section-contact-time-weekend-desc'));
     $('#messages').text($.i18n('message_from', 'Ann', 2, 'female'));
   };
 
@@ -64,7 +79,20 @@ jQuery(document).ready(function() {
       'section-animation-webcont': 'Web Content',
       'section-animation-webcont-content': 'Original, curated and custom made posts for your Facebook, Instagram, & Twitter. PNGs, High Quality GIFs, WebMs, you call it.',
       'section-animation-examples': 'See examples',
-
+      /* PORTFOLIO SECTION */
+      'section-portfolio-desc': 'Our work speaks for ourselves',
+      /* CLIENTS SECTION */
+      'section-clients': 'Our Clients',
+      /* CONTACT SECTION */
+      'section-contact': 'Contact Us',
+      'section-contact-address': 'Address',
+      'section-contact-phone': 'Phone',
+      'section-contact-time': 'Working Hours',
+      'section-contact-time-montue': 'Monday - Tuesday:',
+      'section-contact-time-fri': 'Friday:',
+      'section-contact-time-fri-desc': 'Do you really work on Fridays?',
+      'section-contact-time-weekend': 'Saturday and Sunday:',
+      'section-contact-time-weekend-desc': 'Don\'t even try it',
       'message_from': '$1 has send you $2 {{plural:$2|message|messages}}. {{gender:$3|He|She}} is waiting for your response!'
     },
     'es': {
@@ -92,7 +120,20 @@ jQuery(document).ready(function() {
       'section-animation-webcont': 'Contenido Web',
       'section-animation-webcont-content': 'Creamos contenido para redes sociales, Facebook, Instagram y Twitter además de sitios web. Formato WEBM, GIF, MOV, etc.',
       'section-animation-examples': "Ver ejemplos",
-
+      /* PORTFOLIO SECTION */
+      'section-portfolio-desc': "Dejamos que nuestro trabajo hable por nosostros",
+      /* CLIENTS SECTION */
+      'section-clients': 'Nuestros Clientes',
+      /* CONTACT SECTION */
+      'section-contact': 'Contáctanos',
+      'section-contact-address': 'Dirección',
+      'section-contact-phone': 'Teléfono',
+      'section-contact-time': 'Horario',
+      'section-contact-time-montue': 'Lunes - Jueves:',
+      'section-contact-time-fri': 'Viernes:',
+      'section-contact-time-fri-desc': '¿Trabajas los viernes?',
+      'section-contact-time-weekend': 'Sábado y Domingo:',
+      'section-contact-time-weekend-desc': 'No preguntes',
       'message_from': '$1 {{gender:$3|отправил|отправила}} вам $2 {{plural:$2|сообщение|сообщений|сообщения}}. {{gender:$3|Он|Она}} ждёт ответа!'
     }
   });

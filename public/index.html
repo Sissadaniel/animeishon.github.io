@@ -310,8 +310,8 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 
     <section class="main-section paddind" id="Portfolio"><!--main-section-start-->
       <div class="container">
-        <h2>Trabajo</h2>
-        <h6>Dejamos que nuestro trabajo hable por nosostros</h6>
+        <h2 id="loc-section-portfolio"></h2>
+        <h6 id="loc-section-portfolio-desc"></h6>
         <div class="portfolioFilter">
           <ul class="Portfolio-nav wow fadeIn delay-02s">
             <li><a href="#" data-filter="*" class="current" >All</a></li>
@@ -374,7 +374,7 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 
     <section class="business-talking" id="team"><!--business-talking-start-->
       <div class="Clientes">
-        <cont>Clientes</cont>
+        <cont id="loc-section-clients"></cont>
       </div>
     </section><!--business-talking-end-->
 
@@ -383,7 +383,7 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 
     <section class="business-talking" id="contact"><!--business-talking-start-->
       <div class="container">
-        <cont>Contáctanos</cont>
+        <cont id="loc-section-contact"></cont>
       </div>
     </section><!--business-talking-end-->
 
@@ -393,20 +393,22 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         <div class="row">
           <div class="col-lg-6 col-sm-7 wow fadeInLeft">
             <div class="contact-info-box address clearfix">
-              <h3><i class=" icon-map-marker"></i>Dirección:</h3>
+              <i class=" icon-map-marker"></i><h3 id="loc-section-contact-address"></h3>
               <span>Tabasco 242<br>Roma Norte, Ciudad de México, 06700.</span>
             </div>
             <div class="contact-info-box phone clearfix">
-              <h3><i class="fa-phone"></i>Teléfono:</h3>
+              <i class="fa-phone"></i><h3 id="loc-section-contact-phone"></h3>
               <span>55 22 59 68 98</span>
             </div>
             <div class="contact-info-box email clearfix">
-              <h3><i class="fa-pencil"></i>email:</h3>
+              <i class="fa-pencil"></i><h3>email</h3>
               <span>info@steed.com</span>
             </div>
             <div class="contact-info-box hours clearfix">
-              <h3><i class="fa-clock-o"></i>Horas:</h3>
-              <span><strong>Lunes - Jueves:</strong> 8am - 8pm<br><strong>Viernes:</strong> ¿Trabajas el viernes?<br><strong>Sábado - Domingo:</strong> No preguntes.</span>
+              <i class="fa-clock-o"></i><h3 id="loc-section-contact-time"></h3>
+              <span><strong id="loc-section-contact-time-montue"></strong> 8am - 8pm<br>
+                    <strong id="loc-section-contact-time-fri"></strong> <span id="loc-section-contact-time-fri-desc"></span><br>
+                    <strong id="loc-section-contact-time-weekend"></strong> <span id="loc-section-contact-time-weekend-desc"></span></span>
             </div>
             <!--<ul class="social-link">
               <li class="twitter"><a href="#"><i class="fa-twitter"></i></a></li>
