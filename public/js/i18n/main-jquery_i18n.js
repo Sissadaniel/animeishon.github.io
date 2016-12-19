@@ -44,6 +44,15 @@ jQuery(document).ready(function() {
     $('#loc-section-contact-time-fri-desc').text($.i18n('section-contact-time-fri-desc'));
     $('#loc-section-contact-time-weekend').text($.i18n('section-contact-time-weekend'));
     $('#loc-section-contact-time-weekend-desc').text($.i18n('section-contact-time-weekend-desc'));
+    /* FOOTER */
+    $('#loc-footer-about').text($.i18n('footer-about'));
+    $('#loc-footer-whyus').text($.i18n('footer-whyus'));
+    $('#loc-footer-whyus-1').text($.i18n('footer-whyus-1'));
+    $('#loc-footer-whyus-2').text($.i18n('footer-whyus-2'));
+    $('#loc-footer-whyus-3').text($.i18n('footer-whyus-3'));
+    $('#loc-footer-ouroff').text($.i18n('footer-ouroff'));
+    $('#loc-footer-address').text($.i18n('section-contact-address'));
+    $('#loc-footer-phone').text($.i18n('section-contact-phone'));
     $('#messages').text($.i18n('message_from', 'Ann', 2, 'female'));
   };
 
@@ -93,6 +102,13 @@ jQuery(document).ready(function() {
       'section-contact-time-fri-desc': 'Do you really work on Fridays?',
       'section-contact-time-weekend': 'Saturday and Sunday:',
       'section-contact-time-weekend-desc': 'Don\'t even try it',
+      /* FOOTER */
+      'footer-about': 'Animeishon Studio is a creative agency focused on digital design and animation. We provide different creative services with a solid technical experience. hello@animeishon.studio',
+      'footer-whyus': 'Why us?',
+      'footer-whyus-1': 'We have worked with a wide range of clients: from creative industries to the government.',
+      'footer-whyus-2': 'Mix design and technology to create a polished product.',
+      'footer-whyus-3': '24/7 Support included in every service. We care for you ♥︎',
+      'footer-ouroff': 'Our Offices',
       'message_from': '$1 has send you $2 {{plural:$2|message|messages}}. {{gender:$3|He|She}} is waiting for your response!'
     },
     'es': {
@@ -134,6 +150,13 @@ jQuery(document).ready(function() {
       'section-contact-time-fri-desc': '¿Trabajas los viernes?',
       'section-contact-time-weekend': 'Sábado y Domingo:',
       'section-contact-time-weekend-desc': 'No preguntes',
+      /* FOOTER */
+      'footer-about': 'Animeishon Studio es una agencia especializada en diseño digital y animación. Proveemos distintos servicios enfocados a la creatividad, con fundamentos técnicos sólidos y experiencia. hello@animeishon.studio ',
+      'footer-whyus': '¿Por qué nosotros?',
+      'footer-whyus-1': 'Hemos trabajado con todo tiempo de clientes: desde instancias gubernamentales hasta industrias creativas.',
+      'footer-whyus-2': 'Conjuga diseño y tecnología para lograr un producto completo.',
+      'footer-whyus-3': 'Soporte 24/7 incluido en cada servicio. Nosotros te cuidamos ♥︎',
+      'footer-ouroff': 'Nuestra oficinas',
       'message_from': '$1 {{gender:$3|отправил|отправила}} вам $2 {{plural:$2|сообщение|сообщений|сообщения}}. {{gender:$3|Он|Она}} ждёт ответа!'
     }
   });
