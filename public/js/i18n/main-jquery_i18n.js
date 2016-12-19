@@ -28,6 +28,7 @@ jQuery(document).ready(function() {
     $('#loc-section-animation-webcont').text($.i18n('section-animation-webcont'));
     $('#loc-section-animation-webcont-content').text($.i18n('section-animation-webcont-content'));
     $('#loc-section-animation-examples').text($.i18n('section-animation-examples'));
+    $('#loc-section-animation-modal').text($.i18n('section-animation-webcont'));
     $('#messages').text($.i18n('message_from', 'Ann', 2, 'female'));
   };
 
