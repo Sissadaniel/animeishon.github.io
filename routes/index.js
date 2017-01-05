@@ -7,6 +7,7 @@ router.post('/contacto', function(req, res) {
   sendMail(req.body);
   /*
   res.redirect('/index.html');*/
+  console.log('RESPONSE: ', res);
   res.redirect(req.get('referer'));
 });
 

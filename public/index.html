@@ -25,7 +25,6 @@
       <script type="text/javascript" src="js/wow.js"></script>
       <script type="text/javascript" src="js/classie.js"></script>
       <script type="text/javascript" src="js/collapse.js"></script>
-      <script src="contactform/contactform.js"></script>
       <script src="js/i18n/CLDRPluralRuleParser.js"></script>
       <script src="js/i18n/jquery.i18n.js"></script>
       <script src="js/i18n/jquery.i18n.messagestore.js"></script>
@@ -156,15 +155,15 @@
                   <p>Platícanos tu proyecto. Déjanos tu contacto o llámanos al <span> (55)22596898</span></p>
                </div>
                <div class="form-group">
-                  <input type="text" name="name" class="form-control input-text" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <input type="text" name="name" class="form-control input-text" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Por favor introduce al menos 4 letras" required/>
                   <div class="validation"></div>
                </div>
                <div class="form-group">
-                  <input type="email" class="form-control input-text" name="email" id="email" placeholder="E-Mail o teléfono" data-rule="email" data-msg="Please enter a valid email" />
+                  <input type="text" class="form-control input-text" name="email" id="email" placeholder="E-Mail o teléfono" data-rule="email" data-msg="Por favor introduce un correo válido" required/>
                   <div class="validation"></div>
                </div>
                <div class="form-group">
-                  <input type="text" class="form-control input-text" name="subject" id="subject" placeholder="Cupón (opcional)" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <input type="text" class="form-control input-text" name="coupon" id="coupon" placeholder="Cupón (opcional)"/>
                   <div class="validation"></div>
                </div>
                <div class="text-center"><button onclick="goog_report_conversion('')" type="submit" class="input-btn">Enviar</button></div>
