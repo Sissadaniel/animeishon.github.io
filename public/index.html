@@ -147,18 +147,18 @@
         <video playsinline autoplay muted loop poster="img/animeishon_hero2.gif" id="bgvid">
             <source src="img/animeishon_hero.webm" type="video/webm">
             <source src="img/animeishon_hero.mov" type="video/mp4">
-         </video>
+        </video>
         <div id="header-form" class="collapse in">
             <form action="/contacto" method="post" role="form" class="contactForm">
                 <div class="header-text">
                     <p>Platícanos tu proyecto. Déjanos tu contacto o llámanos al <span> (55)22596898</span></p>
                 </div>
                 <div class="form-group">
-                    <input type="text" name="name" class="form-control input-text" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Por favor introduce al menos 4 letras" required/>
+                    <input type="text" name="name" class="form-control input-text" id="name" placeholder="Nombre" required/>
                     <div class="validation"></div>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control input-text" name="email" id="email" placeholder="E-Mail o teléfono" data-rule="email" data-msg="Por favor introduce un correo válido" required/>
+                    <input type="text" class="form-control input-text" name="email" id="email" placeholder="E-Mail o teléfono" required/>
                     <div class="validation"></div>
                 </div>
                 <div class="form-group">
@@ -461,21 +461,21 @@
                         <div class="form">
                             <div id="sendmessage">Tu mensaje ha sido enviado. Gracias!</div>
                             <div id="errormessage"></div>
-                            <form action="/contacto" method="post" role="form" class="contactForm">
+                            <form action="/contacto_mobile" method="post" role="form" class="contactForm">
                                 <div class="form-group">
-                                    <input type="text" name="name" class="form-control input-text" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                    <input type="text" name="name" class="form-control input-text" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required/>
                                     <div class="validation"></div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control input-text" name="email" id="email" placeholder="E-Mail" data-rule="email" data-msg="Please enter a valid email" />
+                                    <input type="email" class="form-control input-text" name="email" id="email" placeholder="E-Mail" data-rule="email" data-msg="Please enter a valid email" required/>
                                     <div class="validation"></div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control input-text" name="subject" id="subject" placeholder="Título" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                    <input type="text" class="form-control input-text" name="subject" id="subject" placeholder="Título" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" required/>
                                     <div class="validation"></div>
                                 </div>
                                 <div class="form-group">
-                                    <textarea class="form-control input-text text-area" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Cuéntanos tu idea"></textarea>
+                                    <textarea class="form-control input-text text-area" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Cuéntanos tu idea" required></textarea>
                                     <div class="validation"></div>
                                 </div>
                                 <div class="text-center"><button onclick="goog_report_conversion('')" type="submit" class="input-btn">Enviar</button></div>
