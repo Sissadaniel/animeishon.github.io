@@ -1,4 +1,7 @@
 /* CSS Document */
+html, body {
+    overflow-x:hidden;
+    }
 /* Float Elements 
 ---------------------------------*/
 
@@ -73,6 +76,7 @@ a:active {
 ---------------------------------*/
 
 body {
+    overflow-x: hidden;
     background: #fff;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
