@@ -143,6 +143,14 @@ p {
     font-weight: 400;
     padding-bottom: 8%;
 }
+
+.quotes p {
+    font-size: 17px;
+    font-weight: 100;
+    padding-bottom: 8%;
+    font-family: montserrat; 
+    color: #212121
+}
 #explanatory figure p {
     font-size: 200%;
     font-weight: 400;
@@ -1316,4 +1324,39 @@ h8 {
 }
 .nottoday {
     display: none
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.quote_author {
+    text-align: right;
+    font-weight: 700;
+    color: black;
+}
+
+.quotes_padding {
+padding: 20px 40px 50px 20px
+}
+
+.stroke_quote {
+    border-top: 1px solid #ff00ff;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.back_pattern {
+    background: url("../img/back_pattern.png") repeat 0;
+    background-size: 350px;
+    background-attachment: fixed;
+
 }

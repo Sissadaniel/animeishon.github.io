@@ -294,6 +294,14 @@
         width: 318px !important;
         margin: 0px auto !important;
     }
+    .quotes_padding {
+padding: 0px;
+}
+    
+    .quotes p {
+    font-size: 12px;
+    
+}
     /*.isotope-item img{ width:300px; left:50%; margin-left:-100px;}
   .isotope-item{ width:300px; margin:0px auto;}
   .isotope{ width:400px; margin:0px auto;}
