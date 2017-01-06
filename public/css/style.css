@@ -1189,6 +1189,7 @@ h8 {
     background: url("../img/back_landing.png");
     background-size: cover;
     background-repeat: no-repeat;
+            background-attachment: fixed;
 }
 .formalp {
     background: #212121;
@@ -1299,14 +1300,20 @@ h8 {
 }
 .boton_paquetes {
     background-color: #ff00ff;
-    margin: 10px 120px 10px 120px;
+    margin: 3%;
     padding: 5px 0px 5px 0px;
     border-radius: 10px;
-    color: white;
     outline: 1px !important;
     cursor: pointer;
     cursor: hand;
 }
+
+.boton_paquetes a {
+    color: white;
+    font-size: 18px
+    
+}
+
 .contacto_mobile {
     display: none;
 }

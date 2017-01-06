@@ -252,6 +252,7 @@
         font-size: 18px;
         font-weight: 0;
         padding-bottom: 10%;
+line-height: inherit;
     }
     .modal-dialog {
         width: 80vw;
@@ -291,7 +292,7 @@
         padding: 0% 0% 0% 0%;
     }
     .portfolioContainer {
-        width: 318px !important;
+        width: 326px !important;
         margin: 0px auto !important;
     }
     .quotes_padding {
@@ -301,6 +302,18 @@ padding: 0px;
     .quotes p {
     font-size: 12px;
     
+}
+    #explanatory .title {
+    font-size: 18px;
+    color: #212121;
+}
+    .backhero {
+    background: url("../img/back_landing.png");
+    background-size: cover;
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        background-position:top;
+        background-attachment: fixed;
 }
     /*.isotope-item img{ width:300px; left:50%; margin-left:-100px;}
   .isotope-item{ width:300px; margin:0px auto;}
