@@ -147,6 +147,14 @@ p {
     font-weight: 400;
     padding-bottom: 8%;
 }
+
+.quotes p {
+    font-size: 17px;
+    font-weight: 100;
+    padding-bottom: 8%;
+    font-family: montserrat; 
+    color: #212121
+}
 #explanatory figure p {
     font-size: 200%;
     font-weight: 400;
@@ -1170,7 +1178,7 @@ h8 {
     margin-bottom: 15px
 }
 #explanatory .title {
-    font-size: 21px;
+    font-size: 20px;
     color: #212121;
 }
 .fontexplain {
@@ -1185,6 +1193,7 @@ h8 {
     background: url("../img/back_landing.png");
     background-size: cover;
     background-repeat: no-repeat;
+            background-attachment: fixed;
 }
 .formalp {
     background: #212121;
@@ -1246,6 +1255,7 @@ h8 {
     
     background: linear-gradient(to bottom right, #ffffff, #ffedff);
     /* Standard syntax */
+    max-height: 614px;
 }
 .botoncoti {
     background-color: #212121;
@@ -1295,14 +1305,20 @@ h8 {
 }
 .boton_paquetes {
     background-color: #ff00ff;
-    margin: 10px 120px 10px 120px;
+    margin: 3%;
     padding: 5px 0px 5px 0px;
     border-radius: 10px;
-    color: white;
     outline: 1px !important;
     cursor: pointer;
     cursor: hand;
 }
+
+.boton_paquetes a {
+    color: white;
+    font-size: 18px
+    
+}
+
 .contacto_mobile {
     display: none;
 }
@@ -1320,4 +1336,39 @@ h8 {
 }
 .nottoday {
     display: none
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.quote_author {
+    text-align: right;
+    font-weight: 700;
+    color: black;
+}
+
+.quotes_padding {
+padding: 20px 40px 50px 20px
+}
+
+.stroke_quote {
+    border-top: 1px solid #ff00ff;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.back_pattern {
+    background: url("../img/back_pattern.png") repeat 0;
+    background-size: 350px;
+    background-attachment: fixed;
+
 }
