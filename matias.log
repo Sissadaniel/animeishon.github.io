@@ -1,0 +1,742 @@
+
+> animeishon.studio@0.1.0 start /home/matias/Documents/Steed/animeishon.studio
+> node ./bin/animeishon
+
+[0mGET /landing.html [36m304 [0m4.751 ms - -[0m
+[0mGET /css/bootstrap.css [36m304 [0m8.357 ms - -[0m
+[0mGET /css/style.css [36m304 [0m19.441 ms - -[0m
+[0mGET /css/font-awesome.css [36m304 [0m1.031 ms - -[0m
+[0mGET /css/responsive.css [36m304 [0m1.858 ms - -[0m
+[0mGET /css/animate.css [36m304 [0m2.293 ms - -[0m
+[0mGET /js/slick/slick.css [36m304 [0m2.458 ms - -[0m
+[0mGET /js/slick/slick-theme.css [36m304 [0m2.623 ms - -[0m
+[0mGET /js/jquery.1.8.3.min.js [36m304 [0m0.386 ms - -[0m
+[0mGET /js/bootstrap.js [36m304 [0m1.384 ms - -[0m
+[0mGET /js/jquery-scrolltofixed.js [36m304 [0m0.402 ms - -[0m
+[0mGET /js/jquery.easing.1.3.js [36m304 [0m18.773 ms - -[0m
+[0mGET /js/jquery.isotope.js [36m304 [0m16.730 ms - -[0m
+[0mGET /js/main.js [36m304 [0m15.019 ms - -[0m
+[0mGET /js/wow.js [36m304 [0m0.996 ms - -[0m
+[0mGET /js/classie.js [36m304 [0m2.310 ms - -[0m
+[0mGET /js/collapse.js [36m304 [0m2.767 ms - -[0m
+[0mGET /js/slick/slick.min.js [36m304 [0m0.388 ms - -[0m
+[0mGET /img/small_logo2.png [36m304 [0m0.717 ms - -[0m
+[0mGET /img/icono-01.png [36m304 [0m0.371 ms - -[0m
+[0mGET /img/icono-02.png [36m304 [0m0.312 ms - -[0m
+[0mGET /img/icono-03.png [36m304 [0m0.708 ms - -[0m
+[0mGET /img/icono-04.png [36m304 [0m0.302 ms - -[0m
+[0mGET /img/sep_logo.png [36m304 [0m0.299 ms - -[0m
+[0mGET /img/mattel_logo.png [36m304 [0m0.300 ms - -[0m
+[0mGET /img/se_logo.png [36m304 [0m0.437 ms - -[0m
+[0mGET /img/servifacil_logo.png [36m304 [0m0.608 ms - -[0m
+[0mGET /img/imtt_logo.png [36m304 [0m0.311 ms - -[0m
+[0mGET /img/itesm_logo.png [36m304 [0m0.267 ms - -[0m
+[0mGET /img/robotix_logo.png [36m304 [0m0.370 ms - -[0m
+[0mGET /img/80_logo.png [36m304 [0m0.271 ms - -[0m
+[0mGET /img/coche_diseno.png [36m304 [0m0.277 ms - -[0m
+[0mGET /img/icono-05.png [36m304 [0m0.992 ms - -[0m
+[0mGET /img/tele_animacion.png [36m304 [0m0.284 ms - -[0m
+[0mGET /img/quote_isaac.png [36m304 [0m0.251 ms - -[0m
+[0mGET /img/quote_juan.png [36m304 [0m1.609 ms - -[0m
+[0mGET /img/quote_stephy.png [36m304 [0m0.280 ms - -[0m
+[0mGET /img/footer-logo.png [36m304 [0m0.257 ms - -[0m
+[0mGET /img/backlp.png [36m304 [0m0.790 ms - -[0m
+[0mGET /img/back_landing.png [36m304 [0m2.221 ms - -[0m
+[0mGET /fonts/streamster.ttf [36m304 [0m6.593 ms - -[0m
+[0mGET /img/back_pattern.png [36m304 [0m0.349 ms - -[0m
+[0mGET /fonts/fontawesome-webfont.woff?v=4.1.0 [36m304 [0m0.318 ms - -[0m
+[0mGET /js/slick/ajax-loader.gif [36m304 [0m1.139 ms - -[0m
+RESPONSE:  ServerResponse {
+  domain: null,
+  _events: 
+   { finish: [ [Function: resOnFinish], [Function: onevent] ],
+     end: [Function: onevent] },
+  _eventsCount: 2,
+  _maxListeners: undefined,
+  output: [],
+  outputEncodings: [],
+  outputCallbacks: [],
+  outputSize: 0,
+  writable: true,
+  _last: false,
+  upgrading: false,
+  chunkedEncoding: false,
+  shouldKeepAlive: true,
+  useChunkedEncodingByDefault: true,
+  sendDate: true,
+  _removedHeader: {},
+  _contentLength: null,
+  _hasBody: true,
+  _trailer: '',
+  finished: false,
+  _headerSent: false,
+  socket: 
+   Socket {
+     connecting: false,
+     _hadError: false,
+     _handle: 
+      TCP {
+        bytesRead: 19377,
+        _externalStream: {},
+        fd: 17,
+        reading: true,
+        owner: [Circular],
+        onread: [Function: onread],
+        onconnection: null,
+        writeQueueSize: 0 },
+     _parent: null,
+     _host: null,
+     _readableState: 
+      ReadableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        buffer: [Object],
+        length: 0,
+        pipes: null,
+        pipesCount: 0,
+        flowing: true,
+        ended: false,
+        endEmitted: false,
+        reading: true,
+        sync: false,
+        needReadable: true,
+        emittedReadable: false,
+        readableListening: false,
+        resumeScheduled: false,
+        defaultEncoding: 'utf8',
+        ranOut: false,
+        awaitDrain: 0,
+        readingMore: false,
+        decoder: null,
+        encoding: null },
+     readable: true,
+     domain: null,
+     _events: 
+      { end: [Object],
+        finish: [Function: onSocketFinish],
+        _socketEnd: [Function: onSocketEnd],
+        drain: [Object],
+        timeout: [Function],
+        error: [Object],
+        close: [Object],
+        data: [Function: socketOnData],
+        resume: [Function: onSocketResume],
+        pause: [Function: onSocketPause] },
+     _eventsCount: 10,
+     _maxListeners: undefined,
+     _writableState: 
+      WritableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        needDrain: false,
+        ending: false,
+        ended: false,
+        finished: false,
+        decodeStrings: false,
+        defaultEncoding: 'utf8',
+        length: 0,
+        writing: false,
+        corked: 0,
+        sync: false,
+        bufferProcessing: false,
+        onwrite: [Function],
+        writecb: null,
+        writelen: 0,
+        bufferedRequest: null,
+        lastBufferedRequest: null,
+        pendingcb: 0,
+        prefinished: false,
+        errorEmitted: false,
+        bufferedRequestCount: 0,
+        corkedRequestsFree: [Object] },
+     writable: true,
+     allowHalfOpen: true,
+     destroyed: false,
+     _bytesDispatched: 6808,
+     _sockname: null,
+     _pendingData: null,
+     _pendingEncoding: '',
+     server: 
+      Server {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 4,
+        _maxListeners: undefined,
+        _connections: 6,
+        _handle: [Object],
+        _usingSlaves: false,
+        _slaves: [],
+        _unref: false,
+        allowHalfOpen: true,
+        pauseOnConnect: false,
+        httpAllowHalfOpen: false,
+        timeout: 120000,
+        _pendingResponseData: 0,
+        _connectionKey: '6::::3001' },
+     _server: 
+      Server {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 4,
+        _maxListeners: undefined,
+        _connections: 6,
+        _handle: [Object],
+        _usingSlaves: false,
+        _slaves: [],
+        _unref: false,
+        allowHalfOpen: true,
+        pauseOnConnect: false,
+        httpAllowHalfOpen: false,
+        timeout: 120000,
+        _pendingResponseData: 0,
+        _connectionKey: '6::::3001' },
+     _idleTimeout: 120000,
+     _idleNext: 
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: [Object],
+        _parent: null,
+        _host: null,
+        _readableState: [Object],
+        readable: true,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 10,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: true,
+        allowHalfOpen: true,
+        destroyed: false,
+        _bytesDispatched: 1216,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: [Object],
+        _server: [Object],
+        _idleTimeout: 120000,
+        _idleNext: [Object],
+        _idlePrev: [Circular],
+        _idleStart: 17362,
+        parser: [Object],
+        on: [Function: socketOnWrap],
+        _paused: false,
+        read: [Function],
+        _consuming: true,
+        _httpMessage: null,
+        _peername: [Object] },
+     _idlePrev: 
+      TimersList {
+        _idleNext: [Circular],
+        _idlePrev: [Object],
+        _timer: [Object],
+        _unrefed: true,
+        msecs: 120000 },
+     _idleStart: 38024,
+     parser: 
+      HTTPParser {
+        '0': [Function: parserOnHeaders],
+        '1': [Function: parserOnHeadersComplete],
+        '2': [Function: parserOnBody],
+        '3': [Function: parserOnMessageComplete],
+        '4': [Function: onParserExecute],
+        _headers: [],
+        _url: '',
+        _consumed: true,
+        socket: [Circular],
+        incoming: [Object],
+        outgoing: null,
+        maxHeaderPairs: 2000,
+        onIncoming: [Function: parserOnIncoming] },
+     on: [Function: socketOnWrap],
+     _paused: false,
+     read: [Function],
+     _consuming: true,
+     _httpMessage: [Circular],
+     _peername: { address: '::1', family: 'IPv6', port: 51637 } },
+  connection: 
+   Socket {
+     connecting: false,
+     _hadError: false,
+     _handle: 
+      TCP {
+        bytesRead: 19377,
+        _externalStream: {},
+        fd: 17,
+        reading: true,
+        owner: [Circular],
+        onread: [Function: onread],
+        onconnection: null,
+        writeQueueSize: 0 },
+     _parent: null,
+     _host: null,
+     _readableState: 
+      ReadableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        buffer: [Object],
+        length: 0,
+        pipes: null,
+        pipesCount: 0,
+        flowing: true,
+        ended: false,
+        endEmitted: false,
+        reading: true,
+        sync: false,
+        needReadable: true,
+        emittedReadable: false,
+        readableListening: false,
+        resumeScheduled: false,
+        defaultEncoding: 'utf8',
+        ranOut: false,
+        awaitDrain: 0,
+        readingMore: false,
+        decoder: null,
+        encoding: null },
+     readable: true,
+     domain: null,
+     _events: 
+      { end: [Object],
+        finish: [Function: onSocketFinish],
+        _socketEnd: [Function: onSocketEnd],
+        drain: [Object],
+        timeout: [Function],
+        error: [Object],
+        close: [Object],
+        data: [Function: socketOnData],
+        resume: [Function: onSocketResume],
+        pause: [Function: onSocketPause] },
+     _eventsCount: 10,
+     _maxListeners: undefined,
+     _writableState: 
+      WritableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        needDrain: false,
+        ending: false,
+        ended: false,
+        finished: false,
+        decodeStrings: false,
+        defaultEncoding: 'utf8',
+        length: 0,
+        writing: false,
+        corked: 0,
+        sync: false,
+        bufferProcessing: false,
+        onwrite: [Function],
+        writecb: null,
+        writelen: 0,
+        bufferedRequest: null,
+        lastBufferedRequest: null,
+        pendingcb: 0,
+        prefinished: false,
+        errorEmitted: false,
+        bufferedRequestCount: 0,
+        corkedRequestsFree: [Object] },
+     writable: true,
+     allowHalfOpen: true,
+     destroyed: false,
+     _bytesDispatched: 6808,
+     _sockname: null,
+     _pendingData: null,
+     _pendingEncoding: '',
+     server: 
+      Server {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 4,
+        _maxListeners: undefined,
+        _connections: 6,
+        _handle: [Object],
+        _usingSlaves: false,
+        _slaves: [],
+        _unref: false,
+        allowHalfOpen: true,
+        pauseOnConnect: false,
+        httpAllowHalfOpen: false,
+        timeout: 120000,
+        _pendingResponseData: 0,
+        _connectionKey: '6::::3001' },
+     _server: 
+      Server {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 4,
+        _maxListeners: undefined,
+        _connections: 6,
+        _handle: [Object],
+        _usingSlaves: false,
+        _slaves: [],
+        _unref: false,
+        allowHalfOpen: true,
+        pauseOnConnect: false,
+        httpAllowHalfOpen: false,
+        timeout: 120000,
+        _pendingResponseData: 0,
+        _connectionKey: '6::::3001' },
+     _idleTimeout: 120000,
+     _idleNext: 
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: [Object],
+        _parent: null,
+        _host: null,
+        _readableState: [Object],
+        readable: true,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 10,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: true,
+        allowHalfOpen: true,
+        destroyed: false,
+        _bytesDispatched: 1216,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: [Object],
+        _server: [Object],
+        _idleTimeout: 120000,
+        _idleNext: [Object],
+        _idlePrev: [Circular],
+        _idleStart: 17362,
+        parser: [Object],
+        on: [Function: socketOnWrap],
+        _paused: false,
+        read: [Function],
+        _consuming: true,
+        _httpMessage: null,
+        _peername: [Object] },
+     _idlePrev: 
+      TimersList {
+        _idleNext: [Circular],
+        _idlePrev: [Object],
+        _timer: [Object],
+        _unrefed: true,
+        msecs: 120000 },
+     _idleStart: 38024,
+     parser: 
+      HTTPParser {
+        '0': [Function: parserOnHeaders],
+        '1': [Function: parserOnHeadersComplete],
+        '2': [Function: parserOnBody],
+        '3': [Function: parserOnMessageComplete],
+        '4': [Function: onParserExecute],
+        _headers: [],
+        _url: '',
+        _consumed: true,
+        socket: [Circular],
+        incoming: [Object],
+        outgoing: null,
+        maxHeaderPairs: 2000,
+        onIncoming: [Function: parserOnIncoming] },
+     on: [Function: socketOnWrap],
+     _paused: false,
+     read: [Function],
+     _consuming: true,
+     _httpMessage: [Circular],
+     _peername: { address: '::1', family: 'IPv6', port: 51637 } },
+  _header: null,
+  _headers: { 'x-powered-by': 'Express' },
+  _headerNames: { 'x-powered-by': 'X-Powered-By' },
+  _onPendingData: [Function: updateOutgoingData],
+  req: 
+   IncomingMessage {
+     _readableState: 
+      ReadableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        buffer: [Object],
+        length: 0,
+        pipes: null,
+        pipesCount: 0,
+        flowing: true,
+        ended: true,
+        endEmitted: true,
+        reading: false,
+        sync: false,
+        needReadable: false,
+        emittedReadable: false,
+        readableListening: false,
+        resumeScheduled: false,
+        defaultEncoding: 'utf8',
+        ranOut: false,
+        awaitDrain: 0,
+        readingMore: false,
+        decoder: null,
+        encoding: null },
+     readable: false,
+     domain: null,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     socket: 
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: [Object],
+        _parent: null,
+        _host: null,
+        _readableState: [Object],
+        readable: true,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 10,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: true,
+        allowHalfOpen: true,
+        destroyed: false,
+        _bytesDispatched: 6808,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: [Object],
+        _server: [Object],
+        _idleTimeout: 120000,
+        _idleNext: [Object],
+        _idlePrev: [Object],
+        _idleStart: 38024,
+        parser: [Object],
+        on: [Function: socketOnWrap],
+        _paused: false,
+        read: [Function],
+        _consuming: true,
+        _httpMessage: [Circular],
+        _peername: [Object] },
+     connection: 
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: [Object],
+        _parent: null,
+        _host: null,
+        _readableState: [Object],
+        readable: true,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 10,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: true,
+        allowHalfOpen: true,
+        destroyed: false,
+        _bytesDispatched: 6808,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: [Object],
+        _server: [Object],
+        _idleTimeout: 120000,
+        _idleNext: [Object],
+        _idlePrev: [Object],
+        _idleStart: 38024,
+        parser: [Object],
+        on: [Function: socketOnWrap],
+        _paused: false,
+        read: [Function],
+        _consuming: true,
+        _httpMessage: [Circular],
+        _peername: [Object] },
+     httpVersionMajor: 1,
+     httpVersionMinor: 1,
+     httpVersion: '1.1',
+     complete: true,
+     headers: 
+      { host: 'localhost:3001',
+        connection: 'keep-alive',
+        'content-length': '86',
+        'cache-control': 'max-age=0',
+        origin: 'http://localhost:3001',
+        'upgrade-insecure-requests': '1',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+        'content-type': 'application/x-www-form-urlencoded',
+        accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+        dnt: '1',
+        referer: 'http://localhost:3001/landing.html',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.8,it;q=0.6,es;q=0.4,fr;q=0.2',
+        cookie: '__tawkuuid=e::localhost::0yX+FmLJUM53B3J26dR5vJu7MAZcqmV7dNllpwNlZAx+b+APHg9k7BD84APOC5nt::2; Tawk_5850784f3d413a0ca0a544ce=vs44.tawk.to::0; _ga=GA1.1.1994633642.1477361531; _gat=1' },
+     rawHeaders: 
+      [ 'Host',
+        'localhost:3001',
+        'Connection',
+        'keep-alive',
+        'Content-Length',
+        '86',
+        'Cache-Control',
+        'max-age=0',
+        'Origin',
+        'http://localhost:3001',
+        'Upgrade-Insecure-Requests',
+        '1',
+        'User-Agent',
+        'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+        'Content-Type',
+        'application/x-www-form-urlencoded',
+        'Accept',
+        'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+        'DNT',
+        '1',
+        'Referer',
+        'http://localhost:3001/landing.html',
+        'Accept-Encoding',
+        'gzip, deflate, br',
+        'Accept-Language',
+        'en-US,en;q=0.8,it;q=0.6,es;q=0.4,fr;q=0.2',
+        'Cookie',
+        '__tawkuuid=e::localhost::0yX+FmLJUM53B3J26dR5vJu7MAZcqmV7dNllpwNlZAx+b+APHg9k7BD84APOC5nt::2; Tawk_5850784f3d413a0ca0a544ce=vs44.tawk.to::0; _ga=GA1.1.1994633642.1477361531; _gat=1' ],
+     trailers: {},
+     rawTrailers: [],
+     upgrade: false,
+     url: '/contacto_landing',
+     method: 'POST',
+     statusCode: null,
+     statusMessage: null,
+     client: 
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: [Object],
+        _parent: null,
+        _host: null,
+        _readableState: [Object],
+        readable: true,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 10,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: true,
+        allowHalfOpen: true,
+        destroyed: false,
+        _bytesDispatched: 6808,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: [Object],
+        _server: [Object],
+        _idleTimeout: 120000,
+        _idleNext: [Object],
+        _idlePrev: [Object],
+        _idleStart: 38024,
+        parser: [Object],
+        on: [Function: socketOnWrap],
+        _paused: false,
+        read: [Function],
+        _consuming: true,
+        _httpMessage: [Circular],
+        _peername: [Object] },
+     _consuming: true,
+     _dumped: false,
+     next: [Function: next],
+     baseUrl: '',
+     originalUrl: '/contacto_landing',
+     _parsedUrl: 
+      Url {
+        protocol: null,
+        slashes: null,
+        auth: null,
+        host: null,
+        port: null,
+        hostname: null,
+        hash: null,
+        search: null,
+        query: null,
+        pathname: '/contacto_landing',
+        path: '/contacto_landing',
+        href: '/contacto_landing',
+        _raw: '/contacto_landing' },
+     params: {},
+     query: {},
+     res: [Circular],
+     _startAt: [ 30225, 348605925 ],
+     _startTime: 2017-01-06T23:53:28.503Z,
+     _remoteAddress: '::1',
+     body: 
+      { name: 'Alex Cuenca',
+        email: 'alex@gmail.com',
+        service: 'Animación',
+        message: 'This is a test.' },
+     _body: true,
+     length: undefined,
+     read: [Function],
+     secret: undefined,
+     cookies: 
+      { __tawkuuid: 'e::localhost::0yX+FmLJUM53B3J26dR5vJu7MAZcqmV7dNllpwNlZAx+b+APHg9k7BD84APOC5nt::2',
+        Tawk_5850784f3d413a0ca0a544ce: 'vs44.tawk.to::0',
+        _ga: 'GA1.1.1994633642.1477361531',
+        _gat: '1' },
+     signedCookies: {},
+     route: Route { path: '/contacto_landing', stack: [Object], methods: [Object] } },
+  locals: {},
+  _startAt: undefined,
+  _startTime: undefined,
+  writeHead: [Function: writeHead],
+  __onFinished: { [Function: listener] queue: [ [Function: logRequest] ] } }
+[0mPOST /contacto_landing [36m302 [0m75.882 ms - 86[0m
+[0mGET / [32m200 [0m2.356 ms - 39339[0m
+[0mGET /css/bootstrap.css [36m304 [0m10.623 ms - -[0m
+[0mGET /css/style.css [36m304 [0m15.232 ms - -[0m
+[0mGET /css/font-awesome.css [36m304 [0m15.328 ms - -[0m
+[0mGET /css/responsive.css [36m304 [0m11.671 ms - -[0m
+[0mGET /css/animate.css [36m304 [0m13.495 ms - -[0m
+[0mGET /js/jquery.1.8.3.min.js [36m304 [0m5.282 ms - -[0m
+[0mGET /js/jquery.isotope.js [36m304 [0m3.143 ms - -[0m
+[0mGET /js/bootstrap.js [36m304 [0m9.231 ms - -[0m
+[0mGET /js/jquery-scrolltofixed.js [36m304 [0m4.658 ms - -[0m
+[0mGET /js/jquery.easing.1.3.js [36m304 [0m1.958 ms - -[0m
+[0mGET /js/main.js [36m304 [0m7.552 ms - -[0m
+[0mGET /js/wow.js [36m304 [0m0.441 ms - -[0m
+[0mGET /js/classie.js [36m304 [0m10.064 ms - -[0m
+[0mGET /js/collapse.js [36m304 [0m3.009 ms - -[0m
+[0mGET /js/i18n/CLDRPluralRuleParser.js [36m304 [0m2.166 ms - -[0m
+[0mGET /js/i18n/jquery.i18n.js [36m304 [0m4.847 ms - -[0m
+[0mGET /js/i18n/jquery.i18n.messagestore.js [36m304 [0m4.966 ms - -[0m
+[0mGET /js/i18n/jquery.i18n.fallbacks.js [36m304 [0m0.614 ms - -[0m
+[0mGET /js/i18n/jquery.i18n.language.js [36m304 [0m13.699 ms - -[0m
+[0mGET /js/i18n/jquery.i18n.parser.js [36m304 [0m17.943 ms - -[0m
+[0mGET /js/i18n/jquery.i18n.emitter.js [36m304 [0m13.338 ms - -[0m
+[0mGET /js/i18n/jquery.i18n.emitter.bidi.js [36m304 [0m12.382 ms - -[0m
+[0mGET /js/i18n/main-jquery_i18n.js [36m304 [0m1.985 ms - -[0m
+[0mGET /img/animeishon_logo.png [36m304 [0m0.629 ms - -[0m
+[0mGET /img/animeishon_hero2.gif [36m304 [0m0.526 ms - -[0m
+[0mGET /img/small-logo.png [36m304 [0m0.428 ms - -[0m
+[0mGET /img/80_logo.png [36m304 [0m0.504 ms - -[0m
+[0mGET /img/coche_diseno.png [36m304 [0m0.458 ms - -[0m
+[0mGET /img/tele_animacion.png [36m304 [0m0.510 ms - -[0m
+[0mGET /img/combo_paquetes.png [36m304 [0m0.398 ms - -[0m
+[0mGET /img/icono-02.png [36m304 [0m0.810 ms - -[0m
+[0mGET /img/icono-03.png [36m304 [0m0.341 ms - -[0m
+{ id: '<20170106235325.20002.50559.8018E0AC@animeishon.studio>',
+  message: 'Queued. Thank you.' }
+[0mGET /img/icono-01.png [36m304 [0m12.355 ms - -[0m
+[0mGET /img/macbook-pro.gif [36m304 [0m2.840 ms - -[0m
+[0mGET /img/iphone.gif [36m304 [0m2.521 ms - -[0m
+[0mGET /img/icono-05.png [36m304 [0m2.436 ms - -[0m
+[0mGET /img/taller_hero-01.png [36m304 [0m2.490 ms - -[0m
+[0mGET /img/wlb_hero-01.png [36m304 [0m1.978 ms - -[0m
+[0mGET /img/qui_webdesign-01.png [36m304 [0m0.414 ms - -[0m
+[0mGET /img/nim_branding.jpg [36m304 [0m0.362 ms - -[0m
+[0mGET /img/deluxe_hero-01.png [36m304 [0m0.372 ms - -[0m
+[0mGET /img/imtt_hero.png [36m304 [0m3.177 ms - -[0m
+[0mGET /img/hunter_hero-01.png [36m304 [0m1.906 ms - -[0m
+[0mGET /img/steed_hero-01.png [36m304 [0m1.659 ms - -[0m
+[0mGET /fonts/streamster.ttf [36m304 [0m1.454 ms - -[0m
+[0mGET /fonts/fontawesome-webfont.woff?v=4.1.0 [36m304 [0m1.892 ms - -[0m
+[0mGET /img/servifacil_hero.png [36m304 [0m1.260 ms - -[0m
+[0mGET /img/footer-logo.png [36m304 [0m1.218 ms - -[0m
+[0mGET /img/manhole_hero.gif [36m304 [0m1.122 ms - -[0m
+[0mGET /img/luna_hero.gif [36m304 [0m1.109 ms - -[0m
+[0mGET /img/rumberos_hero.gif [36m304 [0m0.381 ms - -[0m
+[0mGET /img/chela_hero.gif [36m304 [0m8.894 ms - -[0m
+[0mGET /img/wizeline_hero.gif [36m304 [0m0.392 ms - -[0m
+[0mGET /img/brainsax_hero.gif [36m304 [0m0.464 ms - -[0m
+[0mGET /img/paquete_basic.png [36m304 [0m0.445 ms - -[0m
+[0mGET /img/paquete_startup.png [36m304 [0m0.569 ms - -[0m
+[0mGET /img/paquete_business.png [36m304 [0m0.536 ms - -[0m
+[0mGET /img/animeishon_hero.webm [36m304 [0m0.479 ms - -[0m
+[0mGET /img/clientes-logos-01.png [36m304 [0m0.419 ms - -[0m
+[0mGET /img/bg-map.png [36m304 [0m0.373 ms - -[0m

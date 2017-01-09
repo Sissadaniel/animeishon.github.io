@@ -4,7 +4,6 @@
 
 @media only screen and (min-width: 992px) {
     /****Ipad Landscape 1024 Container 970 ****/
-    
     .service-list {
         margin-bottom: 30px;
     }
@@ -18,12 +17,9 @@
         display: block !important;
     }
     /*.portfolioContainer{ width:800px; margin:0px auto !important; } */
-    
-    ;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     /****Ipad Portrait 768 Container 750 ****/
-    
     body {
         font-size: 13px;
     }
@@ -84,9 +80,6 @@
     .main-nav li a {
         padding: 8px 15px;
     }
-    /*.portfolioContainer{ width:750px; margin:0px auto !important; }
-  .Portfolio-box{ height:250px;}*/
-    
     #floating-info {
         font-size: 1.0em;
     }
@@ -260,7 +253,7 @@
         font-size: 18px;
         font-weight: 0;
         padding-bottom: 10%;
-line-height: inherit;
+        line-height: inherit;
     }
     .modal-dialog {
         width: 80vw;
@@ -304,36 +297,33 @@ line-height: inherit;
         margin: 0px auto !important;
     }
     .quotes_padding {
-padding: 0px;
-}
-    
+        padding: 0px;
+    }
     .quotes p {
-    font-size: 12px;
-    
-}
+        font-size: 12px;
+    }
     #explanatory .title {
-    font-size: 18px;
-    color: #212121;
-}
+        font-size: 18px;
+        color: #212121;
+    }
     .backhero {
-    background: url("../img/back_landing.png");
-    background-size: cover;
+        background: url("../img/back_landing.png");
+        background-size: cover;
         background-repeat: no-repeat;
         background-size: auto 100%;
         background-position:top;
         background-attachment: fixed;
-}
-    /*.isotope-item img{ width:300px; left:50%; margin-left:-100px;}
-  .isotope-item{ width:300px; margin:0px auto;}
-  .isotope{ width:400px; margin:0px auto;}
-  .Portfolio-box{}
-  .portfolioContainer{ width:350px; margin:0px auto !important; } */
-    
-    ;
+    }
 }
 @media only screen and (max-width: 479px) {
     /****Mobile Portrait 320 ****/
-    
+    .flash__message {
+        padding: 10px;
+        width: 90%;
+        margin: 0 5%;
+        top: 150px;
+        right: auto;
+    }
     .contact-info-box {
         margin-left: 0px;
     }

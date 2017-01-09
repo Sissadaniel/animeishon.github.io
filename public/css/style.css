@@ -186,6 +186,27 @@ p2 {
 #test .container {
     width: 100%;
 }
+.flash__message {
+    position: absolute;
+    padding: 20px;
+    width: 211px;
+    top: 20px;
+    right: 5vw;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, .7);
+    color: #00ffff;
+    border-radius: 15px;
+    -webkit-box-shadow: 0 0 15px #00ffff;
+    box-shadow: 0px 0px 15px #00ffff;
+}
+#close {
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+#close:hover {
+    cursor: pointer;
+}
 .shield {
     position: absolute;
     text-align: center;
