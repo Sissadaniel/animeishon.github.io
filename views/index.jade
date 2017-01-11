@@ -4,6 +4,8 @@ html
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, maximum-scale=1')
     title Animeishon Studio
+    link(rel='icon', href='favicon.png', type='image/png')
+    link(rel='shortcut icon', href='favicon.ico', type='img/x-icon')
     link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
     link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600', rel='stylesheet', type='text/css')
     link(href='css/bootstrap.css', rel='stylesheet', type='text/css')
@@ -23,6 +25,7 @@ html
     script(type='text/javascript', src='js/wow.js')
     script(type='text/javascript', src='js/classie.js')
     script(type='text/javascript', src='js/collapse.js')
+    script(src='contactform/contactform.js')
     script(src='js/i18n/CLDRPluralRuleParser.js')
     script(src='js/i18n/jquery.i18n.js')
     script(src='js/i18n/jquery.i18n.messagestore.js')
@@ -32,37 +35,24 @@ html
     script(src='js/i18n/jquery.i18n.emitter.js')
     script(src='js/i18n/jquery.i18n.emitter.bidi.js')
     script(src='js/i18n/main-jquery_i18n.js')
+    //
+      =======================================================
+      =======================================================
     // Heatmap Code
     script.
-      (function(h, e, a, t, m, p) {
-      m = e.createElement(a);
-      m.async = !0;
-      m.src = t;
-      p = e.getElementsByTagName(a)[0];
-      p.parentNode.insertBefore(m, p);
-      })(window, document, 'script', 'https://u.heatmap.it/log.js');
+      (function(h,e,a,t,m,p) {
+      m=e.createElement(a);m.async=!0;m.src=t;
+      p=e.getElementsByTagName(a)[0];p.parentNode.insertBefore(m,p);
+      })(window,document,'script','https://u.heatmap.it/log.js');
     // DO NOT MODIFY
     // End Heatmap Code
     // Facebook Pixel Code
     script.
-      ! function(f, b, e, v, n, t, s) {
-      if (f.fbq) return;
-      n = f.fbq = function() {
-      n.callMethod ?
-      n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-      };
-      if (!f._fbq) f._fbq = n;
-      n.push = n;
-      n.loaded = !0;
-      n.version = '2.0';
-      n.queue = [];
-      t = b.createElement(e);
-      t.async = !0;
-      t.src = v;
-      s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s)
-      }(window,
-      document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+      document,'script','https://connect.facebook.net/en_US/fbevents.js');
       fbq('init', '1600163683625330'); // Insert your pixel ID here.
       fbq('track', 'PageView');
     noscript
@@ -71,45 +61,28 @@ html
     // End Facebook Pixel Code
     // Google Analytics Code
     script.
-      (function(i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r;
-      i[r] = i[r] || function() {
-      (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date();
-      a = s.createElement(o),
-      m = s.getElementsByTagName(o)[0];
-      a.async = 1;
-      a.src = g;
-      m.parentNode.insertBefore(a, m)
-      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-87301560-1', 'auto');
       ga('send', 'pageview');
     // DO NOT MODIFY
     // End Google Analytics Code
     // Google Tag Manager
     script.
-      (function(w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({
-      'gtm.start': new Date().getTime(),
-      event: 'gtm.js'
-      });
-      var f = d.getElementsByTagName(s)[0],
-      j = d.createElement(s),
-      dl = l != 'dataLayer' ? '&l=' + l : '';
-      j.async = true;
-      j.src =
-      'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-      f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', 'GTM-TKS7GKT');
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-TKS7GKT');
     // End Google Tag Manager
   // Facebook Pixel Code
   script.
     fbq('track', 'Search');
   // End Facebook Pixel Code
-  //
-    Start of Tawk.to Script
-    <script type="text/javascript">
+  // Start of Tawk.to Script
+  script(type='text/javascript').
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
     (function(){
     var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
@@ -119,7 +92,6 @@ html
     s1.setAttribute('crossorigin','*');
     s0.parentNode.insertBefore(s1,s0);
     })();
-    </script>
   // End of Tawk.to Script
   body
     // Google Tag Manager (noscript)
@@ -128,6 +100,12 @@ html
     // End Google Tag Manager (noscript)
     header#header.header
       // header-start
+      a.lang-switch(href='#', data-locale='en') English
+      |  |
+      a.lang-switch(href='#', data-locale='es') Español
+      h1(data-i18n='welcome')
+      p#messages
+      a(href='#explanatory')
       if expressFlash.length > 0
         .flash__message
           p #{ expressFlash }
@@ -141,52 +119,54 @@ html
         a(href='https://www.facebook.com/animeishonstudio/?fref=ts', target='_blank')
           i.fa-behance.fa_prop.nottoday
       .shield
-        img#animeishon_logo(src='img/animeishon_logo.png')
-      video#bgvid(playsinline='', autoplay='', muted='', loop='', poster='img/animeishon_hero2.gif')
-        source(src='img/animeishon_hero.webm', type='video/webm')
-        source(src='img/animeishon_hero.mov', type='video/mp4')
+          img#animeishon_logo(src='img/animeishon_logo.png')
+        video#bgvid(playsinline='', autoplay='', muted='', loop='', poster='img/animeishon_hero2.gif')
+          source(src='img/animeishon_hero.webm', type='video/webm')
+          source(src='img/animeishon_hero.mov', type='video/mp4')
       #header-form.collapse.in
         form.contactForm(action='/contacto', method='post', role='form')
           .header-text
-            p
-              | Platícanos tu proyecto. Déjanos tu contacto o llámanos al 
-              span  (55)22596898
+            p#loc-action-form-text
           .form-group
-            input#name.form-control.input-text(type='text', name='name', placeholder='Nombre', required='')
+            input#name.form-control.input-text(type='text', name='name', placeholder='Nombre', data-rule='minlen:4', data-msg='Please enter at least 4 chars')
             .validation
           .form-group
-            input#email.form-control.input-text(type='text', name='email', placeholder='E-Mail o teléfono', required='')
+            input#email.form-control.input-text(type='email', name='email', placeholder='E-Mail o teléfono', data-rule='email', data-msg='Please enter a valid email')
             .validation
           .form-group
-            input#coupon.form-control.input-text(type='text', name='coupon', placeholder='Cupón (opcional)')
+            input#subject.form-control.input-text(type='text', name='subject', placeholder='Cupón (opcional)', data-rule='minlen:4', data-msg='Please enter at least 8 chars of subject')
             .validation
           .text-center
             button.input-btn(onclick="goog_report_conversion('')", type='submit') Enviar
-      button.closeform(data-toggle='collapse', data-target='#header-form')  Contacto 
+      div
+        button.closeform(type='button', data-toggle='collapse', data-target='#header-form')  X 
+        #header-form.collapse.in
     // header-end
     nav#test.main-nav-outer
       // main-nav-start
       .container
         ul.main-nav
           li
-            a(href='#diseño') Diseño
+            a#loc-explanatory(href='#explanatory')
           li
-            a(href='#animacion') Animación
+            a#loc-design(href='#service')
           li
-            a(href='#Portfolio') Portafolio
+            a#loc-animation(href='#animacion')
+          li
+            a#loc-portfolio(href='#Portfolio')
           li.small-logo
             a(href='#header')
               img(src='img/small-logo.png')
           li
-            a(href='#team') Clientes
+            a#loc-clients(href='#team')
           li
-            a(href='#contact') Contacto
+            a#loc-contact(href='#contact')
           li
             a#link_blog(href='http://blog.animeishon.studio', target='_blank') Blog
+          li
+            a(href='#contact') 5535221681
         a.res-nav_click(href='#')
           i.fa-bars
-    // main-nav-end
-
     #explanatory
       #padtop.gradientback
         .section
@@ -196,31 +176,42 @@ html
                 .col-sm-4
                   img#padimg.img-responsive(src='img/80_logo.png')
                 .col-sm-8
-                  h1 Diseño y animación con una base tecnológica sólida.
-                  p
-                    | Animeishon Studio es una Agencia digital ubicada en la Ciudad de México especializada en diseño y animación. Proveemos servicios enfocados a la creatividad, con fundamentos técnicos y experiencia en distintos campos
+                  h1#loc-intro-title
+                  p#loc-intro-desc
           .section
             .container
               .row
                 .col-sm-4
-                  h2#padtop Diseño
+                  h2.padtop#loc-intro-design
                   img.img-responsive(src='img/coche_diseno.png')
                   a#padtop(href='#diseño')
-                    center VER DETALLES
+                    center#loc-intro-action1
                 .col-sm-4
-                  h2#padtop Animación
+                  h2.padtop#loc-intro-animation
                   img.img-responsive(src='img/tele_animacion.png')
                   a#padtop(href='#animacion')
-                    center VER DETALLES
+                    center#loc-intro-action2
                 .col-sm-4
-                  h2#padtop Paquetes
+                  h2.padtop#loc-intro-packs
                   img.img-responsive(src='img/combo_paquetes.png')
                   a#padtop(data-toggle='modal', data-target='#myModal2')
-                    center VER DETALLES
-    section.main-section(id='diseño')
+                    center#loc-intro-action3
+    // main-nav-end
+    //
+      <div id="floating-info">
+      <a href="#contact">
+      <p>Contáctanos</p>
+      <p>Tabasco 242, Roma Norte
+      <br>info@steed.mx
+      <br> 55<span class="num-divisor">-</span>2259<span class="num-divisor">-</span>6898
+      <a target="_blank" href="http://blog.animeishon.studio">Blog</a>
+      </p>
+      </a>
+      </div>
+    section#service.main-section
       // main-section-start
       .container
-        h2 Diseño
+        h2#loc-section-design
         h6
         .row
           .col-lg-4.col-sm-6.wow.fadeInLeft.delay-05s
@@ -229,25 +220,22 @@ html
                 i
                   img(src='img/icono-02.png', alt='')
               .service-list-col2
-                h3 desarrollo web
-                p
-                  | Creamos sitios web COMPLETOS con diseño responsive, Optimización en buscadores (SEO) y mapas de calor para que sepas como se comportan tus clientes en tu sitio.
+                h3#loc-section-design-webdev
+                p#loc-section-design-webdev-content
             .service-list
               .service-list-col1
                 i
                   img(src='img/icono-03.png', alt='')
               .service-list-col2
-                h3 Desarrollo de apps
-                p
-                  | Nuestro propósito es crear aplicaciones funcionales y estéticas, siempre pensando en cómo se ve (UI) y cómo se siente (UX).
+                h3#loc-section-design-appdev
+                p#loc-section-design-appdev-content
             .service-list
               .service-list-col1
                 i
                   img(src='img/icono-01.png', alt='')
               .service-list-col2
-                h3 Branding e identidad
-                p
-                  | Construimos la identidad de tu marca para comunicar el concepto al público deseado. Naming, logo, aplicaciones, manual de identidad y la armonía entre los elementos.
+                h3 Branding
+                p#loc-section-design-branding-content
           figure.col-lg-8.col-sm-6.text-right.wow.fadeInUp.delay-02s.center-vertically
             img(src='img/macbook-pro.gif', alt='')
     // main-section-end
@@ -261,7 +249,7 @@ html
             br
             img(src='img/iphone.gif', alt='')
           .col-lg-7.col-sm-8.featured-work
-            h2 Animaciones
+            h2#loc-section-animation
             p
             .featured-box
               .featured-box-col1.wow.fadeInRight.delay-02s
@@ -269,34 +257,31 @@ html
                   img(src='img/icono-01.png', alt='')
               .featured-box-col2.wow.fadeInRight.delay-02s
                 h5 Explainer videos
-                p
-                  | Cada uno de los videos que hacemos explica de forma efectiva tu negocio, producto o servicio en menos de 2 minutos, creando una conexión emocional con el cliente.
+                p#loc-section-animation-expvids-content
             .featured-box
               .featured-box-col1.wow.fadeInRight.delay-06s
                 i
                   img(src='img/icono-03.png', alt='')
               .featured-box-col2.wow.fadeInRight.delay-06s
-                h5 3D y realidad virtual
-                p
-                  | Desarrollamos animaciones y videos 3D, listos para ser utilizados por Oculus Rift, HoloLense, Google Cardboard, etc.
+                h5#loc-section-animation-3dvr
+                p#loc-section-animation-3dvr-content
             .featured-box
               .featured-box-col1.wow.fadeInRight.delay-04s
                 i
                   img(src='img/icono-05.png', alt='')
               .featured-box-col2.wow.fadeInRight.delay-04s
                 h5 Kinetic Typography
-                p
-                  | Texto en movimiento. Es una técnica de animación que mezcla animación y texto con el propósito de transmitir una idea de manera fácil, rápida y simple.
+                p#loc-section-animation-kintypo-content
             .featured-box
               .featured-box-col1.wow.fadeInRight.delay-06s
                 i
                   img(src='img/icono-02.png', alt='')
               .featured-box-col2.wow.fadeInRight.delay-06s
-                h5 Contenido Web
-                p
-                  | Creamos contenido para redes sociales, Facebook, Instagram y Twitter además de sitios web. Formato WEBM, GIF, MOV, etc.
+                h5#loc-section-animation-webcont
+                p#loc-section-animation-webcont-content
                 // Trigger the modal with a click
-                a.ver(data-toggle='modal', data-target='#myModal') Ver ejemplos
+                .ver(data-toggle='modal', data-target='#myModal')
+                  p#loc-section-animation-examples
             //
               <div class="featured-box">
               <div class="featured-box-col1 wow fadeInRight delay-06s">
@@ -312,8 +297,8 @@ html
     section#Portfolio.main-section.paddind
       // main-section-start
       .container
-        h2 Trabajo
-        h6 Dejamos que nuestro trabajo hable por nosostros
+        h2#loc-section-portfolio
+        h6#loc-section-portfolio-desc
         .portfolioFilter
           ul.Portfolio-nav.wow.fadeIn.delay-02s
             li
@@ -373,7 +358,7 @@ html
     section#team.business-talking
       // business-talking-start
       .Clientes
-        cont Clientes
+        cont#loc-section-clients
     // business-talking-end
     .c-logo-part
       // c-logo-part-start
@@ -381,94 +366,75 @@ html
     section#contact.business-talking
       // business-talking-start
       .container
-        cont Contáctanos
+        cont#loc-section-contact
     // business-talking-end
-    // contacto movil
-    .contacto_mobile
-      .container
-        section.main-section.contact
-          .row
-            .col-lg-6.col-sm-7.wow.fadeInLeft
-              .contact-info-box.address.clearfix
-                h3
-                  i.icon-map-marker
-                  | Dirección:
-                span
-                  | Tabasco 242
-                  br
-                  | Roma Norte, Ciudad de México, 06700.
-              .contact-info-box.phone.clearfix
-                h3
-                  i.fa-phone
-                  | Teléfono:
-                span 55 22 59 68 98
-              .contact-info-box.email.clearfix
-                h3
-                  i.fa-pencil
-                  | email:
-                span hello@animeishon.studio
-              .contact-info-box.hours.clearfix
-                h3
-                  i.fa-clock-o
-                  | Horas:
-                span
-                  strong Lunes - Jueves:
-                  |  8am - 8pm
-                  br
-                  strong Viernes:
-                  |  ¿Trabajas el viernes?
-                  br
-                  strong Sábado - Domingo:
-                  |  No preguntes.
-            .col-lg-6.col-sm-5.wow.fadeInUp.delay-05s
-              .form
-                #sendmessage Tu mensaje ha sido enviado. Gracias!
-                #errormessage
-                form.contactForm(action='/contacto_mobile', method='post', role='form')
-                  .form-group
-                    input#name.form-control.input-text(type='text', name='name', placeholder='Nombre', data-rule='minlen:4', data-msg='Please enter at least 4 chars', required='')
-                    .validation
-                  .form-group
-                    input#email.form-control.input-text(type='email', name='email', placeholder='E-Mail', data-rule='email', data-msg='Please enter a valid email', required='')
-                    .validation
-                  .form-group
-                    input#subject.form-control.input-text(type='text', name='subject', placeholder='Título', data-rule='minlen:4', data-msg='Please enter at least 8 chars of subject', required='')
-                    .validation
-                  .form-group
-                    textarea.form-control.input-text.text-area(name='message', rows='5', data-rule='required', data-msg='Please write something for us', placeholder='Cuéntanos tu idea', required='')
-                    .validation
-                  .text-center
-                    button.input-btn(onclick="goog_report_conversion('')", type='submit') Enviar
-    // fin contacto movil
+    .container
+      section.main-section.contact
+        .row
+          .col-lg-6.col-sm-7.wow.fadeInLeft
+            .contact-info-box.address.clearfix
+              h3#loc-section-contact-address
+              span
+                | Tabasco 242
+                br
+                | Roma Norte, Ciudad de México, 06700.
+            .contact-info-box.phone.clearfix
+              h3#loc-section-contact-phone
+              span 55 22 59 68 98
+            .contact-info-box.email.clearfix
+              h3 ✏️ email
+              span info@steed.com
+            .contact-info-box.hours.clearfix
+              h3#loc-section-contact-time
+              span
+                strong#loc-section-contact-time-montue
+                |  8am - 8pm
+                br
+                strong#loc-section-contact-time-fri
+                span#loc-section-contact-time-fri-desc
+                br
+                strong#loc-section-contact-time-weekend
+                span#loc-section-contact-time-weekend-desc
+            //
+              <ul class="social-link">
+              <li class="twitter"><a href="#"><i class="fa-twitter"></i></a></li>
+              <li class="facebook"><a href="#"><i class="fa-facebook"></i></a></li>
+              <li class="pinterest"><a href="#"><i class="fa-pinterest"></i></a></li>
+              <li class="gplus"><a href="#"><i class="fa-google-plus"></i></a></li>
+              <li class="dribbble"><a href="#"><i class="fa-dribbble"></i></a></li>
+              </ul>
+          .col-lg-6.col-sm-5.wow.fadeInUp.delay-05s
+            .form
+              #sendmessage Tu mensaje ha sido enviado. Gracias!
+              #errormessage
+              form.contactForm(action='/contacto_mobile', method='post', role='form')
+                .form-group
+                  input#name.form-control.input-text(type='text', name='name', placeholder='Nombre', data-rule='minlen:4', data-msg='Please enter at least 4 chars')
+                  .validation
+                .form-group
+                  input#email.form-control.input-text(type='email', name='email', placeholder='E-Mail', data-rule='email', data-msg='Please enter a valid email')
+                  .validation
+                .form-group
+                  input#subject.form-control.input-text(type='text', name='subject', placeholder='Título', data-rule='minlen:4', data-msg='Please enter at least 8 chars of subject')
+                  .validation
+                .form-group
+                  textarea.form-control.input-text.text-area(name='message', rows='5', data-rule='required', data-msg='Please write something for us', placeholder='Cuéntanos tu idea')
+                  .validation
+                .text-center
+                  button.input-btn(onclick="goog_report_conversion('')", type='submit') Enviar
     div
       section.megafooter
         .section.section-primary
           .container
             .row
               .col-sm-3
-                img#padimg.img-responsive.img_center(src='img/footer-logo.png')
-                p
-                  | Animeishon Studio es una Agencia especializada en Diseño digital y animación. Proveemos distintos servicios enfocados a la creatividad, con fundamentos técnicos sólidos y experiencia.
-                  br
-                  br
-                  | hello@animeishon.studio 
-                  br
-                  br
-                  a(href='https://www.facebook.com/animeishonstudio/?fref=ts', target='_blank')
-                    i.fa-facebook-square.fa_prop.nottoday
-                  a(href='https://www.facebook.com/animeishonstudio/?fref=ts', target='_blank')
-                    i.fa-instagram.fa_prop.nottoday
-                  a(href='https://www.facebook.com/animeishonstudio/?fref=ts', target='_blank')
-                    i.fa-behance.fa_prop.nottoday
+                img#padimg.img-responsive(src='img/animeishon_logo.png')
+                p#loc-footer-about
               .col-sm-3
-                h4(contenteditable='true') ¿Por qué con nosotros?
-                p
-                  | Hemos trabajado con todo tiempo de clientes; desde instancias gubernamentales hasta industrias creativas.
-                p Conjuga diseño y tecnología para lograr un producto completo.
-                p Soporte 24/7
-                p
-                  | Para cualquiera de nuestros servicios, ofrecemos soporte técnico 24/7. Descuida, nosotros te cuidamos.
-                p Baila Tu cuerpo alegría macarena.
+                h4#loc-footer-whyus(contenteditable='true')
+                p#loc-footer-whyus-1
+                p#loc-footer-whyus-2
+                p#loc-footer-whyus-3
               .col-sm-3
                 h4(contenteditable='true') Instagram Feed
                 div
@@ -476,36 +442,30 @@ html
                   script(src='//lightwidget.com/widgets/lightwidget.js')
                   iframe.lightwidget-widget(src='//lightwidget.com/widgets/3ffba35e93f75718836990d834d66458.html', scrolling='no', allowtransparency='true', style='width: 100%; border: 0; overflow: hidden;')
               .col-sm-3
-                h4 Nuestras Oficinas
-                p
-                  | Nos encontramos en We Are Todos, un espacio de coworking localizado en Tabasco 242, colonia Roma Norte.
+                h4#loc-footer-ouroff
+                p Steed @ WE ARE TODOS
                 .contact-info-box.address.clearfix
-                  p
-                    i.icon-map-marker
-                    |  Dirección:
-                  p
+                  p#loc-footer-address
+                  span
                     | Tabasco 242
                     br
                     | Roma Norte, Ciudad de México, 06700.
                 .contact-info-box.phone.clearfix
-                  p
-                    i.fa-phone
-                    |  Teléfono:
-                  p 55 22 59 68 98
-    //
-      <footer class="footer">
-      <div class="container">
-      <div class="footer-logo"><a href="#"><img src="img/footer-logo.png" alt=""></a></div>
-      <span class="copyright">&copy; steed.mx. Todos los derechos reservados.</span>
-      <div class="credits">
-      All the links in the footer should remain intact.
-      You can delete the links only if you purchased the pro version.
-      Licensing information: https://bootstrapmade.com/license/
-      Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Knight
-      <a href="http://steed.mx">steed.mx</a>
-      </div>
-      </div>
-      </footer>
+                  p#loc-footer-phone
+                  span 55 22 59 68 98
+    footer.footer
+      .container
+        .footer-logo
+          a(href='#')
+            img(src='img/footer-logo.png', alt='')
+        span.copyright © steed.mx. Todos los derechos reservados.
+        .credits
+          //
+            All the links in the footer should remain intact.
+            You can delete the links only if you purchased the pro version.
+            Licensing information: https://bootstrapmade.com/license/
+            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Knight
+          a(href='http://steed.mx') steed.mx
     // Gif modal
     #myModal.modal.fade(role='dialog')
       .modal-dialog
@@ -513,31 +473,21 @@ html
         .modal-content
           .modal-header
             button.close(type='button', data-dismiss='modal') ×
-            h2.modal-title Contenido Web
-          .container.col-sm-12
-            .row
-              .col-sm-6
-                p
-                  img(src='img/manhole_hero.gif', alt='')
-              .col-sm-6
-                p
-                  img(src='img/luna_hero.gif', alt='')
-              .col-sm-6
-                p
-                  a(target='_blank', href='http://www.losrumberos.mx')
-                    img(src='img/rumberos_hero.gif', alt='')
-              .col-sm-6
-                p
-                  a
-                    img(src='img/chela_hero.gif', alt='')
-              .col-sm-6
-                p
-                  a(target='_blank', href='https://www.facebook.com/wizelinemx/')
-                    img(src='img/wizeline_hero.gif', alt='')
-              .col-sm-6
-                p
-                  a
-                    img(src='img/brainsax_hero.gif', alt='')
+            h2#loc-section-animation-modal.modal-title
+          .modal-body
+            p
+            a
+              img(src='img/manhole_hero.gif', alt='')
+            a
+              img(src='img/luna_hero.gif', alt='')
+            a
+              img(src='img/chela_hero.gif', alt='')
+            a
+              img(src='img/brainsax_hero.gif', alt='')
+            a(target='_blank', href='http://www.losrumberos.mx')
+              img(src='img/rumberos_hero.gif', alt='')
+            a(target='_blank', href='https://www.facebook.com/wizelinemx/')
+              img(src='img/wizeline_hero.gif', alt='')
           .modal-footer
             button.btn.btn-default(type='button', data-dismiss='modal') Close
     // Paquetes modal
@@ -547,51 +497,53 @@ html
         .modal-content
           .modal-header
             button.close(type='button', data-dismiss='modal') ×
-            h2.modal-title Paquetes
+            h2.modal-title#loc-intro-modal-packs
           .container.col-sm-12
             .row
               .col-sm-4
                 img(src='img/paquete_basic.png', alt='')
                 .text-center
                   .boton_paquetes
-                    a(href='landing.html', target='_blank') Cotiza 
+                    a(href='landing.html', target='_blank')#loc-intro-modal-quote1
               .col-sm-4
                 img(src='img/paquete_startup.png', alt='')
                 .text-center
                   .boton_paquetes
-                    a(href='landing.html', target='_blank') Cotiza 
+                    a(href='landing.html', target='_blank')#loc-intro-modal-quote2
               .col-sm-4
                 img(src='img/paquete_business.png', alt='')
                 .text-center
                   .boton_paquetes
-                    a(href='landing.html', target='_blank') Cotiza
+                    a(href='landing.html', target='_blank')#loc-intro-modal-quote3
           .modal-footer
             button.btn.btn-default(type='button', data-dismiss='modal') Close
     script(type='text/javascript').
       $(document).ready(function(e) {
       $('#test').scrollToFixed();
-      $('.main-nav li a').click(function() {
+      $('.main-nav li a').click(function(){
       $('.main-nav').slideToggle();
       return false
       });
-      $('.res-nav_click').click(function() {
+      $('.res-nav_click').click(function(){
       $('.main-nav').slideToggle();
       return false
       });
       });
     script.
-      wow = new WOW({
+      wow = new WOW(
+      {
       animateClass: 'animated',
-      offset: 100
-      });
+      offset:       100
+      }
+      );
       wow.init();
     script(type='text/javascript').
-      $(window).load(function() {
-      $('header a').bind('click', function(event) {
+      $(window).load(function(){
+      $('header a').bind('click',function(event){
       var $anchor = $(this);
       $('html, body').stop().animate({
       scrollTop: $($anchor.attr('href')).offset().top - 102
-      }, 1500, 'easeInOutExpo');
+      }, 1500,'easeInOutExpo');
       /*
       if you don't want to use the easing effects:
       $('html, body').stop().animate({
@@ -600,11 +552,11 @@ html
       */
       event.preventDefault();
       });
-      $('#floating-info a').bind('click', function(event) {
+      $('#floating-info a').bind('click',function(event){
       var $anchor = $(this);
       $('html, body').stop().animate({
       scrollTop: $($anchor.attr('href')).offset().top - 102
-      }, 1500, 'easeInOutExpo');
+      }, 1500,'easeInOutExpo');
       /*
       if you don't want to use the easing effects:
       $('html, body').stop().animate({
@@ -613,11 +565,11 @@ html
       */
       event.preventDefault();
       });
-      $('.main-nav li a').bind('click', function(event) {
+      $('.main-nav li a').bind('click',function(event){
       var $anchor = $(this);
       $('html, body').stop().animate({
       scrollTop: $($anchor.attr('href')).offset().top - 102
-      }, 1500, 'easeInOutExpo');
+      }, 1500,'easeInOutExpo');
       /*
       if you don't want to use the easing effects:
       $('html, body').stop().animate({
@@ -628,7 +580,7 @@ html
       });
       })
     script(type='text/javascript').
-      $(window).load(function() {
+      $(window).load(function(){
       var $container = $('.portfolioContainer'),
       $body = $('body'),
       colW = 375,
@@ -637,21 +589,21 @@ html
       // disable window resizing
       resizable: true,
       masonry: {
-      columnWidth: colW,
+      columnWidth: colW
       }
       });
-      $(window).smartresize(function() {
+      $(window).smartresize(function(){
       // check if columns has changed
-      var currentColumns = Math.floor(($body.width() - 30) / colW);
-      if (currentColumns !== columns) {
+      var currentColumns = Math.floor( ( $body.width() -30 ) / colW );
+      if ( currentColumns !== columns ) {
       // set new column count
       columns = currentColumns;
       // apply width to container manually, then trigger relayout
-      $container.width(columns * colW)
+      $container.width( columns * colW )
       .isotope('reLayout');
       }
       }).smartresize(); // trigger resize to set container width
-      $('.portfolioFilter a').click(function() {
+      $('.portfolioFilter a').click(function(){
       $('.portfolioFilter .current').removeClass('current');
       $(this).addClass('current');
       var selector = $(this).attr('data-filter');

@@ -12,6 +12,20 @@ jQuery(document).ready(function() {
     $('#loc-portfolio').text($.i18n('portfolio'));
     $('#loc-clients').text($.i18n('clients'));
     $('#loc-contact').text($.i18n('contact'));
+    /* INTRO SECTION */
+    $('#loc-intro-title').text($.i18n('intro-title'));
+    $('#loc-intro-desc').text($.i18n('intro-desc'));
+    $('#loc-intro-action1').text($.i18n('intro-action'));
+    $('#loc-intro-action2').text($.i18n('intro-action'));
+    $('#loc-intro-action3').text($.i18n('intro-action'));
+    $('#loc-intro-design').text($.i18n('design'));
+    $('#loc-intro-animation').text($.i18n('animation'));
+    $('#loc-intro-packs').text($.i18n('intro-packs'));
+    /* INTRO SECTION MODAL */
+    $('#loc-intro-modal-packs').text($.i18n('intro-packs'));
+    $('#loc-intro-modal-quote1').text($.i18n('intro-modal-quote'));
+    $('#loc-intro-modal-quote2').text($.i18n('intro-modal-quote'));
+    $('#loc-intro-modal-quote3').text($.i18n('intro-modal-quote'));
     /* DESIGN SECTION */
     $('#loc-section-design').text($.i18n('design'));
     $('#loc-section-design-webdev').text($.i18n('section-design-webdev'));
@@ -74,6 +88,13 @@ jQuery(document).ready(function() {
       'portfolio': 'Portfolio',
       'clients': 'Clients',
       'contact': 'Contact',
+      /* INTRO SECTION */
+      'intro-title': 'Design and animation with a strong technical background',
+      'intro-desc': 'Animeishon Studio is Mexico City-based digital agency specialized in design and animation. We provide creative services with a strong experience in different fields.',
+      'intro-action': 'SEE MORE',
+      'intro-packs': 'Packs',
+      /* INTRO SECTION MODAL */
+      'intro-modal-quote': 'Quote',
       /* DESIGN SECTION */
       'section-design-webdev': 'Web Development',
       'section-design-webdev-content': 'We create beautiful, modern, mobile-first websites that will really make you stand out. You will also get Search Engine Optimization (SEO), heatmaps to know where your visitors click, and real-time analytics for your website.',
@@ -122,6 +143,13 @@ jQuery(document).ready(function() {
       'portfolio': 'Portafolio',
       'clients': 'Clientes',
       'contact': 'Contacto',
+      /* INTRO SECTION */
+      'intro-title': 'Diseño y animación con una expriencia técnica sólida',
+      'intro-desc': 'Animeishon Studio es una agencia digital en la Ciudad de México especializada en diseño y animación. Proveemos servicios creativos con una experiencia técnica sólida en diferentes campos.',
+      'intro-action': 'VER DETALLES',
+      'intro-packs': 'Paquetes',
+      /* INTRO SECTION MODAL */
+      'intro-modal-quote': 'Cotiza',
       /* DESIGN SECTION */
       'section-design-webdev': 'Desarrollo Web',
       'section-design-webdev-content': 'Creamos sitios web estéticos y modernos con diseño mobile-first, optimización en buscadores (SEO), mapas de calor para que sepas como se comportan tus clientes en tu sitio y analíticas en tiempo real.',

@@ -16,6 +16,14 @@ router.get('/landing', function(req, res) {
   res.render('landing', { title: 'Animeishon Studio'});
 });
 
+router.get('/new', function(req, res) {
+  res.render('new', {
+    expressFlash: req.flash('success'),
+    sessionFlash: res.locals.sessionFlash,
+    title: 'NEWWWWW'
+  });
+});
+
 router.post('/contacto', function(req, res) {
   sendMail('contacto', req.body);
   console.log('RESPONSE: ', res);
