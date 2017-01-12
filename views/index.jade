@@ -100,11 +100,9 @@ html
     // End Google Tag Manager (noscript)
     header#header.header
       // header-start
-      a.lang-switch(href='#', data-locale='en') English
-      |  |
-      a.lang-switch(href='#', data-locale='es') Español
-      h1(data-i18n='welcome')
-      p#messages
+      div#lang-switch-container
+        a.lang-switch(href='#', data-locale='en') 🍔
+        a.lang-switch(href='#', data-locale='es') 🌮
       a(href='#explanatory')
       if expressFlash.length > 0
         .flash__message
