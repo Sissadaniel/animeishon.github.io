@@ -265,6 +265,11 @@ html
               .featured-box-col2.wow.fadeInRight.delay-06s
                 h5#loc-section-animation-3dvr
                 p#loc-section-animation-3dvr-content
+                ul.ver
+                  li
+                    a#loc-section-animation-vr-link(data-toggle='modal', data-target='#vrDemoModal')
+                  li
+                    a#loc-section-animation-3d-link(href="https://animeishon-studio.itch.io/animeishon-studio-virtual-house-tour", target="_blank")
             .featured-box
               .featured-box-col1.wow.fadeInRight.delay-04s
                 i
@@ -460,12 +465,17 @@ html
             img(src='img/footer-logo.png', alt='')
         span.copyright © steed.mx. Todos los derechos reservados.
         .credits
-          //
-            All the links in the footer should remain intact.
-            You can delete the links only if you purchased the pro version.
-            Licensing information: https://bootstrapmade.com/license/
-            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Knight
           a(href='http://steed.mx') steed.mx
+
+    #vrDemoModal.modal.fade(role='dialog')
+      .modal-dialog(role='document')
+        .modal-content
+          .modal-header(style="border-bottom:none;")
+            button.close(type='button', data-dismiss='modal', aria-label='Close')
+              span(aria-hidden='true') ×
+          .modal-body(style="text-align:center;padding: 100px 0")
+            iframe(width='1120', height='630', src='https://www.youtube.com/embed/qag12S5OJFg', frameborder='1', allowfullscreen='')
+
     // Gif modal
     #myModal.modal.fade(role='dialog')
       .modal-dialog

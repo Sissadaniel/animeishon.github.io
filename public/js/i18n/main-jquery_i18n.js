@@ -38,6 +38,8 @@ jQuery(document).ready(function() {
     $('#loc-section-animation-expvids-content').text($.i18n('section-animation-expvids-content'));
     $('#loc-section-animation-3dvr').text($.i18n('section-animation-3dvr'));
     $('#loc-section-animation-3dvr-content').text($.i18n('section-animation-3dvr-content'));
+    $('#loc-section-animation-vr-link').text($.i18n('section-animation-vr-link'));
+    $('#loc-section-animation-3d-link').text($.i18n('section-animation-3d-link'));
     $('#loc-section-animation-kintypo-content').text($.i18n('section-animation-kintypo-content'));
     $('#loc-section-animation-webcont').text($.i18n('section-animation-webcont'));
     $('#loc-section-animation-webcont-content').text($.i18n('section-animation-webcont-content'));
@@ -105,6 +107,8 @@ jQuery(document).ready(function() {
       'section-animation-expvids-content': 'Let your clients know what you offer, in under 2 minutes. No. Overhead.',
       'section-animation-3dvr': '3D & VR',
       'section-animation-3dvr-content': 'Stereoscopic video and animations. Ocuclus Rift & Hololens ready. Even Google Cardboard.',
+      'section-animation-vr-link': 'Virtual reality demo',
+      'section-animation-3d-link': '3D landscapes and architecture',
       'section-animation-kintypo-content': 'Movin’ type. Express yourself with animated text. Dynamic, simple and easy.',
       'section-animation-webcont': 'Web Content',
       'section-animation-webcont-content': 'Original, curated and custom made posts for your Facebook, Instagram, & Twitter. PNGs, High Quality GIFs, WebMs, you call it.',
@@ -160,6 +164,8 @@ jQuery(document).ready(function() {
       'section-animation-expvids-content': 'Cada uno de los videos que hacemos explica de forma efectiva tu negocio, producto o servicio en menos de 2 minutos, creando una conexión emocional con el cliente.',
       'section-animation-3dvr': '3D y Realidad Virtual',
       'section-animation-3dvr-content': 'Desarrollamos animaciones y videos 3D, listos para ser utilizados por Oculus Rift, HoloLens y Google Cardboard.',
+      'section-animation-vr-link': 'Demo de realidad virtual',
+      'section-animation-3d-link': 'Demo de tour interactivo',
       'section-animation-kintypo-content': 'Texto en movimiento. Es una técnica de animación que mezcla animación y texto con el propósito de transmitir una idea de manera fácil, rápida y simple.',
       'section-animation-webcont': 'Contenido Web',
       'section-animation-webcont-content': 'Creamos contenido para redes sociales, Facebook, Instagram y Twitter además de sitios web. Formato WEBM, GIF, MOV, etc.',
