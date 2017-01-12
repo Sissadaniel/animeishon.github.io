@@ -2,7 +2,7 @@
 html, body {
     overflow-x:hidden;
     }
-/* Float Elements 
+/* Float Elements
 ---------------------------------*/
 
 .fl-lt {
@@ -11,6 +11,26 @@ html, body {
 .fl-rt {
     float: right;
 }
+
+#lang-switch-container {
+  z-index:999;
+  position:fixed;
+  margin: 3rem 0 0 2rem;
+}
+
+.lang-switch {
+  background-color: cyan;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+  vertical-align: sub;
+  border-color: #ff00ff;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 2rem;
+  border-radius: 15%;
+}
+
 /* Clear Floated Elements
 ---------------------------------*/
 
@@ -152,7 +172,7 @@ p {
     font-size: 17px;
     font-weight: 100;
     padding-bottom: 8%;
-    font-family: montserrat; 
+    font-family: montserrat;
 }
 #explanatory figure p {
     font-size: 200%;
@@ -179,7 +199,7 @@ p2 {
   max-height: 90vh;
   overflow: hidden;
   */
-    
+
     color: #fff;
     padding: 0px 0 0px 0;
 }
@@ -223,7 +243,7 @@ video#bgvid {
     max-width: 100%;
     -webkit-filter: blur(3px);
     /* Safari */
-    
+
     filter: blur(3px);
 }
 .logo {
@@ -343,7 +363,7 @@ video#bgvid {
   margin-left: 12vw;
   max-width: 75vw;
   bottom: 25vh;*/
-    
+
     margin: 0 5vw 0vw;
     background-color: rgba(0, 0, 0, .7);
     position: fixed;
@@ -368,7 +388,7 @@ video#bgvid {
   margin-left: 15px;
   margin: 2vh 0 0 2vw;
   */
-    
+
     font-size: large;
     color: #ff00ff;
 }
@@ -396,7 +416,7 @@ video#bgvid {
 }
 #header-form::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
-    
+
     color: #00ffff;
 }
 /* Floating contact info
@@ -610,7 +630,7 @@ img {
 
 .isotope .isotope-item {
     /* change duration value to whatever you like */
-    
+
     -webkit-transition-duration: 0.6s;
     -moz-transition-duration: 0.6s;
     transition-duration: 0.6s;
@@ -930,7 +950,7 @@ img {
     font-family: 'Open Sans', sans-serif;
     /*
   margin: 0 0 15px 0;*/
-    
+
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
@@ -1147,16 +1167,16 @@ button {
 .gradientback {
     background: #60f5e4;
     /* For browsers that do not support gradients */
-    
+
     background: -webkit-linear-gradient(-90deg, #60f5e4, yellow);
     /* For Safari 5.1 to 6.0 */
-    
+
     background: -o-linear-gradient(-90deg, red, yellow);
     /* For Opera 11.1 to 12.0 */
-    
+
     background: -moz-linear-gradient(-90deg, red, yellow);
     /* For Firefox 3.6 to 15 */
-    
+
     background: linear-gradient(-90deg, #d8ffff, #f7cfff);
     /* Standard syntax */
 }
@@ -1222,19 +1242,19 @@ h8 {
 .formalp {
     background: #212121;
     /* For browsers that do not support gradients */
-    
+
     background: -webkit-linear-gradient(#212121, #434343);
     /* For Safari 5.1 to 6.0 */
-    
+
     background: -o-linear-gradient(#212121, #434343);
     /* For Opera 11.1 to 12.0 */
-    
+
     background: -moz-linear-gradient(#212121, #434343);
     /* For Firefox 3.6 to 15 */
-    
+
     background: linear-gradient(#212121, #434343);
     /* Standard syntax */
-    
+
     margin: 10px 0 40px 0;
     padding: 20px 20px 20px 20px;
     border-radius: 15px;
@@ -1258,7 +1278,7 @@ h8 {
 .formaserv {
     background: #fff;
     /* For browsers that do not support gradients */
-    
+
     margin: 0px 0px 0px 0;
     padding: 20px 20px 20px 20px;
     border-radius: 15px;
@@ -1267,16 +1287,16 @@ h8 {
     border-style: solid;
     background: red;
     /* For browsers that do not support gradients */
-    
+
     background: -webkit-linear-gradient(left top, red, yellow);
     /* For Safari 5.1 to 6.0 */
-    
+
     background: -o-linear-gradient(bottom right, red, yellow);
     /* For Opera 11.1 to 12.0 */
-    
+
     background: -moz-linear-gradient(bottom right, red, yellow);
     /* For Firefox 3.6 to 15 */
-    
+
     background: linear-gradient(to bottom right, #ffffff, #ffedff);
     /* Standard syntax */
     max-height: 614px;
@@ -1340,7 +1360,7 @@ h8 {
 .boton_paquetes a {
     color: white;
     font-size: 18px
-    
+
 }
 
 .contacto_mobile {
