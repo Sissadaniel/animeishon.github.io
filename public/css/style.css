@@ -311,11 +311,8 @@ video#bgvid {
     text-decoration: none;
     color: #fff !important;
 }
-#loc-action-form-text {
-    text-align: justify;
-}
 #loc-action-form-tel {
-    font-size: xx-large !important;
+    font-size: x-large !important;
     color: #00ffff !important;
     margin-top: 10px;
 }
@@ -382,7 +379,7 @@ video#bgvid {
     box-shadow: 0px 0px 15px #00ffff;
 }
 #header-form .header-text {
-    padding: 2%;
+    padding: 1%;
 }
 #header-form .input-btn {
 }
@@ -410,6 +407,9 @@ video#bgvid {
 }
 #header-form input {
     text-align: center;
+    background-color: rgba(0, 0, 0, .4);
+}
+#header-form select {
     background-color: rgba(0, 0, 0, .4);
 }
 #header-form::-webkit-input-placeholder {

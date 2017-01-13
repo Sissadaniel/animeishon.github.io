@@ -109,17 +109,21 @@ html
         video#bgvid(playsinline='', autoplay='', muted='', loop='', poster='img/animeishon_hero2.gif')
           source(src='img/animeishon_hero.webm', type='video/webm')
           source(src='img/animeishon_hero.mov', type='video/mp4')
-      #header-form.collapse.in
+      .container#header-form.collapse.in
         form.contactForm(action='/contacto', method='post', role='form')
           .row.header-text
             p.col-md-7#loc-action-form-text
             p.col-md-5#loc-action-form-tel 55 35 22 16 81
           .form-group
-            input#name.form-control.input-text(type='text', name='name', placeholder='Nombre', data-rule='minlen:4', data-msg='Please enter at least 4 chars')
-            .validation
-          .form-group
             input#email.form-control.input-text(type='email', name='email', placeholder='E-Mail o teléfono', data-rule='email', data-msg='Please enter a valid email')
             .validation
+          .form-group
+            select#service.form-control.input-text(name='service', required='')
+              option Servicio
+              option Branding
+              option Animación
+              option Diseño
+              option Paquete
           .form-group
             input#subject.form-control.input-text(type='text', name='subject', placeholder='Cupón (opcional)', data-rule='minlen:4', data-msg='Please enter at least 8 chars of subject')
             .validation
