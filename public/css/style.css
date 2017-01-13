@@ -315,6 +315,7 @@ video#bgvid {
 ---------------------------------*/
 
 .main-nav-outer {
+    z-index: 1 !important;
     padding: 0px;
     border: 0px solid #00ffff;
     box-shadow: 0 3px 5px 3px #818181;
@@ -1134,8 +1135,7 @@ cont {
 .ver li a {
     color: #ff00ff;
 }
-.ver__desktop {
-    display: block; 
+.ver__desktop { display: block; 
 }
 .ver__mobile {
     display: none; 
