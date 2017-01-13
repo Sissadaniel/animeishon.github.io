@@ -39,6 +39,7 @@ jQuery(document).ready(function() {
     $('#loc-section-animation-3dvr').text($.i18n('section-animation-3dvr'));
     $('#loc-section-animation-3dvr-content').text($.i18n('section-animation-3dvr-content'));
     $('#loc-section-animation-vr-link').text($.i18n('section-animation-vr-link'));
+    $('#loc-section-animation-vrmobile-link').text($.i18n('section-animation-vrmobile-link'));
     $('#loc-section-animation-3d-link').text($.i18n('section-animation-3d-link'));
     $('#loc-section-animation-kintypo-content').text($.i18n('section-animation-kintypo-content'));
     $('#loc-section-animation-webcont').text($.i18n('section-animation-webcont'));
@@ -108,6 +109,7 @@ jQuery(document).ready(function() {
       'section-animation-3dvr': '3D & VR',
       'section-animation-3dvr-content': 'Stereoscopic video and animations. Ocuclus Rift & Hololens ready. Even Google Cardboard.',
       'section-animation-vr-link': 'Virtual reality demo',
+      'section-animation-vrmobile-link': 'Virtual reality demo',
       'section-animation-3d-link': '3D landscapes and architecture',
       'section-animation-kintypo-content': 'Movin’ type. Express yourself with animated text. Dynamic, simple and easy.',
       'section-animation-webcont': 'Web Content',
@@ -165,6 +167,7 @@ jQuery(document).ready(function() {
       'section-animation-3dvr': '3D y Realidad Virtual',
       'section-animation-3dvr-content': 'Desarrollamos animaciones y videos 3D, listos para ser utilizados por Oculus Rift, HoloLens y Google Cardboard.',
       'section-animation-vr-link': 'Demo de realidad virtual',
+      'section-animation-vrmobile-link': 'Demo de realidad virtual',
       'section-animation-3d-link': 'Demo de tour interactivo',
       'section-animation-kintypo-content': 'Texto en movimiento. Es una técnica de animación que mezcla animación y texto con el propósito de transmitir una idea de manera fácil, rápida y simple.',
       'section-animation-webcont': 'Contenido Web',

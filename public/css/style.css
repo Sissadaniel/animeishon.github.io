@@ -1134,6 +1134,12 @@ cont {
 .ver li a {
     color: #ff00ff;
 }
+.ver__desktop {
+    display: block; 
+}
+.ver__mobile {
+    display: none; 
+}
 .megafooter {
     background-color: #212121;
     color: #999;
@@ -1240,9 +1246,9 @@ h8 {
     background: url("../img/back_landing.png");
     background-size: cover;
     background-repeat: no-repeat;
-            background-attachment: fixed;
-}
-.formalp {
+    background-attachment: fixed;
+  }
+  .formalp {
     background: #212121;
     /* For browsers that do not support gradients */
 
@@ -1264,21 +1270,21 @@ h8 {
     border: aqua;
     border-width: 1px;
     border-style: solid;
-}
-.tituloform {
+  }
+  .tituloform {
     text-align: center;
     font-family: 'montserrat';
     font-size: 23px;
-}
-.explainerform {
+  }
+  .explainerform {
     text-align: center;
     font-family: 'montserrat';
     font-size: 13px;
-}
-.pad {
+  }
+  .pad {
     padding-top: 25px
-}
-.formaserv {
+  }
+  .formaserv {
     background: #fff;
     /* For browsers that do not support gradients */
 
@@ -1303,54 +1309,54 @@ h8 {
     background: linear-gradient(to bottom right, #ffffff, #ffedff);
     /* Standard syntax */
     max-height: 614px;
-}
-.botoncoti {
+  }
+  .botoncoti {
     background-color: #212121;
     border-radius: 15px;
     height: 50px;
     margin: 10px 0 20px 0;
-}
-.centerletter {
+  }
+  .centerletter {
     text-align: center;
     padding-top: 15px;
     margin-top: 20px;
     margin-bottom: 20px;
     color: white;
-}
-.stroke {
+  }
+  .stroke {
     width: 100%;
     float: center;
     border-top: 1px solid #ff00ff;
     margin-bottom: 10px;
-}
-#explanatory .img-responsive {
+  }
+  #explanatory .img-responsive {
     width: 100%;
     height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-#explanatory figure .img-responsive {
+  }
+  #explanatory figure .img-responsive {
     width: 40%;
     height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-.img_center {
+  }
+  .img_center {
     display: block;
     margin-left: auto;
     margin-right: auto;
     height: 15vh;
     width: auto;
-}
-.text_center {
+  }
+  .text_center {
     margin: 30px 40px 0px 40px
-}
-.padtop {
+  }
+  .padtop {
     padding-top: 30px;
-}
-.boton_paquetes {
+  }
+  .boton_paquetes {
     background-color: #ff00ff;
     margin: 3%;
     padding: 5px 0px 5px 0px;
@@ -1358,33 +1364,33 @@ h8 {
     outline: 1px !important;
     cursor: pointer;
     cursor: hand;
-}
+  }
 
-.boton_paquetes a {
+  .boton_paquetes a {
     color: white;
     font-size: 18px
 
-}
+  }
 
-.contacto_mobile {
+  .contacto_mobile {
     display: none;
-}
-.redes {
+  }
+  .redes {
     position: absolute;
     color: white;
     z-index: 1;
     text-align: right;
     padding: 2% 6% 0% 0%;
-}
-.fa_prop {
+  }
+  .fa_prop {
     font-size: 35px;
     margin: 10px;
     color: rgba(255, 255, 255, 0.8)
-}
-.nottoday {
+  }
+  .nottoday {
     display: none
-}
-.quote_author {
+  }
+  .quote_author {
     text-align: right;
     font-weight: 700;
     color: black;
