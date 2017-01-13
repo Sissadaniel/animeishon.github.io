@@ -317,6 +317,9 @@
 }
 @media only screen and (max-width: 479px) {
     /****Mobile Portrait 320 ****/
+    .business-talking-contact {
+        display: block;
+    }
     .flash__message {
         padding: 10px;
         width: 90%;

@@ -354,12 +354,12 @@ html
     .c-logo-part
       // c-logo-part-start
     // c-logo-part-end
-    section#contact.business-talking
+    section#contact.business-talking.business-talking-contact
       // business-talking-start
       .container
         cont#loc-section-contact
     // business-talking-end
-    .container
+    .container.business-talking-contact
       section.main-section.contact
         .row
           .col-lg-6.col-sm-7.wow.fadeInLeft
@@ -467,24 +467,27 @@ html
       .modal-dialog
         // Modal content
         .modal-content
-          .modal-header
+          .modal-header(style="border-bottom:none;")
             button.close(type='button', data-dismiss='modal') ×
             h2#loc-section-animation-modal.modal-title
           .modal-body
-            p
-            a
-              img(src='img/manhole_hero.gif', alt='')
-            a
-              img(src='img/luna_hero.gif', alt='')
-            a
-              img(src='img/chela_hero.gif', alt='')
-            a
-              img(src='img/brainsax_hero.gif', alt='')
-            a(target='_blank', href='http://www.losrumberos.mx')
-              img(src='img/rumberos_hero.gif', alt='')
-            a(target='_blank', href='https://www.facebook.com/wizelinemx/')
-              img(src='img/wizeline_hero.gif', alt='')
-          .modal-footer
+            .row
+              .col-md-4
+                img(src='img/manhole_hero.gif', alt='')
+              .col-md-4
+                img(src='img/luna_hero.gif', alt='')
+              .col-md-4
+                img(src='img/chela_hero.gif', alt='')
+            .row
+              .col-md-4
+                img(src='img/brainsax_hero.gif', alt='')
+              .col-md-4
+                a(target='_blank', href='http://www.losrumberos.mx')
+                  img(src='img/rumberos_hero.gif', alt='')
+              .col-md-4
+                a(target='_blank', href='https://www.facebook.com/wizelinemx/')
+                  img(src='img/wizeline_hero.gif', alt='')
+          .modal-footer(style="border-top:none;")
             button.btn.btn-default(type='button', data-dismiss='modal') Close
     // Paquetes modal
     #myModal2.modal.fade(role='dialog')
