@@ -111,8 +111,9 @@ html
           source(src='img/animeishon_hero.mov', type='video/mp4')
       #header-form.collapse.in
         form.contactForm(action='/contacto', method='post', role='form')
-          .header-text
-            p#loc-action-form-text
+          .row.header-text
+            p.col-md-7#loc-action-form-text
+            p.col-md-5#loc-action-form-tel 55 35 22 16 81
           .form-group
             input#name.form-control.input-text(type='text', name='name', placeholder='Nombre', data-rule='minlen:4', data-msg='Please enter at least 4 chars')
             .validation
@@ -150,7 +151,7 @@ html
           li
             a#link_blog(href='http://blog.animeishon.studio', target='_blank') Blog
           li
-            a(href='#contact') 5535221681
+            a(href='#contact') Tel: 55 35 22 16 81
         a.res-nav_click(href='#')
           i.fa-bars
     #explanatory
@@ -356,7 +357,7 @@ html
     .c-logo-part
       // c-logo-part-start
     // c-logo-part-end
-    section#contact.business-talking.business-talking-contact
+    section#contact.business-talking
       // business-talking-start
       .container
         cont#loc-section-contact

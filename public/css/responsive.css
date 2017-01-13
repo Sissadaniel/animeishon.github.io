@@ -190,6 +190,7 @@
     }
     .contact-info-box span {
         line-height: 18px;
+        text-align: center;
     }
     .social-link {
         margin-left: 30px;

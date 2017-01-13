@@ -82,7 +82,7 @@ jQuery(document).ready(function() {
   $.i18n().load({
     'en': {
       'welcome': 'Welcome!',
-      'action-form-text': 'Tell us about your project. Leave your contact info here or call us at (55)22596898',
+      'action-form-text': 'Tell us about your project. Leave your contact info here or call us at',
       'action-form-name': 'Name',
       /* NAVBAR */
       'explanatory': 'Agency',
@@ -139,8 +139,8 @@ jQuery(document).ready(function() {
       'message_from': '$1 has send you $2 {{plural:$2|message|messages}}. {{gender:$3|He|She}} is waiting for your response!'
     },
     'es': {
-      'welcome': 'Добро пожаловать!',
-      'action-form-text': 'Platícanos tu proyecto. Déjanos tu contacto o llámanos al (55)22596898',
+      'welcome': '¡Bienvenido!',
+      'action-form-text': 'Platícanos tu proyecto. Déjanos tu contacto o llámanos al',
       'action-form-name': 'Nombre',
       /* NAVBAR */
       'explanatory': 'Agencia',
