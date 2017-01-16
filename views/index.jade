@@ -82,15 +82,32 @@ html
     fbq('track', 'Search');
   // End Facebook Pixel Code
   body
-    // Google Tag Manager (noscript)
+    // Google Code for Animeishon Root Conversion Page
+    script(type='text/javascript').
+      /* <![CDATA[ */
+      var google_conversion_id = 975230127;
+      var google_conversion_language = "en";
+      var google_conversion_format = "3";
+      var google_conversion_color = "ff0000";
+      var google_conversion_label = "5OjSCKy8sW0Qr6mD0QM";
+      var google_remarketing_only = false;
+      /* ]]> */
+    script(type='text/javascript', src='//www.googleadservices.com/pagead/conversion.js')
     noscript
-      iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-TKS7GKT', height='0', width='0', style='display:none;visibility:hidden')
+      div(style='display:inline;')
+        img(height='1', width='1', style='border-style:none;', alt='', src='//www.googleadservices.com/pagead/conversion/975230127/?label=5OjSCKy8sW0Qr6mD0QM&guid=ON&script=0')
+
+    // Google Tag Manager (noscript)
+      noscript
+        iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-TKS7GKT', height='0', width='0', style='display:none;visibility:hidden')
+
     // End Google Tag Manager (noscript)
     header#header.header
       // header-start
-      div#lang-switch-container
-        a.lang-switch(href='#', data-locale='en') 🍔
-        a.lang-switch(href='#', data-locale='es') 🌮
+      .container.lang-switch-container
+        div#lang-switch-container
+          a.lang-switch#lang-switch-en(href='#', data-locale='en') 🍔 english
+          a.lang-switch#lang-switch-es(href='#', data-locale='es') 🌮 español
       a(href='#explanatory')
       if expressFlash.length > 0
         .flash__message
@@ -110,12 +127,12 @@ html
           source(src='img/animeishon_hero.webm', type='video/webm')
           source(src='img/animeishon_hero.mov', type='video/mp4')
       .container#header-form.collapse.in
-        form.contactForm(action='/contacto', method='post', role='form')
+        form.contactForm#contact_floater(action='/contacto', method='post', role='form')
           .row.header-text
             p.col-md-7#loc-action-form-text
             p.col-md-5#loc-action-form-tel 55 35 22 16 81
           .form-group
-            input#email.form-control.input-text(type='email', name='email', placeholder='E-Mail o teléfono', data-rule='email', data-msg='Please enter a valid email')
+            input#email.form-control.input-text(type='text', name='email', placeholder='E-Mail o teléfono', data-rule='minlen:4', data-msg='Please enter a valid email')
             .validation
           .form-group
             select#service.form-control.input-text(name='service', required='')
@@ -128,7 +145,7 @@ html
             input#subject.form-control.input-text(type='text', name='subject', placeholder='Cupón (opcional)', data-rule='minlen:4', data-msg='Please enter at least 8 chars of subject')
             .validation
           .text-center
-            button.input-btn(onclick="goog_report_conversion('')", type='submit') Enviar
+            button.input-btn(type='submit') Enviar
       div
         button.closeform(type='button', data-toggle='collapse', data-target='#header-form')  X 
         #header-form.collapse.in
@@ -405,7 +422,7 @@ html
             .form
               #sendmessage Tu mensaje ha sido enviado. Gracias!
               #errormessage
-              form.contactForm(action='/contacto_mobile', method='post', role='form')
+              form.contactForm#contact_mobile(action='/contacto_mobile', method='post', role='form')
                 .form-group
                   input#name.form-control.input-text(type='text', name='name', placeholder='Nombre', data-rule='minlen:4', data-msg='Please enter at least 4 chars')
                   .validation
@@ -419,7 +436,7 @@ html
                   textarea.form-control.input-text.text-area(name='message', rows='5', data-rule='required', data-msg='Please write something for us', placeholder='Cuéntanos tu idea')
                   .validation
                 .text-center
-                  button.input-btn(onclick="goog_report_conversion('')", type='submit') Enviar
+                  button.input-btn(type='submit') Enviar
     div
       section.megafooter
         .section.section-primary
@@ -515,7 +532,6 @@ html
                 img(src='img/paquete_startup.png', alt='')
                 .text-center
                   .boton_paquetes
-
                     a(href='landing', target='_blank') Cotiza 
               .col-sm-4
                 img(src='img/paquete_business.png', alt='')
@@ -524,6 +540,24 @@ html
                     a(href='landing', target='_blank') Cotiza
           .modal-footer
             button.btn.btn-default(type='button', data-dismiss='modal') Close
+    script(type='text/javascript').
+      $('#lang-switch-es').click(function() {
+        $('#lang-switch-en').css({
+          'display': 'block'
+        });
+        $('#lang-switch-es').css({
+          'display': 'none'
+        });
+      });
+    script(type='text/javascript').
+      $('#lang-switch-en').click(function() {
+        $('#lang-switch-en').css({
+          'display': 'none'
+        });
+        $('#lang-switch-es').css({
+          'display': 'block'
+        });
+      });
     script(type='text/javascript').
       $(document).ready(function(e) {
       $('#test').scrollToFixed();
@@ -620,34 +654,49 @@ html
       return false;
       });
       });
+
+    script(type='text/javascript').
+      $('#contact_mobile').submit(function(e){
+        if( $( this ).valid() ) {
+          goog_report_conversion() // Change for your page link.
+          console.log('Conversion!'); // Confirmation that the conversion has been sent. Remove after testing. 
+        }
+      }); 
+    script(type='text/javascript').
+      $('#contact_floater').submit(function(e){
+        if( $( this ).valid() ) {
+          goog_report_conversion() // Change for your page link.
+          console.log('Conversion!'); // Confirmation that the conversion has been sent. Remove after testing. 
+        }
+      }); 
     //
       Google Code for form completada2 Conversion Page
       In your html page, add the snippet and call
       goog_report_conversion when someone clicks on the
       chosen link or button.
-    script(type='text/javascript').
-      /* <![CDATA[ */
-      goog_snippet_vars = function() {
-      var w = window;
-      w.google_conversion_id = 975230127;
-      w.google_conversion_label = "2ZvUCKjyiGwQr6mD0QM";
-      w.google_remarketing_only = false;
-      }
-      // DO NOT CHANGE THE CODE BELOW.
-      goog_report_conversion = function(url) {
-      goog_snippet_vars();
-      window.google_conversion_format = "3";
-      var opt = new Object();
-      opt.onload_callback = function() {
-      if (typeof(url) != 'undefined') {
-      window.location = url;
-      }
-      }
-      var conv_handler = window['google_trackConversion'];
-      if (typeof(conv_handler) == 'function') {
-      conv_handler(opt);
-      }
-      }
-      /* ]]> */
-    script(type='text/javascript', src='//www.googleadservices.com/pagead/conversion_async.js')
-    // Final Google adword conversion
+      //
+      script(type='text/javascript').
+        /* <![CDATA[ */
+        goog_snippet_vars = function() {
+        var w = window;
+        w.google_conversion_id = 975230127;
+        w.google_conversion_label = "2ZvUCKjyiGwQr6mD0QM";
+        w.google_remarketing_only = false;
+        }
+        // DO NOT CHANGE THE CODE BELOW.
+        goog_report_conversion = function(url) {
+        goog_snippet_vars();
+        window.google_conversion_format = "3";
+        var opt = new Object();
+        opt.onload_callback = function() {
+        if (typeof(url) != 'undefined') {
+        window.location = url;
+        }
+        }
+        var conv_handler = window['google_trackConversion'];
+        if (typeof(conv_handler) == 'function') {
+        conv_handler(opt);
+        }
+        }
+        /* ]]> */
+      script(type='text/javascript', src='//www.googleadservices.com/pagead/conversion_async.js')

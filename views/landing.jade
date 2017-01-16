@@ -83,21 +83,21 @@ html
     // DO NOT MODIFY
     // End Google Analytics Code
     // Google Tag Manager
-    script.
-      (function(w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({
-      'gtm.start': new Date().getTime(),
-      event: 'gtm.js'
-      });
-      var f = d.getElementsByTagName(s)[0],
-      j = d.createElement(s),
-      dl = l != 'dataLayer' ? '&l=' + l : '';
-      j.async = true;
-      j.src =
-      'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-      f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', 'GTM-TKS7GKT');
+      script.
+        (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TKS7GKT');
     // End Google Tag Manager
   // Facebook Pixel Code
   script.
@@ -112,16 +112,16 @@ html
     s1.async=true;
     s1.src='https://embed.tawk.to/5850784f3d413a0ca0a544ce/default';
     s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
     s0.parentNode.insertBefore(s1,s0);
     })();
   // End of Tawk.to Script
   
   
   body
+
     // Google Tag Manager (noscript)
-    noscript
-      iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-TKS7GKT', height='0', width='0', style='display:none;visibility:hidden')
+      noscript
+        iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-TKS7GKT', height='0', width='0', style='display:none;visibility:hidden')
     // End Google Tag Manager (noscript)
     // header-end
     nav
@@ -177,7 +177,7 @@ html
             .form.pad
               #sendmessage Tu mensaje ha sido enviado. Gracias!
               #errormessage
-              form.contactForm(action='/contacto_landing', method='post', role='form')
+              form.contactForm#contact_landing(action='/contacto_landing', method='post', role='form')
                 .form-group
                   input#name.form-control.input-text(type='text', name='name', placeholder='Nombre', required='')
                 .form-group
@@ -193,6 +193,7 @@ html
                 .text-center
                   button.input-btn(onclick="goog_report_conversion('')", type='submit') Cotiza gratis
              .padtop20.explainerform Al realizar una cotización te enviaremos una sorpresa a tu correo ;)
+
     //
       <div id="floating-info">
       <a href="#contact">
@@ -499,6 +500,13 @@ html
       In your html page, add the snippet and call
       goog_report_conversion when someone clicks on the
       chosen link or button.
+    script(type='text/javascript').
+      $('#contact_landing').submit(function(e){
+        if( $( this ).valid() ) {
+          goog_report_conversion() // Change for your page link.
+          alert("Conversion!"); // Confirmation that the conversion has been sent. Remove after testing. 
+        }
+      }); 
     script(type='text/javascript').
       /* <![CDATA[ */
       goog_snippet_vars = function() {
