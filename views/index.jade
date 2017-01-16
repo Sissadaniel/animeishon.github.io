@@ -88,9 +88,10 @@ html
     // End Google Tag Manager (noscript)
     header#header.header
       // header-start
-      div#lang-switch-container
-        a.lang-switch(href='#', data-locale='en') 🍔
-        a.lang-switch(href='#', data-locale='es') 🌮
+      .container.lang-switch-container
+        div#lang-switch-container
+          a.lang-switch#lang-switch-en(href='#', data-locale='en') 🍔 english
+          a.lang-switch#lang-switch-es(href='#', data-locale='es') 🌮 español
       a(href='#explanatory')
       if expressFlash.length > 0
         .flash__message
@@ -110,12 +111,12 @@ html
           source(src='img/animeishon_hero.webm', type='video/webm')
           source(src='img/animeishon_hero.mov', type='video/mp4')
       .container#header-form.collapse.in
-        form.contactForm(action='/contacto', method='post', role='form')
+        form.contactForm#contact_floater(action='/contacto', method='post', role='form')
           .row.header-text
             p.col-md-7#loc-action-form-text
             p.col-md-5#loc-action-form-tel 55 35 22 16 81
           .form-group
-            input#email.form-control.input-text(type='email', name='email', placeholder='E-Mail o teléfono', data-rule='email', data-msg='Please enter a valid email')
+            input#email.form-control.input-text(type='text', name='email', placeholder='E-Mail o teléfono', data-rule='minlen:4', data-msg='Please enter a valid email')
             .validation
           .form-group
             select#service.form-control.input-text(name='service', required='')
@@ -128,7 +129,7 @@ html
             input#subject.form-control.input-text(type='text', name='subject', placeholder='Cupón (opcional)', data-rule='minlen:4', data-msg='Please enter at least 8 chars of subject')
             .validation
           .text-center
-            button.input-btn(onclick="goog_report_conversion('')", type='submit') Enviar
+            button.input-btn(type='submit') Enviar
       div
         button.closeform(type='button', data-toggle='collapse', data-target='#header-form')  X 
         #header-form.collapse.in
@@ -405,7 +406,7 @@ html
             .form
               #sendmessage Tu mensaje ha sido enviado. Gracias!
               #errormessage
-              form.contactForm(action='/contacto_mobile', method='post', role='form')
+              form.contactForm#contact_mobile(action='/contacto_mobile', method='post', role='form')
                 .form-group
                   input#name.form-control.input-text(type='text', name='name', placeholder='Nombre', data-rule='minlen:4', data-msg='Please enter at least 4 chars')
                   .validation
@@ -419,7 +420,7 @@ html
                   textarea.form-control.input-text.text-area(name='message', rows='5', data-rule='required', data-msg='Please write something for us', placeholder='Cuéntanos tu idea')
                   .validation
                 .text-center
-                  button.input-btn(onclick="goog_report_conversion('')", type='submit') Enviar
+                  button.input-btn(type='submit') Enviar
     div
       section.megafooter
         .section.section-primary
@@ -524,6 +525,24 @@ html
           .modal-footer
             button.btn.btn-default(type='button', data-dismiss='modal') Close
     script(type='text/javascript').
+      $('#lang-switch-es').click(function() {
+        $('#lang-switch-en').css({
+          'display': 'block'
+        });
+        $('#lang-switch-es').css({
+          'display': 'none'
+        });
+      });
+    script(type='text/javascript').
+      $('#lang-switch-en').click(function() {
+        $('#lang-switch-en').css({
+          'display': 'none'
+        });
+        $('#lang-switch-es').css({
+          'display': 'block'
+        });
+      });
+    script(type='text/javascript').
       $(document).ready(function(e) {
       $('#test').scrollToFixed();
       $('.main-nav li a').click(function(){
@@ -619,6 +638,21 @@ html
       return false;
       });
       });
+
+    script(type='text/javascript').
+      $('#contact_mobile').submit(function(e){
+        if( $( this ).valid() ) {
+          goog_report_conversion() // Change for your page link.
+          alert("Conversion!"); // Confirmation that the conversion has been sent. Remove after testing. 
+        }
+      }); 
+    script(type='text/javascript').
+      $('#contact_floater').submit(function(e){
+        if( $( this ).valid() ) {
+          goog_report_conversion() // Change for your page link.
+          alert("Conversion!"); // Confirmation that the conversion has been sent. Remove after testing. 
+        }
+      }); 
     //
       Google Code for form completada2 Conversion Page
       In your html page, add the snippet and call

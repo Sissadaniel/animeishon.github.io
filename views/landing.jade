@@ -498,7 +498,7 @@ html
     script(type='text/javascript').
       $('#contact_landing').submit(function(e){
         if( $( this ).valid() ) {
-          goog_report_conversion // Change for your page link.
+          goog_report_conversion() // Change for your page link.
           alert("Conversion!"); // Confirmation that the conversion has been sent. Remove after testing. 
         }
       }); 

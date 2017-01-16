@@ -12,23 +12,37 @@ html, body {
     float: right;
 }
 
+.lang-switch-container {
+  position: absolute;
+  margin-top: 5%;
+  z-index: 999;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
 #lang-switch-container {
-  z-index:999;
-  position:fixed;
-  margin: 3rem 0 0 2rem;
+  position: absolute;
+  left: 0;
 }
 
 .lang-switch {
-  background-color: cyan;
+  color: #00ffff;
+  background-color: rgba(0, 0, 0, .7);
   padding: 1rem;
   margin: 1rem;
   text-align: center;
   vertical-align: sub;
-  border-color: #ff00ff;
-  border-style: solid;
-  border-width: 1px;
   font-size: 2rem;
-  border-radius: 15%;
+  border-radius: 15px;
+  -moz-box-shadow: 0 0 15px #00ffff;
+  -webkit-box-shadow: 0 0 15px #00ffff;
+  box-shadow: 0px 0px 15px #00ffff;
+}
+
+#lang-switch-es {
+  display: none;
 }
 
 /* Clear Floated Elements
@@ -346,7 +360,7 @@ video#bgvid {
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     line-height: 20px;
-    margin: 17px 32px;
+    margin: 17px 16px;
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;

@@ -1,4 +1,7 @@
 jQuery(document).ready(function() {
+  $.i18n({
+    locale: 'es' // default locale spanish
+  });
   var update_texts = function() {
     $('body').i18n();
     $('#loc-action-form-text').text($.i18n('action-form-text'));
@@ -80,64 +83,6 @@ jQuery(document).ready(function() {
   });
 
   $.i18n().load({
-    'en': {
-      'welcome': 'Welcome!',
-      'action-form-text': 'Tell us about your project. Leave your contact info here or call us at',
-      'action-form-name': 'Name',
-      /* NAVBAR */
-      'explanatory': 'Agency',
-      'design': 'Design',
-      'animation': 'Animation',
-      'portfolio': 'Portfolio',
-      'clients': 'Clients',
-      'contact': 'Contact',
-      /* INTRO SECTION */
-      'intro-title': 'Design and animation with a strong technical background',
-      'intro-desc': 'Animeishon Studio is Mexico City-based digital agency specialized in design and animation. We provide creative services with a strong experience in different fields.',
-      'intro-action': 'SEE MORE',
-      'intro-packs': 'Packs',
-      /* INTRO SECTION MODAL */
-      'intro-modal-quote': 'Quote',
-      /* DESIGN SECTION */
-      'section-design-webdev': 'Web Development',
-      'section-design-webdev-content': 'We create beautiful, modern, mobile-first websites that will really make you stand out. You will also get Search Engine Optimization (SEO), heatmaps to know where your visitors click, and real-time analytics for your website.',
-      'section-design-appdev': 'App Development',
-      'section-design-appdev-content': 'User interfaces for a beautiful user experience. Our apps are clean and straightforward. Programmers love us!',
-      'section-design-branding-content': 'We build brands that can be easily recognized by their desired audience. From the logo and how to use it, the look and feel of the website, the company\'s communication and the harmony among these elements.',
-      /* ANIMATION SECTION */
-      'section-animation-expvids-content': 'Let your clients know what you offer, in under 2 minutes. No. Overhead.',
-      'section-animation-3dvr': '3D & VR',
-      'section-animation-3dvr-content': 'Stereoscopic video and animations. Ocuclus Rift & Hololens ready. Even Google Cardboard.',
-      'section-animation-vr-link': 'Virtual reality demo',
-      'section-animation-vrmobile-link': 'Virtual reality demo',
-      'section-animation-3d-link': '3D landscapes and architecture',
-      'section-animation-kintypo-content': 'Movin’ type. Express yourself with animated text. Dynamic, simple and easy.',
-      'section-animation-webcont': 'Web Content',
-      'section-animation-webcont-content': 'Original, curated and custom made posts for your Facebook, Instagram, & Twitter. PNGs, High Quality GIFs, WebMs, you call it.',
-      'section-animation-examples': 'See examples',
-      /* PORTFOLIO SECTION */
-      'section-portfolio-desc': 'Our work speaks for ourselves',
-      /* CLIENTS SECTION */
-      'section-clients': 'Our Clients',
-      /* CONTACT SECTION */
-      'section-contact': 'Contact Us',
-      'section-contact-address': '🏡 Address',
-      'section-contact-phone': '📞 Phone',
-      'section-contact-time': '🕖 Working Hours',
-      'section-contact-time-montue': 'Monday - Tuesday:',
-      'section-contact-time-fri': 'Friday:',
-      'section-contact-time-fri-desc': 'Do you really work on Fridays?',
-      'section-contact-time-weekend': 'Saturday and Sunday:',
-      'section-contact-time-weekend-desc': 'Don\'t even try it',
-      /* FOOTER */
-      'footer-about': 'Animeishon Studio is a creative agency focused on digital design and animation. We provide different creative services with a solid technical experience. hello@animeishon.studio',
-      'footer-whyus': 'Why us?',
-      'footer-whyus-1': 'We have worked with a wide range of clients: from creative industries to the government.',
-      'footer-whyus-2': 'Mix design and technology to create a polished product.',
-      'footer-whyus-3': '24/7 Support included in every service. We care for you ♥︎',
-      'footer-ouroff': 'Our Offices',
-      'message_from': '$1 has send you $2 {{plural:$2|message|messages}}. {{gender:$3|He|She}} is waiting for your response!'
-    },
     'es': {
       'welcome': '¡Bienvenido!',
       'action-form-text': 'Platícanos tu proyecto. Déjanos tu contacto o llámanos al',
@@ -195,6 +140,64 @@ jQuery(document).ready(function() {
       'footer-whyus-3': 'Soporte 24/7 incluido en cada servicio. Nosotros te cuidamos ♥︎',
       'footer-ouroff': 'Nuestra oficinas',
       'message_from': '$1 {{gender:$3|отправил|отправила}} вам $2 {{plural:$2|сообщение|сообщений|сообщения}}. {{gender:$3|Он|Она}} ждёт ответа!'
+    },
+    'en': {
+      'welcome': 'Welcome!',
+      'action-form-text': 'Tell us about your project. Leave your contact info here or call us at',
+      'action-form-name': 'Name',
+      /* NAVBAR */
+      'explanatory': 'Agency',
+      'design': 'Design',
+      'animation': 'Animation',
+      'portfolio': 'Portfolio',
+      'clients': 'Clients',
+      'contact': 'Contact',
+      /* INTRO SECTION */
+      'intro-title': 'Design and animation with a strong technical background',
+      'intro-desc': 'Animeishon Studio is Mexico City-based digital agency specialized in design and animation. We provide creative services with a strong experience in different fields.',
+      'intro-action': 'SEE MORE',
+      'intro-packs': 'Packs',
+      /* INTRO SECTION MODAL */
+      'intro-modal-quote': 'Quote',
+      /* DESIGN SECTION */
+      'section-design-webdev': 'Web Development',
+      'section-design-webdev-content': 'We create beautiful, modern, mobile-first websites that will really make you stand out. You will also get Search Engine Optimization (SEO), heatmaps to know where your visitors click, and real-time analytics for your website.',
+      'section-design-appdev': 'App Development',
+      'section-design-appdev-content': 'User interfaces for a beautiful user experience. Our apps are clean and straightforward. Programmers love us!',
+      'section-design-branding-content': 'We build brands that can be easily recognized by their desired audience. From the logo and how to use it, the look and feel of the website, the company\'s communication and the harmony among these elements.',
+      /* ANIMATION SECTION */
+      'section-animation-expvids-content': 'Let your clients know what you offer, in under 2 minutes. No. Overhead.',
+      'section-animation-3dvr': '3D & VR',
+      'section-animation-3dvr-content': 'Stereoscopic video and animations. Ocuclus Rift & Hololens ready. Even Google Cardboard.',
+      'section-animation-vr-link': 'Virtual reality demo',
+      'section-animation-vrmobile-link': 'Virtual reality demo',
+      'section-animation-3d-link': '3D landscapes and architecture',
+      'section-animation-kintypo-content': 'Movin’ type. Express yourself with animated text. Dynamic, simple and easy.',
+      'section-animation-webcont': 'Web Content',
+      'section-animation-webcont-content': 'Original, curated and custom made posts for your Facebook, Instagram, & Twitter. PNGs, High Quality GIFs, WebMs, you call it.',
+      'section-animation-examples': 'See examples',
+      /* PORTFOLIO SECTION */
+      'section-portfolio-desc': 'Our work speaks for ourselves',
+      /* CLIENTS SECTION */
+      'section-clients': 'Our Clients',
+      /* CONTACT SECTION */
+      'section-contact': 'Contact Us',
+      'section-contact-address': '🏡 Address',
+      'section-contact-phone': '📞 Phone',
+      'section-contact-time': '🕖 Working Hours',
+      'section-contact-time-montue': 'Monday - Tuesday:',
+      'section-contact-time-fri': 'Friday:',
+      'section-contact-time-fri-desc': 'Do you really work on Fridays?',
+      'section-contact-time-weekend': 'Saturday and Sunday:',
+      'section-contact-time-weekend-desc': 'Don\'t even try it',
+      /* FOOTER */
+      'footer-about': 'Animeishon Studio is a creative agency focused on digital design and animation. We provide different creative services with a solid technical experience. hello@animeishon.studio',
+      'footer-whyus': 'Why us?',
+      'footer-whyus-1': 'We have worked with a wide range of clients: from creative industries to the government.',
+      'footer-whyus-2': 'Mix design and technology to create a polished product.',
+      'footer-whyus-3': '24/7 Support included in every service. We care for you ♥︎',
+      'footer-ouroff': 'Our Offices',
+      'message_from': '$1 has send you $2 {{plural:$2|message|messages}}. {{gender:$3|He|She}} is waiting for your response!'
     }
   });
 
