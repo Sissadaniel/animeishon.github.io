@@ -976,7 +976,7 @@ img {
     height: 50px;
     color: #000;
     border-radius: 4px;
-    background: #00ffff;
+    background: #00f000;
     font-size: 14px;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
@@ -1352,6 +1352,9 @@ h8 {
   }
   .padtop {
     padding-top: 30px;
+  }
+  .padtop20 {
+    padding-top: 20px;
   }
   .boton_paquetes {
     background-color: #ff00ff;
