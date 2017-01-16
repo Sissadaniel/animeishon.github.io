@@ -112,7 +112,6 @@ html
     s1.async=true;
     s1.src='https://embed.tawk.to/5850784f3d413a0ca0a544ce/default';
     s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
     s0.parentNode.insertBefore(s1,s0);
     }Õ[MaØ[MaØ[M`Ø)();
     </script>
@@ -175,7 +174,7 @@ html
             .form.pad
               #sendmessage Tu mensaje ha sido enviado. Gracias!
               #errormessage
-              form.contactForm(action='/contacto_landing', method='post', role='form')
+              form.contactForm#contact_landing(action='/contacto_landing', method='post', role='form')
                 .form-group
                   input#name.form-control.input-text(type='text', name='name', placeholder='Nombre', required='')
                 .form-group
@@ -189,7 +188,7 @@ html
                 .form-group
                   textarea#message.form-control.input-text.text-area(name='message', rows='5', placeholder='Agrega algún detalle', required='')
                 .text-center
-                  button.input-btn(onclick="goog_report_conversion('')", type='submit') Cotiza gratis
+                  button.input-btn(type='submit') Cotiza gratis
     //
       <div id="floating-info">
       <a href="#contact">
@@ -496,6 +495,13 @@ html
       In your html page, add the snippet and call
       goog_report_conversion when someone clicks on the
       chosen link or button.
+    script(type='text/javascript').
+      $('#contact_landing').submit(function(e){
+        if( $( this ).valid() ) {
+          goog_report_conversion // Change for your page link.
+          alert("Conversion!"); // Confirmation that the conversion has been sent. Remove after testing. 
+        }
+      }); 
     script(type='text/javascript').
       /* <![CDATA[ */
       goog_snippet_vars = function() {

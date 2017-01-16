@@ -19,10 +19,9 @@ router.get('/landing', function(req, res) {
 router.post('/contacto', function(req, res) {
   sendMail('contacto', req.body);
   console.log('RESPONSE: ', res);
-  //req.flash('success', '¡Gracias por tu mensaje! En breve nos pondremos en comunicación contigo.');
-  //res.redirect(301, '/');
+  req.flash('success', '¡Gracias por tu mensaje! En breve nos pondremos en comunicación contigo.');
+  res.redirect(301, '/');
   //res.redirect(req.get('referer'));
-  res.redirect('/?expressFlash=hola');
 });
 
 router.post('/contacto_landing', function(req, res) {
