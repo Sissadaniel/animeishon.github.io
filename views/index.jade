@@ -82,9 +82,25 @@ html
     fbq('track', 'Search');
   // End Facebook Pixel Code
   body
-    // Google Tag Manager (noscript)
+    // Google Code for Animeishon Root Conversion Page
+    script(type='text/javascript').
+      /* <![CDATA[ */
+      var google_conversion_id = 975230127;
+      var google_conversion_language = "en";
+      var google_conversion_format = "3";
+      var google_conversion_color = "ff0000";
+      var google_conversion_label = "5OjSCKy8sW0Qr6mD0QM";
+      var google_remarketing_only = false;
+      /* ]]> */
+    script(type='text/javascript', src='//www.googleadservices.com/pagead/conversion.js')
     noscript
-      iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-TKS7GKT', height='0', width='0', style='display:none;visibility:hidden')
+      div(style='display:inline;')
+        img(height='1', width='1', style='border-style:none;', alt='', src='//www.googleadservices.com/pagead/conversion/975230127/?label=5OjSCKy8sW0Qr6mD0QM&guid=ON&script=0')
+
+    // Google Tag Manager (noscript)
+      noscript
+        iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-TKS7GKT', height='0', width='0', style='display:none;visibility:hidden')
+
     // End Google Tag Manager (noscript)
     header#header.header
       // header-start
@@ -643,14 +659,14 @@ html
       $('#contact_mobile').submit(function(e){
         if( $( this ).valid() ) {
           goog_report_conversion() // Change for your page link.
-          alert("Conversion!"); // Confirmation that the conversion has been sent. Remove after testing. 
+          console.log('Conversion!'); // Confirmation that the conversion has been sent. Remove after testing. 
         }
       }); 
     script(type='text/javascript').
       $('#contact_floater').submit(function(e){
         if( $( this ).valid() ) {
           goog_report_conversion() // Change for your page link.
-          alert("Conversion!"); // Confirmation that the conversion has been sent. Remove after testing. 
+          console.log('Conversion!'); // Confirmation that the conversion has been sent. Remove after testing. 
         }
       }); 
     //
@@ -658,29 +674,29 @@ html
       In your html page, add the snippet and call
       goog_report_conversion when someone clicks on the
       chosen link or button.
-    script(type='text/javascript').
-      /* <![CDATA[ */
-      goog_snippet_vars = function() {
-      var w = window;
-      w.google_conversion_id = 975230127;
-      w.google_conversion_label = "2ZvUCKjyiGwQr6mD0QM";
-      w.google_remarketing_only = false;
-      }
-      // DO NOT CHANGE THE CODE BELOW.
-      goog_report_conversion = function(url) {
-      goog_snippet_vars();
-      window.google_conversion_format = "3";
-      var opt = new Object();
-      opt.onload_callback = function() {
-      if (typeof(url) != 'undefined') {
-      window.location = url;
-      }
-      }
-      var conv_handler = window['google_trackConversion'];
-      if (typeof(conv_handler) == 'function') {
-      conv_handler(opt);
-      }
-      }
-      /* ]]> */
-    script(type='text/javascript', src='//www.googleadservices.com/pagead/conversion_async.js')
-    // Final Google adword conversion
+      //
+      script(type='text/javascript').
+        /* <![CDATA[ */
+        goog_snippet_vars = function() {
+        var w = window;
+        w.google_conversion_id = 975230127;
+        w.google_conversion_label = "2ZvUCKjyiGwQr6mD0QM";
+        w.google_remarketing_only = false;
+        }
+        // DO NOT CHANGE THE CODE BELOW.
+        goog_report_conversion = function(url) {
+        goog_snippet_vars();
+        window.google_conversion_format = "3";
+        var opt = new Object();
+        opt.onload_callback = function() {
+        if (typeof(url) != 'undefined') {
+        window.location = url;
+        }
+        }
+        var conv_handler = window['google_trackConversion'];
+        if (typeof(conv_handler) == 'function') {
+        conv_handler(opt);
+        }
+        }
+        /* ]]> */
+      script(type='text/javascript', src='//www.googleadservices.com/pagead/conversion_async.js')
