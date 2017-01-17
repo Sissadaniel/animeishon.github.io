@@ -119,6 +119,37 @@ html
   
   body
 
+    //
+      Google Code for Animeishon Root Conversion Page
+      In your html page, add the snippet and call
+      goog_report_conversion when someone clicks on the
+      chosen link or button.
+    script(type='text/javascript').
+      /* <![CDATA[ */
+      goog_snippet_vars = function() {
+      var w = window;
+      w.google_conversion_id = 975230127;
+      w.google_conversion_label = "5OjSCKy8sW0Qr6mD0QM";
+      w.google_remarketing_only = false;
+      }
+      // DO NOT CHANGE THE CODE BELOW.
+      goog_report_conversion = function(url) {
+      goog_snippet_vars();
+      window.google_conversion_format = "3";
+      var opt = new Object();
+      opt.onload_callback = function() {
+      if (typeof(url) != 'undefined') {
+      window.location = url;
+      }
+      }
+      var conv_handler = window['google_trackConversion'];
+      if (typeof(conv_handler) == 'function') {
+      conv_handler(opt);
+      }
+      }
+      /* ]]> */
+    script(type='text/javascript', src='//www.googleadservices.com/pagead/conversion_async.js')
+
     // Google Tag Manager (noscript)
       noscript
         iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-TKS7GKT', height='0', width='0', style='display:none;visibility:hidden')
@@ -130,7 +161,7 @@ html
           .container
             .row
               .col-xs-4
-                a(href='index', target='_blank')
+                a(href='/', target='_blank')
                   img.shrink.wow.flipInX.delay-02s(src='img/small_logo2.png')
               #telefono.col-xs-8.wow.fadeInRight.delay-03s
                 div
@@ -192,7 +223,7 @@ html
                   textarea#message.form-control.input-text.text-area(name='message', rows='5', placeholder='Agrega algún detalle', required='')
                 .text-center
                   button.input-btn(onclick="goog_report_conversion('')", type='submit') Cotiza gratis
-             .padtop20.explainerform Al realizar una cotización te enviaremos una sorpresa a tu correo ;)
+            .padtop20.explainerform Al realizar una cotización te enviaremos una sorpresa a tu correo ;)
 
     //
       <div id="floating-info">
@@ -504,7 +535,6 @@ html
       $('#contact_landing').submit(function(e){
         if( $( this ).valid() ) {
           goog_report_conversion() // Change for your page link.
-          alert("Conversion!"); // Confirmation that the conversion has been sent. Remove after testing. 
         }
       }); 
     //

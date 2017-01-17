@@ -124,7 +124,7 @@ html
         div#lang-switch-container
           a.lang-switch#lang-switch-en(href='#', data-locale='en') 🍔 english
           a.lang-switch#lang-switch-es(href='#', data-locale='es') 🌮 español
-          a(onClick="goog_report_conversion ('http://animeishon.studio')") GRC
+          //a(onClick="goog_report_conversion ('http://animeishon.studio')") GRC
       a(href='#explanatory')
       if expressFlash.length > 0
         .flash__message
@@ -672,18 +672,15 @@ html
       });
       });
 
-    //
-      script(type='text/javascript').
-        $('#contact_mobile').submit(function(e){
-          if( $( this ).valid() ) {
-            goog_report_conversion() // Change for your page link.
-            console.log('Conversion!'); // Confirmation that the conversion has been sent. Remove after testing. 
-          }
-        }); 
-      script(type='text/javascript').
-        $('#contact_floater').submit(function(e){
-          if( $( this ).valid() ) {
-            goog_report_conversion() // Change for your page link.
-            console.log('Conversion!'); // Confirmation that the conversion has been sent. Remove after testing. 
-          }
-        }); 
+    script(type='text/javascript').
+      $('#contact_mobile').submit(function(e){
+        if( $( this ).valid() ) {
+          goog_report_conversion() // Change for your page link.
+        }
+      }); 
+    script(type='text/javascript').
+      $('#contact_floater').submit(function(e){
+        if( $( this ).valid() ) {
+          goog_report_conversion() // Change for your page link.
+        }
+      }); 
