@@ -102,6 +102,7 @@ html
       }
       // DO NOT CHANGE THE CODE BELOW.
       goog_report_conversion = function(url) {
+      console.log('we\'re inside GRC function!');
       goog_snippet_vars();
       window.google_conversion_format = "3";
       var opt = new Object();
@@ -124,7 +125,7 @@ html
         div#lang-switch-container
           a.lang-switch#lang-switch-en(href='#', data-locale='en') 🍔 english
           a.lang-switch#lang-switch-es(href='#', data-locale='es') 🌮 español
-          a(onClick="goog_report_conversion ('http://animeishon.studio')") GRC
+          a(onClick="goog_report_conversion ('http://localhost:3001')") GRC
       a(href='#explanatory')
       if expressFlash.length > 0
         .flash__message
