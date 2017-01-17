@@ -38,6 +38,14 @@ html
     //
       =======================================================
       =======================================================
+    // Google Tag Manager
+    script.
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-5MV45NR');
+    // End Google Tag Manager
     // Heatmap Code
     script.
       (function(h,e,a,t,m,p) {
@@ -69,14 +77,6 @@ html
       ga('send', 'pageview');
     // DO NOT MODIFY
     // End Google Analytics Code
-    // Google Tag Manager
-    script.
-      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-5MV45NR');
-    // End Google Tag Manager
   // Facebook Pixel Code
   script.
     fbq('track', 'Search');
@@ -87,45 +87,12 @@ html
       iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-5MV45NR', height='0', width='0', style='display:none;visibility:hidden')
     // End Google Tag Manager (noscript)
 
-    //
-      Google Code for Animeishon Root Conversion Page
-      In your html page, add the snippet and call
-      goog_report_conversion when someone clicks on the
-      chosen link or button.
-    script(type='text/javascript').
-      /* <![CDATA[ */
-      goog_snippet_vars = function() {
-      var w = window;
-      w.google_conversion_id = 975230127;
-      w.google_conversion_label = "5OjSCKy8sW0Qr6mD0QM";
-      w.google_remarketing_only = false;
-      }
-      // DO NOT CHANGE THE CODE BELOW.
-      goog_report_conversion = function(url) {
-      console.log('we\'re inside GRC function!');
-      goog_snippet_vars();
-      window.google_conversion_format = "3";
-      var opt = new Object();
-      opt.onload_callback = function() {
-      if (typeof(url) != 'undefined') {
-      window.location = url;
-      }
-      }
-      var conv_handler = window['google_trackConversion'];
-      if (typeof(conv_handler) == 'function') {
-      conv_handler(opt);
-      }
-      }
-      /* ]]> */
-    script(type='text/javascript', src='//www.googleadservices.com/pagead/conversion_async.js')
-
     header#header.header
       // header-start
       .container.lang-switch-container
         div#lang-switch-container
           a.lang-switch#lang-switch-en(href='#', data-locale='en') 🍔 english
           a.lang-switch#lang-switch-es(href='#', data-locale='es') 🌮 español
-          a(onClick="goog_report_conversion ('http://localhost:3001')") GRC
       a(href='#explanatory')
       if expressFlash.length > 0
         .flash__message
@@ -293,9 +260,9 @@ html
                 p#loc-section-animation-3dvr-content
                 ul.ver
                   li.ver__desktop
-                    a#loc-section-animation-vr-link(data-toggle='modal', data-target='#vrDemoModal')
+                    a#loc-section-animation-vr-link(onclick="vrdesktopEvent()", data-toggle='modal', data-target='#vrDemoModal')
                   li.ver__mobile
-                    a#loc-section-animation-vrmobile-link(href="https://youtu.be/qag12S5OJFg", target="_blank")
+                    a#loc-section-animation-vrmobile-link(onclick="vrmobileEvent()", href="https://youtu.be/qag12S5OJFg", target="_blank")
                   li
                     a#loc-section-animation-3d-link(href="https://animeishon-studio.itch.io/animeishon-studio-virtual-house-tour", target="_blank")
             .featured-box
@@ -559,6 +526,24 @@ html
           .modal-footer
             button.btn.btn-default(type='button', data-dismiss='modal') Close
     script(type='text/javascript').
+      vrmobileEvent = function () {
+        ga('send', {
+          hitType: 'event',
+          eventCategory: 'Videos',
+          eventAction: 'play',
+          eventLabel: 'VR Mobile demo has been played on YouTube...'
+        });
+      };
+    script(type='text/javascript').
+      vrdesktopEvent = function () {
+        ga('send', {
+          hitType: 'event',
+          eventCategory: 'Videos',
+          eventAction: 'play',
+          eventLabel: 'VR Desktop demo has been played...'
+        });
+      };
+    script(type='text/javascript').
       $('#lang-switch-es').click(function() {
         $('#lang-switch-en').css({
           'display': 'block'
@@ -673,18 +658,15 @@ html
       });
       });
 
-    //
-      script(type='text/javascript').
-        $('#contact_mobile').submit(function(e){
-          if( $( this ).valid() ) {
-            goog_report_conversion() // Change for your page link.
-            console.log('Conversion!'); // Confirmation that the conversion has been sent. Remove after testing. 
-          }
-        }); 
-      script(type='text/javascript').
-        $('#contact_floater').submit(function(e){
-          if( $( this ).valid() ) {
-            goog_report_conversion() // Change for your page link.
-            console.log('Conversion!'); // Confirmation that the conversion has been sent. Remove after testing. 
-          }
-        }); 
+    script(type='text/javascript').
+      $('#contact_mobile').submit(function(e){
+        if( $( this ).valid() ) {
+          goog_report_conversion() // Change for your page link.
+        }
+      }); 
+    script(type='text/javascript').
+      $('#contact_floater').submit(function(e){
+        if( $( this ).valid() ) {
+          goog_report_conversion() // Change for your page link.
+        }
+      }); 
