@@ -1367,6 +1367,9 @@ h8 {
   .padtop {
     padding-top: 30px;
   }
+  .padtop20 {
+    padding-top: 20px;
+  }
   .boton_paquetes {
     background-color: #ff00ff;
     margin: 3%;
