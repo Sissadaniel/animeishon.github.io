@@ -503,27 +503,71 @@ html
       .modal-dialog
         // Modal content
         .modal-content
-          .modal-header
+          .modal-header(style='border:none;')
             button.close(type='button', data-dismiss='modal') ×
+          .modal-body
             h2.modal-title#loc-intro-modal-packs
-          .container.col-sm-12
-            .row
-              .col-sm-4
-                img(src='img/paquete_basic.png', alt='')
-                .text-center
-                  .boton_paquetes
-                    a(href='landing', target='_blank') Cotiza 
-              .col-sm-4
-                img(src='img/paquete_startup.png', alt='')
-                .text-center
-                  .boton_paquetes
-                    a(href='landing', target='_blank') Cotiza 
-              .col-sm-4
-                img(src='img/paquete_business.png', alt='')
-                .text-center
-                  .boton_paquetes
-                    a(href='landing', target='_blank') Cotiza
-          .modal-footer
+            .container
+              .row
+                div.col-sm-3
+                  .bundles__header
+                    h1 Basic
+                  .bundles__body
+                    ul
+                      li Desarrollo de sitio Web
+                      li Diseño de logotipo
+                      li Hosting por 1 año
+                  .bundles__footer
+                    button cotiza
+                div.col-sm-3
+                  .bundles__header
+                    h1 Basic
+                  .bundles__body
+                    ul
+                      li Desarrollo de sitio Web
+                      li Diseño de logotipo
+                      li Hosting por 1 año
+                  .bundles__footer
+                    button cotiza
+                div.col-sm-3
+                  .bundles__header
+                    h1 Basic
+                  .bundles__body
+                    ul
+                      li Desarrollo de sitio Web
+                      li Diseño de logotipo
+                      li Hosting por 1 año
+                  .bundles__footer
+                    button cotiza
+                div.col-sm-3
+                  .bundles__header
+                    h1 Basic
+                  .bundles__body
+                    ul
+                      li Desarrollo de sitio Web
+                      li Diseño de logotipo
+                      li Hosting por 1 año
+                  .bundles__footer
+                    button cotiza
+            //
+              .container
+                .row
+                  .col-sm-4
+                    img(src='img/paquete_basic.png', alt='')
+                    .text-center
+                      .boton_paquetes
+                        a(href='landing', target='_blank') Cotiza 
+                  .col-sm-4
+                    img(src='img/paquete_startup.png', alt='')
+                    .text-center
+                      .boton_paquetes
+                        a(href='landing', target='_blank') Cotiza 
+                  .col-sm-4
+                    img(src='img/paquete_business.png', alt='')
+                    .text-center
+                      .boton_paquetes
+                        a(href='landing', target='_blank') Cotiza
+          .modal-footer(style="border-top:none;")
             button.btn.btn-default(type='button', data-dismiss='modal') Close
     script(type='text/javascript').
       vrmobileEvent = function () {
