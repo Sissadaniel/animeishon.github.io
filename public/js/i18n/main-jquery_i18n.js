@@ -26,6 +26,16 @@ jQuery(document).ready(function() {
     $('#loc-intro-packs').text($.i18n('intro-packs'));
     /* INTRO SECTION MODAL */
     $('#loc-intro-modal-packs').text($.i18n('intro-packs'));
+    $('#loc-intro-modal-bundle1').text($.i18n('intro-modal-bundle1'));
+    $('#loc-intro-modal-bundle1-bullet1').text($.i18n('intro-modal-bundle1-bullet1'));
+    $('#loc-intro-modal-bundle1-bullet2').text($.i18n('intro-modal-bundle1-bullet2'));
+    $('#loc-intro-modal-bundle1-bullet3').text($.i18n('intro-modal-bundle1-bullet3'));
+    $('#loc-intro-modal-bundle1-bullet4').text($.i18n('intro-modal-bundle1-bullet4'));
+    $('#loc-intro-modal-bundle1-bullet5').text($.i18n('intro-modal-bundle1-bullet5'));
+    $('#loc-intro-modal-bundle1-bullet6').text($.i18n('intro-modal-bundle1-bullet6'));
+    $('#loc-intro-modal-bundle1-bullet7').text($.i18n('intro-modal-bundle1-bullet7'));
+    $('#loc-intro-modal-bundle1-bullet8').text($.i18n('intro-modal-bundle1-bullet8'));
+    $('#loc-intro-modal-bundle1-bullet9').text($.i18n('intro-modal-bundle1-bullet9'));
     $('#loc-intro-modal-quote1').text($.i18n('intro-modal-quote'));
     $('#loc-intro-modal-quote2').text($.i18n('intro-modal-quote'));
     $('#loc-intro-modal-quote3').text($.i18n('intro-modal-quote'));
@@ -101,6 +111,16 @@ jQuery(document).ready(function() {
       'intro-packs': 'Paquetes',
       /* INTRO SECTION MODAL */
       'intro-modal-quote': 'Cotiza',
+      'intro-modal-bundle1': 'PyME',
+      'intro-modal-bundle1-bullet1': 'Hasta 5 páginas estáticas',
+      'intro-modal-bundle1-bullet2': 'Diseño adaptable (smartphones, tabletas y computadoras)',
+      'intro-modal-bundle1-bullet3': 'Diseño 100% personalizado',
+      'intro-modal-bundle1-bullet4': '1 año de hospedaje web gratis',
+      'intro-modal-bundle1-bullet5': '1 año de cambios a banners, imágenes, y textos',
+      'intro-modal-bundle1-bullet6': 'Registro de dominio gratis',
+      'intro-modal-bundle1-bullet7': 'Código optimizado haciendo que el sitio sea lo más veloz posible',
+      'intro-modal-bundle1-bullet8': '1.5GB de almacenamiento',
+      'intro-modal-bundle1-bullet9': '2 rondas de cambios al aspecto y estructura del sitio antes de la entrega final',
       /* DESIGN SECTION */
       'section-design-webdev': 'Desarrollo Web',
       'section-design-webdev-content': 'Creamos sitios web estéticos y modernos con diseño mobile-first, optimización en buscadores (SEO), mapas de calor para que sepas como se comportan tus clientes en tu sitio y analíticas en tiempo real.',
@@ -159,6 +179,16 @@ jQuery(document).ready(function() {
       'intro-packs': 'Packs',
       /* INTRO SECTION MODAL */
       'intro-modal-quote': 'Quote',
+      'intro-modal-bundle1': 'Small business',
+      'intro-modal-bundle1-bullet1': 'Up to 5 static pages',
+      'intro-modal-bundle1-bullet2': 'Responsive design',
+      'intro-modal-bundle1-bullet3': '100% custom design',
+      'intro-modal-bundle1-bullet4': 'Free hosting for 1 year',
+      'intro-modal-bundle1-bullet5': 'On demand change to site\'s banners, images & text',
+      'intro-modal-bundle1-bullet6': 'Free domain registration',
+      'intro-modal-bundle1-bullet7': 'Well optimized code for faster loading',
+      'intro-modal-bundle1-bullet8': '1.5GB of storage',
+      'intro-modal-bundle1-bullet9': 'Two rounds of modifications to the site\'s look & structure before launch',
       /* DESIGN SECTION */
       'section-design-webdev': 'Web Development',
       'section-design-webdev-content': 'We create beautiful, modern, mobile-first websites that will really make you stand out. You will also get Search Engine Optimization (SEO), heatmaps to know where your visitors click, and real-time analytics for your website.',
