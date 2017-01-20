@@ -138,7 +138,7 @@ jQuery(document).ready(function() {
       'intro-title': 'Diseño y animación con una expriencia técnica sólida',
       'intro-desc': 'Animeishon Studio es una agencia digital en la Ciudad de México especializada en diseño y animación. Proveemos servicios creativos con una experiencia técnica sólida en diferentes campos.',
       'intro-action': 'VER DETALLES',
-      'intro-packs': 'Paquetes',
+      'intro-packs': 'Servicios web',
       /* INTRO SECTION MODAL */
       'intro-modal-quote': 'Cotiza',
       'intro-modal-bundle1': 'Personal',
@@ -167,7 +167,7 @@ jQuery(document).ready(function() {
       'intro-modal-bundle2-bullet7': 'Código optimizado haciendo que el sitio sea lo más veloz posible',
       'intro-modal-bundle2-bullet8': '1.5GB de almacenamiento',
       'intro-modal-bundle2-bullet9': '2 rondas de cambios al aspecto y estructura del sitio antes de la entrega final',
-      'intro-modal-bundle3': 'Paqueteautoadministres',
+      'intro-modal-bundle3': 'CMS',
       'intro-modal-bundle3-bullet1': 'Hasta 15 páginas estáticas',
       'intro-modal-bundle3-bullet2': 'Diseño adaptable (smartphones, tabletas y computadoras)',
       'intro-modal-bundle3-bullet3': 'Diseño profesional 100% personalizado',
