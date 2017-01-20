@@ -65,6 +65,29 @@ jQuery(document).ready(function() {
     $('#loc-intro-modal-bundle3-bullet10').text($.i18n('intro-modal-bundle3-bullet10'));
     $('#loc-intro-modal-bundle3-bullet11').text($.i18n('intro-modal-bundle3-bullet11'));
     $('#loc-intro-modal-bundle3-bullet12').text($.i18n('intro-modal-bundle3-bullet12'));
+    $('#loc-intro-modal-bundle3-bullet13').text($.i18n('intro-modal-bundle3-bullet13'));
+    $('#loc-intro-modal-bundle3-bullet14').text($.i18n('intro-modal-bundle3-bullet14'));
+    $('#loc-intro-modal-bundle3-bullet15').text($.i18n('intro-modal-bundle3-bullet15'));
+    $('#loc-intro-modal-bundle3-bullet16').text($.i18n('intro-modal-bundle3-bullet16'));
+    $('#loc-intro-modal-bundle3-bullet17').text($.i18n('intro-modal-bundle3-bullet17'));
+    $('#loc-intro-modal-bundle4').text($.i18n('intro-modal-bundle4'));
+    $('#loc-intro-modal-bundle4-bullet1').text($.i18n('intro-modal-bundle4-bullet1'));
+    $('#loc-intro-modal-bundle4-bullet2').text($.i18n('intro-modal-bundle4-bullet2'));
+    $('#loc-intro-modal-bundle4-bullet3').text($.i18n('intro-modal-bundle4-bullet3'));
+    $('#loc-intro-modal-bundle4-bullet4').text($.i18n('intro-modal-bundle4-bullet4'));
+    $('#loc-intro-modal-bundle4-bullet5').text($.i18n('intro-modal-bundle4-bullet5'));
+    $('#loc-intro-modal-bundle4-bullet6').text($.i18n('intro-modal-bundle4-bullet6'));
+    $('#loc-intro-modal-bundle4-bullet7').text($.i18n('intro-modal-bundle4-bullet7'));
+    $('#loc-intro-modal-bundle4-bullet8').text($.i18n('intro-modal-bundle4-bullet8'));
+    $('#loc-intro-modal-bundle4-bullet9').text($.i18n('intro-modal-bundle4-bullet9'));
+    $('#loc-intro-modal-bundle4-bullet10').text($.i18n('intro-modal-bundle4-bullet10'));
+    $('#loc-intro-modal-bundle4-bullet11').text($.i18n('intro-modal-bundle4-bullet11'));
+    $('#loc-intro-modal-bundle4-bullet12').text($.i18n('intro-modal-bundle4-bullet12'));
+    $('#loc-intro-modal-bundle4-bullet13').text($.i18n('intro-modal-bundle4-bullet13'));
+    $('#loc-intro-modal-bundle4-bullet14').text($.i18n('intro-modal-bundle4-bullet14'));
+    $('#loc-intro-modal-bundle4-bullet15').text($.i18n('intro-modal-bundle4-bullet15'));
+    $('#loc-intro-modal-bundle4-bullet16').text($.i18n('intro-modal-bundle4-bullet16'));
+    $('#loc-intro-modal-bundle4-bullet17').text($.i18n('intro-modal-bundle4-bullet17'));
     $('#loc-intro-modal-quote1').text($.i18n('intro-modal-quote'));
     $('#loc-intro-modal-quote2').text($.i18n('intro-modal-quote'));
     $('#loc-intro-modal-quote3').text($.i18n('intro-modal-quote'));
@@ -144,7 +167,7 @@ jQuery(document).ready(function() {
       'intro-modal-bundle1': 'Personal',
       'intro-modal-bundle1-bullet1': 'Hasta 5 páginas estáticas',
       'intro-modal-bundle1-bullet2': 'Diseño adaptable (smartphones, tabletas y computadoras)',
-      'intro-modal-bundle1-bullet3': 'Diseño profesional 100% personalizado',
+      'intro-modal-bundle1-bullet3': 'Diseño  100% personalizado',
       'intro-modal-bundle1-bullet4': '1 año de hospedaje web gratis',
       'intro-modal-bundle1-bullet12': 'Hasta 20 cuentas de correo @tu.dominio',
       'intro-modal-bundle1-bullet10': 'Hasta 5 formularios de contacto',
@@ -157,9 +180,9 @@ jQuery(document).ready(function() {
       'intro-modal-bundle2': 'Negocio',
       'intro-modal-bundle2-bullet1': 'Hasta 15 páginas estáticas',
       'intro-modal-bundle2-bullet2': 'Diseño adaptable (smartphones, tabletas y computadoras)',
-      'intro-modal-bundle2-bullet3': 'Diseño profesional 100% personalizado',
+      'intro-modal-bundle2-bullet3': 'Diseño  100% personalizado',
       'intro-modal-bundle2-bullet4': '1 año de hospedaje web gratis',
-      'intro-modal-bundle2-bullet12': 'Infinitas cuentas de correo @tu.dominio, ligadas a tu Gmail o Outlook',
+      'intro-modal-bundle2-bullet12': 'Cuentas de correo ilimitadas @tu.dominio, ligadas a Gmail o Outlook',
       'intro-modal-bundle2-bullet10': 'Todos los formularios de contacto que se requieran',
       'intro-modal-bundle2-bullet11': 'Integración con Google Analytics',
       'intro-modal-bundle2-bullet5': '1 año de cambios a banners, imágenes, y textos',
@@ -167,19 +190,39 @@ jQuery(document).ready(function() {
       'intro-modal-bundle2-bullet7': 'Código optimizado haciendo que el sitio sea lo más veloz posible',
       'intro-modal-bundle2-bullet8': '1.5GB de almacenamiento',
       'intro-modal-bundle2-bullet9': '2 rondas de cambios al aspecto y estructura del sitio antes de la entrega final',
-      'intro-modal-bundle3': 'CMS',
-      'intro-modal-bundle3-bullet1': 'Hasta 15 páginas estáticas',
-      'intro-modal-bundle3-bullet2': 'Diseño adaptable (smartphones, tabletas y computadoras)',
-      'intro-modal-bundle3-bullet3': 'Diseño profesional 100% personalizado',
+      'intro-modal-bundle3': 'Página editable',
+      'intro-modal-bundle3-bullet1': 'Hasta 5 páginas estáticas',
+      'intro-modal-bundle3-bullet13': 'Editor de contenidos',
+      'intro-modal-bundle3-bullet2': 'Diseño  adaptable (smartphones, tabletas y computadoras)',
+      'intro-modal-bundle3-bullet3': 'Diseño 100% personalizado',
       'intro-modal-bundle3-bullet4': '1 año de hospedaje web gratis',
-      'intro-modal-bundle3-bullet12': 'Infinitas cuentas de correo @tu.dominio, ligadas a tu Gmail o Outlook',
+      'intro-modal-bundle3-bullet12': 'Cuentas de correo ilimitadas @tu.dominio, ligadas a Gmail o Outlook',
       'intro-modal-bundle3-bullet10': 'Todos los formularios de contacto que se requieran',
       'intro-modal-bundle3-bullet11': 'Integración con Google Analytics',
-      'intro-modal-bundle3-bullet5': '1 año de cambios a banners, imágenes, y textos',
+      'intro-modal-bundle3-bullet5': '1 año de soporte técnico y resolución de dudas',
       'intro-modal-bundle3-bullet6': 'Registro de dominio gratis',
       'intro-modal-bundle3-bullet7': 'Código optimizado haciendo que el sitio sea lo más veloz posible',
       'intro-modal-bundle3-bullet8': '1.5GB de almacenamiento',
+      'intro-modal-bundle3-bullet14': 'Manual de usuario',
       'intro-modal-bundle3-bullet9': '2 rondas de cambios al aspecto y estructura del sitio antes de la entrega final',
+      'intro-modal-bundle4': 'E-commerce',
+      'intro-modal-bundle4-bullet1': 'Hasta 5 páginas estáticas',
+      'intro-modal-bundle4-bullet13': 'Editor de contenidos',
+      'intro-modal-bundle4-bullet15': 'Tienda en linea',
+      'intro-modal-bundle4-bullet16': 'Catálogo y editor de productos',
+      'intro-modal-bundle4-bullet17': 'Pago con tarjeta y PayPal',
+      'intro-modal-bundle4-bullet2': 'Diseño adaptable (smartphones, tabletas y computadoras)',
+      'intro-modal-bundle4-bullet3': 'Diseño 100% personalizado',
+      'intro-modal-bundle4-bullet4': '1 año de hospedaje web gratis',
+      'intro-modal-bundle4-bullet12': 'Cuentas de correo ilimitadas @tu.dominio, ligadas a Gmail o Outlook',
+      'intro-modal-bundle4-bullet10': 'Todos los formularios de contacto que se requieran',
+      'intro-modal-bundle4-bullet11': 'Integración con Google Analytics',
+      'intro-modal-bundle4-bullet5': '1 año de soporte técnico y resolución de dudas',
+      'intro-modal-bundle4-bullet6': 'Registro de dominio gratis',
+      'intro-modal-bundle4-bullet7': 'Código optimizado haciendo que el sitio sea lo más veloz posible',
+      'intro-modal-bundle4-bullet8': '1.5GB de almacenamiento',
+      'intro-modal-bundle4-bullet14': 'Manual de usuario',
+      'intro-modal-bundle4-bullet9': '2 rondas de cambios al aspecto y estructura del sitio antes de la entrega final',
       /* DESIGN SECTION */
       'section-design-webdev': 'Desarrollo Web',
       'section-design-webdev-content': 'Creamos sitios web estéticos y modernos con diseño mobile-first, optimización en buscadores (SEO), mapas de calor para que sepas como se comportan tus clientes en tu sitio y analíticas en tiempo real.',
