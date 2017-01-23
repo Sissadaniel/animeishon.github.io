@@ -16,18 +16,12 @@ router.get('/landing', function(req, res) {
   res.render('landing', { title: 'Animeishon Studio'});
 });
 
-router.get('/new', function(req, res) {
-  res.render('new', {
-    expressFlash: req.flash('success'),
-    sessionFlash: res.locals.sessionFlash,
-    title: 'NEWWWWW'
-  });
-});
-
 router.post('/contacto', function(req, res) {
   sendMail('contacto', req.body);
   console.log('RESPONSE: ', res);
-  res.redirect(req.get('referer'));
+  req.flash('success', '¡Gracias por tu mensaje! En breve nos pondremos en comunicación contigo.');
+  res.redirect(301, '/');
+  //res.redirect(req.get('referer'));
 });
 
 router.post('/contacto_landing', function(req, res) {
@@ -41,7 +35,9 @@ router.post('/contacto_landing', function(req, res) {
 router.post('/contacto_mobile', function(req, res) {
   sendMail('contacto_mobile', req.body);
   console.log('RESPONSE: ', res);
-  res.redirect(req.get('referer'), {msg: true});
+  req.flash('success', '¡Gracias por tu mensaje! En breve nos pondremos en comunicación contigo.');
+  res.redirect(301, '/');
+  //res.redirect(req.get('referer'), {msg: true});
 });
 
 module.exports = router;

@@ -38,6 +38,14 @@ html
     //
       =======================================================
       =======================================================
+    // Google Tag Manager
+    script.
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-5MV45NR');
+    // End Google Tag Manager
     // Heatmap Code
     script.
       (function(h,e,a,t,m,p) {
@@ -69,40 +77,22 @@ html
       ga('send', 'pageview');
     // DO NOT MODIFY
     // End Google Analytics Code
-    // Google Tag Manager
-    script.
-      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-TKS7GKT');
-    // End Google Tag Manager
   // Facebook Pixel Code
   script.
     fbq('track', 'Search');
   // End Facebook Pixel Code
-  // Start of Tawk.to Script
-  script(type='text/javascript').
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/5850784f3d413a0ca0a544ce/default';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
-  // End of Tawk.to Script
   body
     // Google Tag Manager (noscript)
     noscript
-      iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-TKS7GKT', height='0', width='0', style='display:none;visibility:hidden')
+      iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-5MV45NR', height='0', width='0', style='display:none;visibility:hidden')
     // End Google Tag Manager (noscript)
+
     header#header.header
       // header-start
-      div#lang-switch-container
-        a.lang-switch(href='#', data-locale='en') 🍔
-        a.lang-switch(href='#', data-locale='es') 🌮
+      .container.lang-switch-container
+        div#lang-switch-container
+          a.lang-switch#lang-switch-en(href='#', data-locale='en') 🍔 english
+          a.lang-switch#lang-switch-es(href='#', data-locale='es') 🌮 español
       a(href='#explanatory')
       if expressFlash.length > 0
         .flash__message
@@ -121,21 +111,26 @@ html
         video#bgvid(playsinline='', autoplay='', muted='', loop='', poster='img/animeishon_hero2.gif')
           source(src='img/animeishon_hero.webm', type='video/webm')
           source(src='img/animeishon_hero.mov', type='video/mp4')
-      #header-form.collapse.in
-        form.contactForm(action='/contacto', method='post', role='form')
-          .header-text
-            p#loc-action-form-text
+      .container#header-form.collapse.in
+        form.contactForm#contact_floater(action='/contacto', method='post', role='form')
+          .row.header-text
+            p.col-md-7#loc-action-form-text
+            p.col-md-5#loc-action-form-tel 55 35 22 16 81
           .form-group
-            input#name.form-control.input-text(type='text', name='name', placeholder='Nombre', data-rule='minlen:4', data-msg='Please enter at least 4 chars')
+            input#email.form-control.input-text(type='text', name='email', placeholder='E-Mail o teléfono', data-rule='minlen:4', data-msg='Please enter a valid email')
             .validation
           .form-group
-            input#email.form-control.input-text(type='email', name='email', placeholder='E-Mail o teléfono', data-rule='email', data-msg='Please enter a valid email')
-            .validation
+            select#service.form-control.input-text(name='service', required='')
+              option Servicio
+              option Branding
+              option Animación
+              option Diseño
+              option Paquete
           .form-group
             input#subject.form-control.input-text(type='text', name='subject', placeholder='Cupón (opcional)', data-rule='minlen:4', data-msg='Please enter at least 8 chars of subject')
             .validation
           .text-center
-            button.input-btn(onclick="goog_report_conversion('')", type='submit') Enviar
+            button.input-btn(type='submit') Enviar
       div
         button.closeform(type='button', data-toggle='collapse', data-target='#header-form')  X 
         #header-form.collapse.in
@@ -162,7 +157,7 @@ html
           li
             a#link_blog(href='http://blog.animeishon.studio', target='_blank') Blog
           li
-            a(href='#contact') 5535221681
+            a(href='#contact') Tel: 55 35 22 16 81
         a.res-nav_click(href='#')
           i.fa-bars
     #explanatory
@@ -182,7 +177,7 @@ html
                 .col-sm-4
                   h2.padtop#loc-intro-design
                   img.img-responsive(src='img/coche_diseno.png')
-                  a#padtop(href='#diseño')
+                  a#padtop(href='#service')
                     center#loc-intro-action1
                 .col-sm-4
                   h2.padtop#loc-intro-animation
@@ -263,6 +258,13 @@ html
               .featured-box-col2.wow.fadeInRight.delay-06s
                 h5#loc-section-animation-3dvr
                 p#loc-section-animation-3dvr-content
+                ul.ver
+                  li.ver__desktop
+                    a#loc-section-animation-vr-link(onclick="vrdesktopEvent()", data-toggle='modal', data-target='#vrDemoModal')
+                  li.ver__mobile
+                    a#loc-section-animation-vrmobile-link(onclick="vrmobileEvent()", href="https://youtu.be/qag12S5OJFg", target="_blank")
+                  li
+                    a#loc-section-animation-3d-link(href="https://animeishon-studio.itch.io/animeishon-studio-virtual-house-tour", target="_blank")
             .featured-box
               .featured-box-col1.wow.fadeInRight.delay-04s
                 i
@@ -366,7 +368,7 @@ html
       .container
         cont#loc-section-contact
     // business-talking-end
-    .container
+    .container.business-talking-contact
       section.main-section.contact
         .row
           .col-lg-6.col-sm-7.wow.fadeInLeft
@@ -405,7 +407,7 @@ html
             .form
               #sendmessage Tu mensaje ha sido enviado. Gracias!
               #errormessage
-              form.contactForm(action='/contacto_mobile', method='post', role='form')
+              form.contactForm#contact_mobile(action='/contacto_mobile', method='post', role='form')
                 .form-group
                   input#name.form-control.input-text(type='text', name='name', placeholder='Nombre', data-rule='minlen:4', data-msg='Please enter at least 4 chars')
                   .validation
@@ -419,7 +421,7 @@ html
                   textarea.form-control.input-text.text-area(name='message', rows='5', data-rule='required', data-msg='Please write something for us', placeholder='Cuéntanos tu idea')
                   .validation
                 .text-center
-                  button.input-btn(onclick="goog_report_conversion('')", type='submit') Enviar
+                  button.input-btn(type='submit') Enviar
     div
       section.megafooter
         .section.section-primary
@@ -451,70 +453,216 @@ html
                 .contact-info-box.phone.clearfix
                   p#loc-footer-phone
                   span 55 22 59 68 98
-    footer.footer
-      .container
-        .footer-logo
-          a(href='#')
-            img(src='img/footer-logo.png', alt='')
-        span.copyright © steed.mx. Todos los derechos reservados.
-        .credits
-          //
-            All the links in the footer should remain intact.
-            You can delete the links only if you purchased the pro version.
-            Licensing information: https://bootstrapmade.com/license/
-            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Knight
-          a(href='http://steed.mx') steed.mx
+    //
+      footer.footer
+        .container
+          .footer-logo
+            a(href='#')
+              img(src='img/footer-logo.png', alt='')
+          span.copyright © steed.mx. Todos los derechos reservados.
+          .credits
+            a(href='http://steed.mx') steed.mx
+
+    #vrDemoModal.modal.fade(role='dialog')
+      .modal-dialog(role='document')
+        .modal-content
+          .modal-body(style="text-align:center;padding: 100px 0")
+            button.close(type='button', data-dismiss='modal', aria-label='Close')
+              span(aria-hidden='true') ×
+            iframe(width='85%', height='630', src='https://www.youtube.com/embed/qag12S5OJFg', frameborder='1', allowfullscreen='')
+
     // Gif modal
     #myModal.modal.fade(role='dialog')
       .modal-dialog
         // Modal content
         .modal-content
-          .modal-header
+          .modal-header(style="border-bottom:none;")
             button.close(type='button', data-dismiss='modal') ×
             h2#loc-section-animation-modal.modal-title
           .modal-body
-            p
-            a
-              img(src='img/manhole_hero.gif', alt='')
-            a
-              img(src='img/luna_hero.gif', alt='')
-            a
-              img(src='img/chela_hero.gif', alt='')
-            a
-              img(src='img/brainsax_hero.gif', alt='')
-            a(target='_blank', href='http://www.losrumberos.mx')
-              img(src='img/rumberos_hero.gif', alt='')
-            a(target='_blank', href='https://www.facebook.com/wizelinemx/')
-              img(src='img/wizeline_hero.gif', alt='')
-          .modal-footer
+            .row
+              .col-md-4
+                img(src='img/manhole_hero.gif', alt='')
+              .col-md-4
+                img(src='img/luna_hero.gif', alt='')
+              .col-md-4
+                img(src='img/chela_hero.gif', alt='')
+            .row
+              .col-md-4
+                img(src='img/brainsax_hero.gif', alt='')
+              .col-md-4
+                a(target='_blank', href='http://www.losrumberos.mx')
+                  img(src='img/rumberos_hero.gif', alt='')
+              .col-md-4
+                a(target='_blank', href='https://www.facebook.com/wizelinemx/')
+                  img(src='img/wizeline_hero.gif', alt='')
+          .modal-footer(style="border-top:none;")
             button.btn.btn-default(type='button', data-dismiss='modal') Close
     // Paquetes modal
     #myModal2.modal.fade(role='dialog')
       .modal-dialog
         // Modal content
         .modal-content
-          .modal-header
+          .modal-header(style='border:none;')
             button.close(type='button', data-dismiss='modal') ×
+          .modal-body
             h2.modal-title#loc-intro-modal-packs
-          .container.col-sm-12
-            .row
-              .col-sm-4
-                img(src='img/paquete_basic.png', alt='')
-                .text-center
-                  .boton_paquetes
-                    a(href='landing.html', target='_blank')#loc-intro-modal-quote1
-              .col-sm-4
-                img(src='img/paquete_startup.png', alt='')
-                .text-center
-                  .boton_paquetes
-                    a(href='landing.html', target='_blank')#loc-intro-modal-quote2
-              .col-sm-4
-                img(src='img/paquete_business.png', alt='')
-                .text-center
-                  .boton_paquetes
-                    a(href='landing.html', target='_blank')#loc-intro-modal-quote3
-          .modal-footer
+            .container
+              .row
+                div.col-sm-3
+                  .bundles__header
+                    h2#loc-intro-modal-bundle1
+                  .bundles__body
+                    ul
+                      li#loc-intro-modal-bundle1-bullet1
+                      li#loc-intro-modal-bundle1-bullet2
+                      li#loc-intro-modal-bundle1-bullet3
+                      li#loc-intro-modal-bundle1-bullet4
+                      li#loc-intro-modal-bundle1-bullet12
+                      li#loc-intro-modal-bundle1-bullet10
+                      li#loc-intro-modal-bundle1-bullet11
+                      li#loc-intro-modal-bundle1-bullet5
+                      li#loc-intro-modal-bundle1-bullet6
+                      li#loc-intro-modal-bundle1-bullet7
+                      li#loc-intro-modal-bundle1-bullet8
+                      li#loc-intro-modal-bundle1-bullet9
+                    .row
+                      .col-md-3
+                      .col-md-6.bundles__pricing
+                        a(href='landing', target='_blank')
+                          p#loc-intro-modal-quote1
+                      .col-md-3
+                div.col-sm-3
+                  .bundles__header
+                    h2#loc-intro-modal-bundle2
+                  .bundles__body
+                    ul
+                      li#loc-intro-modal-bundle2-bullet1
+                      li#loc-intro-modal-bundle2-bullet2
+                      li#loc-intro-modal-bundle2-bullet3
+                      li#loc-intro-modal-bundle2-bullet4
+                      li#loc-intro-modal-bundle2-bullet12
+                      li#loc-intro-modal-bundle2-bullet10
+                      li#loc-intro-modal-bundle2-bullet11
+                      li#loc-intro-modal-bundle2-bullet5
+                      li#loc-intro-modal-bundle2-bullet6
+                      li#loc-intro-modal-bundle2-bullet7
+                      li#loc-intro-modal-bundle2-bullet8
+                      li#loc-intro-modal-bundle2-bullet9
+                    .row
+                      .col-md-3
+                      .col-md-6.bundles__pricing
+                        a(href='landing', target='_blank')
+                          p#loc-intro-modal-quote2
+                      .col-md-3
+                div.col-sm-3
+                  .bundles__header
+                    h2#loc-intro-modal-bundle3
+                  .bundles__body
+                    ul
+                      li#loc-intro-modal-bundle3-bullet1
+                      li#loc-intro-modal-bundle3-bullet13
+                      li#loc-intro-modal-bundle3-bullet2
+                      li#loc-intro-modal-bundle3-bullet3
+                      li#loc-intro-modal-bundle3-bullet4
+                      li#loc-intro-modal-bundle3-bullet12
+                      li#loc-intro-modal-bundle3-bullet14
+                      li#loc-intro-modal-bundle3-bullet10
+                      li#loc-intro-modal-bundle3-bullet11
+                      li#loc-intro-modal-bundle3-bullet5
+                      li#loc-intro-modal-bundle3-bullet6
+                      li#loc-intro-modal-bundle3-bullet7
+                      li#loc-intro-modal-bundle3-bullet8
+                    .row
+                      .col-md-3
+                      .col-md-6.bundles__pricing
+                        a(href='landing', target='_blank')
+                          p#loc-intro-modal-quote3
+                      .col-md-3
+                div.col-sm-3
+                  .bundles__header
+                      h2#loc-intro-modal-bundle4
+                  .bundles__body
+                    ul
+                      li#loc-intro-modal-bundle4-bullet1
+                      li#loc-intro-modal-bundle4-bullet13
+                      li#loc-intro-modal-bundle4-bullet15
+                      li#loc-intro-modal-bundle4-bullet16
+                      li#loc-intro-modal-bundle4-bullet17
+                      li#loc-intro-modal-bundle4-bullet2
+                      li#loc-intro-modal-bundle4-bullet3
+                      li#loc-intro-modal-bundle4-bullet4
+                      li#loc-intro-modal-bundle4-bullet12
+                      li#loc-intro-modal-bundle4-bullet14
+                      li#loc-intro-modal-bundle4-bullet10
+                      li#loc-intro-modal-bundle4-bullet11
+                      li#loc-intro-modal-bundle4-bullet5
+                      li#loc-intro-modal-bundle4-bullet6
+                      li#loc-intro-modal-bundle4-bullet7
+                      li#loc-intro-modal-bundle4-bullet8
+                    .row
+                      .col-md-3
+                      .col-md-6.bundles__pricing
+                        a(href='landing', target='_blank')
+                          p#loc-intro-modal-quote4
+                      .col-md-3
+            //
+              .container
+                .row
+                  .col-sm-4
+                    img(src='img/paquete_basic.png', alt='')
+                    .text-center
+                      .boton_paquetes
+                        a(href='landing', target='_blank') Cotiza 
+                  .col-sm-4
+                    img(src='img/paquete_startup.png', alt='')
+                    .text-center
+                      .boton_paquetes
+                        a(href='landing', target='_blank') Cotiza 
+                  .col-sm-4
+                    img(src='img/paquete_business.png', alt='')
+                    .text-center
+                      .boton_paquetes
+                        a(href='landing', target='_blank') Cotiza
+          .modal-footer(style="border-top:none;")
             button.btn.btn-default(type='button', data-dismiss='modal') Close
+    script(type='text/javascript').
+      vrmobileEvent = function () {
+        ga('send', {
+          hitType: 'event',
+          eventCategory: 'Videos',
+          eventAction: 'play',
+          eventLabel: 'VR Mobile demo has been played on YouTube...'
+        });
+      };
+    script(type='text/javascript').
+      vrdesktopEvent = function () {
+        console.log('vr desktop link has been clicked...');
+        ga('send', {
+          hitType: 'event',
+          eventCategory: 'Videos',
+          eventAction: 'play',
+          eventLabel: 'VR Desktop demo has been played...'
+        });
+      };
+    script(type='text/javascript').
+      $('#lang-switch-es').click(function() {
+        $('#lang-switch-en').css({
+          'display': 'block'
+        });
+        $('#lang-switch-es').css({
+          'display': 'none'
+        });
+      });
+    script(type='text/javascript').
+      $('#lang-switch-en').click(function() {
+        $('#lang-switch-en').css({
+          'display': 'none'
+        });
+        $('#lang-switch-es').css({
+          'display': 'block'
+        });
+      });
     script(type='text/javascript').
       $(document).ready(function(e) {
       $('#test').scrollToFixed();
@@ -611,34 +759,16 @@ html
       return false;
       });
       });
-    //
-      Google Code for form completada2 Conversion Page
-      In your html page, add the snippet and call
-      goog_report_conversion when someone clicks on the
-      chosen link or button.
+
     script(type='text/javascript').
-      /* <![CDATA[ */
-      goog_snippet_vars = function() {
-      var w = window;
-      w.google_conversion_id = 975230127;
-      w.google_conversion_label = "2ZvUCKjyiGwQr6mD0QM";
-      w.google_remarketing_only = false;
-      }
-      // DO NOT CHANGE THE CODE BELOW.
-      goog_report_conversion = function(url) {
-      goog_snippet_vars();
-      window.google_conversion_format = "3";
-      var opt = new Object();
-      opt.onload_callback = function() {
-      if (typeof(url) != 'undefined') {
-      window.location = url;
-      }
-      }
-      var conv_handler = window['google_trackConversion'];
-      if (typeof(conv_handler) == 'function') {
-      conv_handler(opt);
-      }
-      }
-      /* ]]> */
-    script(type='text/javascript', src='//www.googleadservices.com/pagead/conversion_async.js')
-    // Final Google adword conversion
+      $('#contact_mobile').submit(function(e){
+        if( $( this ).valid() ) {
+          goog_report_conversion() // Change for your page link.
+        }
+      }); 
+    script(type='text/javascript').
+      $('#contact_floater').submit(function(e){
+        if( $( this ).valid() ) {
+          goog_report_conversion() // Change for your page link.
+        }
+      }); 
