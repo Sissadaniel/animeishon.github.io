@@ -117,12 +117,12 @@ html
       .backlp.wow.fadeInLeft.delay-01s
         .section
           .container
-            .row
-              .col-xs-4
-                a(href='/', target='_blank')
-                  img.shrink.wow.flipInX.delay-02s(src='img/small_logo2.png')
-              #telefono.col-xs-8.wow.fadeInRight.delay-03s
-                div#loc-navbar-callus
+            a(href='/', target='_blank')
+              img.shrink.wow.flipInX.delay-02s(src='img/small_logo2.png')
+            #telefono.col-xs-8.wow.fadeInRight.delay-03s
+              div#loc-navbar-callus
+            a.lang-switch#lang-switch-en(href='#', data-locale='en') 🍔 english
+            a.lang-switch#lang-switch-es(href='#', data-locale='es') 🌮 español
     // main-nav-end
     header#header.header
       // header-start
@@ -305,40 +305,139 @@ html
                     .centerletter
                       a(href='#header') COTIZA DE MANERA GRATUITA
     .back_pattern
-      .container.quotes_padding.quotes
-        .row.padtop.wow.fadeInLeft.delay-02s
-          .col-xs-offset-1.col-xs-3
-            img(src='img/quote_isaac.png')
-          .col-xs-offset-1.col-xs-6
-            p
-              | "Después de trabajar un tiempo con el equipo, encontré que Animeishon Studio es una de las Agencias de diseño más confiables en el mercado actual. Su equipo de diseñadores e ingenieros realizan el trabajo de la manera más eficiente. Recomiendo ampliamente sus servicios."
-            p.quote_author
-              | Isaac Cherem,
-              br
-              |  Productor Ejecutivo, Fosforescente
-        .col-xs-offset-2.col-xs-8.stroke_quote
-        .row.padtop.wow.fadeInLeft.delay-03s
-          .col-xs-offset-1.col-xs-3
-            img(src='img/quote_juan.png')
-          .col-xs-offset-1.col-xs-6
-            p
-              | "Estoy impresionado con el servicio de Animeishon. A diferencia de otras Agencias de Diseño, ellos en realidad entienden el problema preguntando lo necesario para ofrecer la mejor solución. Trabajar con Animeishon Studio nos ayudó a definir la comunicación de nuestra recien creada empresa."
-            p.quote_author
-              | Juan Perez Burgos,
-              br
-              | Sumerte INC
-        .col-xs-offset-2.col-xs-8.stroke_quote
-        .row.padtop.wow.fadeInLeft.delay-04s
-          .col-xs-offset-1.col-xs-3
-            img(src='img/quote_stephy.png')
-          .col-xs-offset-1.col-xs-6
-            p
-              | "Animeishon Studio nos ayudó con nuestro sitio Web. Desde un principio nos enviaron una propuesta y la respetaron.  Un gran equipo con grandes habilidades de diseño y programación. Tuvimos completa atención desde el inicio hasta el final del proyecto."
-            p.quote_author
-              | Stephy Cruz,
-              br
-              | UltimumNews
-        .col-xs-offset-2.col-xs-8.stroke_quote
+      h2#loc-intro-modal-packs
+      .container
+        .row
+          div.col-sm-3.wow.fadeInLeft.delay-03s
+            .bundles__header
+              h2#loc-intro-modal-bundle1
+            .bundles__body
+              ul
+                li#loc-intro-modal-bundle1-bullet1
+                li#loc-intro-modal-bundle1-bullet2
+                li#loc-intro-modal-bundle1-bullet3
+                li#loc-intro-modal-bundle1-bullet4
+                li#loc-intro-modal-bundle1-bullet12
+                li#loc-intro-modal-bundle1-bullet10
+                li#loc-intro-modal-bundle1-bullet11
+                li#loc-intro-modal-bundle1-bullet5
+                li#loc-intro-modal-bundle1-bullet6
+                li#loc-intro-modal-bundle1-bullet7
+                li#loc-intro-modal-bundle1-bullet8
+                li#loc-intro-modal-bundle1-bullet9
+              .row
+                .col-md-3
+                .col-md-6.bundles__pricing
+                  a(href='#telefono')
+                    p#loc-intro-modal-quote1
+                .col-md-3
+          div.col-sm-3.wow.fadeInLeft.delay-03s
+            .bundles__header
+              h2#loc-intro-modal-bundle2
+            .bundles__body
+              ul
+                li#loc-intro-modal-bundle2-bullet1
+                li#loc-intro-modal-bundle2-bullet2
+                li#loc-intro-modal-bundle2-bullet3
+                li#loc-intro-modal-bundle2-bullet4
+                li#loc-intro-modal-bundle2-bullet12
+                li#loc-intro-modal-bundle2-bullet10
+                li#loc-intro-modal-bundle2-bullet11
+                li#loc-intro-modal-bundle2-bullet5
+                li#loc-intro-modal-bundle2-bullet6
+                li#loc-intro-modal-bundle2-bullet7
+                li#loc-intro-modal-bundle2-bullet8
+                li#loc-intro-modal-bundle2-bullet9
+              .row
+                .col-md-3
+                .col-md-6.bundles__pricing
+                  a(href='landing', target='_blank')
+                    p#loc-intro-modal-quote2
+                .col-md-3
+          div.col-sm-3.wow.fadeInRight.delay-03s
+            .bundles__header
+              h2#loc-intro-modal-bundle3
+            .bundles__body
+              ul
+                li#loc-intro-modal-bundle3-bullet13
+                li#loc-intro-modal-bundle3-bullet2
+                li#loc-intro-modal-bundle3-bullet3
+                li#loc-intro-modal-bundle3-bullet4
+                li#loc-intro-modal-bundle3-bullet12
+                li#loc-intro-modal-bundle3-bullet14
+                li#loc-intro-modal-bundle3-bullet10
+                li#loc-intro-modal-bundle3-bullet11
+                li#loc-intro-modal-bundle3-bullet5
+                li#loc-intro-modal-bundle3-bullet6
+                li#loc-intro-modal-bundle3-bullet7
+                li#loc-intro-modal-bundle3-bullet8
+              .row
+                .col-md-3
+                .col-md-6.bundles__pricing
+                  a(href='landing', target='_blank')
+                    p#loc-intro-modal-quote3
+                .col-md-3
+          div.col-sm-3.wow.fadeInRight.delay-03s
+            .bundles__header
+                h2#loc-intro-modal-bundle4
+            .bundles__body
+              ul
+                li#loc-intro-modal-bundle4-bullet15
+                li#loc-intro-modal-bundle4-bullet16
+                li#loc-intro-modal-bundle4-bullet17
+                li#loc-intro-modal-bundle4-bullet2
+                li#loc-intro-modal-bundle4-bullet3
+                li#loc-intro-modal-bundle4-bullet4
+                li#loc-intro-modal-bundle4-bullet12
+                li#loc-intro-modal-bundle4-bullet14
+                li#loc-intro-modal-bundle4-bullet10
+                li#loc-intro-modal-bundle4-bullet11
+                li#loc-intro-modal-bundle4-bullet5
+                li#loc-intro-modal-bundle4-bullet6
+                li#loc-intro-modal-bundle4-bullet7
+                li#loc-intro-modal-bundle4-bullet8
+              .row
+                .col-md-3
+                .col-md-6.bundles__pricing
+                  a(href='landing', target='_blank')
+                    p#loc-intro-modal-quote4
+                .col-md-3
+
+      //
+        .container.quotes_padding.quotes
+          .row.padtop.wow.fadeInLeft.delay-02s
+            .col-xs-offset-1.col-xs-3
+              img(src='img/quote_isaac.png')
+            .col-xs-offset-1.col-xs-6
+              p
+                | "Después de trabajar un tiempo con el equipo, encontré que Animeishon Studio es una de las Agencias de diseño más confiables en el mercado actual. Su equipo de diseñadores e ingenieros realizan el trabajo de la manera más eficiente. Recomiendo ampliamente sus servicios."
+              p.quote_author
+                | Isaac Cherem,
+                br
+                |  Productor Ejecutivo, Fosforescente
+          .col-xs-offset-2.col-xs-8.stroke_quote
+          .row.padtop.wow.fadeInLeft.delay-03s
+            .col-xs-offset-1.col-xs-3
+              img(src='img/quote_juan.png')
+            .col-xs-offset-1.col-xs-6
+              p
+                | "Estoy impresionado con el servicio de Animeishon. A diferencia de otras Agencias de Diseño, ellos en realidad entienden el problema preguntando lo necesario para ofrecer la mejor solución. Trabajar con Animeishon Studio nos ayudó a definir la comunicación de nuestra recien creada empresa."
+              p.quote_author
+                | Juan Perez Burgos,
+                br
+                | Sumerte INC
+          .col-xs-offset-2.col-xs-8.stroke_quote
+          .row.padtop.wow.fadeInLeft.delay-04s
+            .col-xs-offset-1.col-xs-3
+              img(src='img/quote_stephy.png')
+            .col-xs-offset-1.col-xs-6
+              p
+                | "Animeishon Studio nos ayudó con nuestro sitio Web. Desde un principio nos enviaron una propuesta y la respetaron.  Un gran equipo con grandes habilidades de diseño y programación. Tuvimos completa atención desde el inicio hasta el final del proyecto."
+              p.quote_author
+                | Stephy Cruz,
+                br
+                | UltimumNews
+          .col-xs-offset-2.col-xs-8.stroke_quote
     div
       section.megafooter
         .section.section-primary
@@ -402,6 +501,24 @@ html
       $('.main-nav').slideToggle();
       return false
       });
+      });
+    script(type='text/javascript').
+      $('#lang-switch-es').click(function() {
+        $('#lang-switch-en').css({
+          'display': 'block'
+        });
+        $('#lang-switch-es').css({
+          'display': 'none'
+        });
+      });
+    script(type='text/javascript').
+      $('#lang-switch-en').click(function() {
+        $('#lang-switch-en').css({
+          'display': 'none'
+        });
+        $('#lang-switch-es').css({
+          'display': 'block'
+        });
       });
     script.
       wow = new WOW({
