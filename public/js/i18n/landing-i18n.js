@@ -18,6 +18,18 @@ jQuery(document).ready(function() {
     $('#loc-form-desc').text($.i18n('form-desc'));
     /* PACKS */
     $('#loc-packs-title').text($.i18n('packs-title'));
+    $('#loc-packs-desc').text($.i18n('packs-desc'));
+    $('#loc-packs-pack1-title').text($.i18n('packs-pack1-title'));
+    $('#loc-packs-pack1-feature1').text($.i18n('packs-pack1-feature1'));
+    $('#loc-packs-pack1-feature2').text($.i18n('packs-pack1-feature2'));
+    $('#loc-packs-pack1-feature3').text($.i18n('packs-pack1-feature3'));
+    $('#loc-packs-pack1-feature4').text($.i18n('packs-pack1-feature4'));
+    $('#loc-packs-get-quote1').text($.i18n('packs-get-quote'));
+    $('#loc-packs-get-quote2').text($.i18n('packs-get-quote'));
+    $('#loc-packs-pack2-title').text($.i18n('packs-pack2-title'));
+    $('#loc-packs-pack2-feature2').text($.i18n('packs-pack2-feature2'));
+    $('#loc-packs-pack2-feature3').text($.i18n('packs-pack2-feature3'));
+    $('#loc-packs-pack2-feature4').text($.i18n('packs-pack2-feature4'));
     /* CONTACT SECTION */
     $('#loc-section-contact').text($.i18n('section-contact'));
     $('#loc-section-contact-address').text($.i18n('section-contact-address'));
@@ -133,6 +145,17 @@ jQuery(document).ready(function() {
       'form-desc': 'Get a free quote by filling this form or by calling us.',
       /* PACKS */
       'packs-title': 'Do you need to create or enhance your business branding?',
+      'packs-desc': 'Animeishon Studio is a digital agency based in Mexico City, we specialize in design and animation. We provide creativity-focused services with strong technical foundations and experience in diverse fields.',
+      'packs-pack1-title': 'Design Service',
+      'packs-pack1-feature1': 'Web Development & Hosting',
+      'packs-pack1-feature2': 'App & Backend Development',
+      'packs-pack1-feature3': 'Branding & Identity',
+      'packs-pack1-feature4': 'Logotypes and brand elements',
+      'packs-get-quote': 'GET A FREE QUOTE',
+      'packs-pack2-title': 'Animation Service',
+      'packs-pack2-feature2': 'VR Videos & Animations',
+      'packs-pack2-feature3': 'Web Content for Social Networks',
+      'packs-pack2-feature4': 'Kinetic Typography & E-cards',
       /* CONTACT SECTION */
       'section-contact': 'Contact Us',
       'section-contact-address': '🏡 Address',
@@ -232,6 +255,17 @@ jQuery(document).ready(function() {
       'form-desc': 'Para una cotización gratuita, llena la siguiente forma o llámanos.',
       /* PACKS */
       'packs-title': '¿Necesitas generar o mejorar la imagen de tu negocio?',
+      'packs-desc': 'Animeishon Studio es una Agencia digital ubicada en la Ciudad de México especializada en diseño y animación. Proveemos servicios enfocados a la creatividad, con fundamentos técnicos y experiencia en distintos campos.',
+      'packs-pack1-title': 'Servicio de Diseño',
+      'packs-pack1-feature1': 'Desarrollo Web y Hosting',
+      'packs-pack1-feature2': 'Desarrollo de Apps y plataformas',
+      'packs-pack1-feature3': 'Branding e identidad',
+      'packs-pack1-feature4': 'Logotipos y elementos de marca',
+      'packs-get-quote': 'COTIZA DE MANERA GRATUITA',
+      'packs-pack2-title': 'Servicio de Animación',
+      'packs-pack2-feature2': 'Videos y animaciones de realidad Virtual',
+      'packs-pack2-feature3': 'Contenido Web para Redes',
+      'packs-pack2-feature4': 'Tipografía cinética y E-cards ',
       /* CONTACT SECTION */
       'section-contact': 'Contáctanos',
       'section-contact-address': '🏡 Dirección',
