@@ -26,8 +26,15 @@ html
     script(type='text/javascript', src='js/classie.js')
     script(type='text/javascript', src='js/collapse.js')
     //
-      =======================================================
-      =======================================================
+    script(src='js/i18n/CLDRPluralRuleParser.js')
+    script(src='js/i18n/jquery.i18n.js')
+    script(src='js/i18n/jquery.i18n.messagestore.js')
+    script(src='js/i18n/jquery.i18n.fallbacks.js')
+    script(src='js/i18n/jquery.i18n.language.js')
+    script(src='js/i18n/jquery.i18n.parser.js')
+    script(src='js/i18n/jquery.i18n.emitter.js')
+    script(src='js/i18n/jquery.i18n.emitter.bidi.js')
+    script(src='js/i18n/landing-i18n.js')
     // Heatmap Code
     script.
       (function(h, e, a, t, m, p) {
@@ -132,46 +139,48 @@ html
                 a(href='index.html', target='_blank')
                   img.shrink.wow.flipInX.delay-02s(src='img/small_logo2.png')
               #telefono.col-xs-8.wow.fadeInRight.delay-03s
-                div
-                  | LLAMA AL
-                  br
-                  h7 (55)22596898
+                div#loc-navbar-callus
     // main-nav-end
+    header#header.header
+      // header-start
+      div#lang-switch-container
+        a.lang-switch(href='#', data-locale='en') 🍔
+        a.lang-switch(href='#', data-locale='es') 🌮
     header#header.header.whitefont.backhero.padtop
       // main-section-start
       .container.animated-form
         .row
           .col-lg-6.col-md-6.col-sm-6.wow.fadeInLeft.delay-05s
             .service-list
-              .frase Diseño y animación con una base tecnológica sólida.
+              .frase#loc-hero-title
             .service-list
               .service-list-col1
                 i
                   img.nomobile(src='img/icono-01.png', alt='')
               .service-list-col2
-                .title Trabajo Ágil Con Entregas Rápidas Según El Proyecto.
+                .title#loc-hero-desc1
             .service-list
               .service-list-col1
                 i
                   img.nomobile(src='img/icono-02.png', alt='')
               .service-list-col2
-                .title Obtén Un Presupuesto Gratis y Rápido.
+                .title#loc-hero-desc2
             .service-list
               .service-list-col1
                 i
                   img.nomobile(src='img/icono-03.png', alt='')
               .service-list-col2
-                .title Entrega De Sitios Web Con Diseño Responsivo En Menos De 3 Días.
+                .title#loc-hero-desc3
             .service-list
               .service-list-col1
                 i
                   img.nomobile(src='img/icono-04.png', alt='')
               .service-list-col2
-                .title Soporte 24/7
+                .title#loc-hero-desc4
           .col-lg-2.col-md-1.col-sm-1.col-xs-3
           figure.col-lg-4.col-md-5.col-sm-6.col-xs-0.formalp.wow.tada.delay-06s
-            .tituloform Cuéntanos tu proyecto, un experto te atenderá.
-            .explainerform Para una cotización gratuita, llena la siguiente forma o llámanos
+            .tituloform#loc-form-title
+            .explainerform#loc-form-desc
             .form.pad
               #sendmessage Tu mensaje ha sido enviado. Gracias!
               #errormessage
@@ -225,7 +234,7 @@ html
                 .col-sm-4
                   img#padimg.img-responsive.wow.fadeInLeft.delay-03s(src='img/80_logo.png')
                 .col-sm-8.wow.fadeInRight.delay-05s
-                  h1 ¿Necesitas generar o mejorar la imagen de tu negocio?
+                  h1#loc-packs-title
                   p.who-we-are
                     | Animeishon Studio es una Agencia digital ubicada en la Ciudad de México especializada en diseño y animación. Proveemos servicios enfocados a la creatividad, con fundamentos técnicos y experiencia en distintos campos
           .section
@@ -572,4 +581,3 @@ html
       ]
       });
       });
-
