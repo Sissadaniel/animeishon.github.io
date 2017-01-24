@@ -340,58 +340,37 @@ html
               br
               | UltimumNews
         .col-xs-offset-2.col-xs-8.stroke_quote
-    div
-      section.megafooter
-        .section.section-primary
-          .container
-            .row
-              .col-sm-3
-                img.img-responsive.img_center(src='img/footer-logo.png')
-                p
-                  | Animeishon Studio es una Agencia especializada en Diseño digital y animación. Proveemos distintos servicios enfocados a la creatividad, con fundamentos técnicos sólidos y experiencia.
-                  br
-                  br
-                  | hello@animeishon.studio 
-                  br
-                  br
-                  a(href='https://www.facebook.com/animeishonstudio/?fref=ts', target='_blank')
-                    i.fa-facebook-square.fa_prop.nottoday
-                  a(href='https://www.facebook.com/animeishonstudio/?fref=ts', target='_blank')
-                    i.fa-instagram.fa_prop.nottoday
-                  a(href='https://www.facebook.com/animeishonstudio/?fref=ts', target='_blank')
-                    i.fa-behance.fa_prop.nottoday
-              .col-sm-3
-                h4(contenteditable='true') ¿Por qué con nosotros?
-                p
-                  | Hemos trabajado con todo tiempo de clientes; desde instancias gubernamentales hasta industrias creativas.
-                p Conjuga diseño y tecnología para lograr un producto completo.
-                p Soporte Técnico 24/7
-                p
-                  | Para cualquiera de nuestros servicios, ofrecemos soporte técnico 24/7. Descuida, nosotros te cuidamos.
-                p Baila Tu cuerpo alegría macarena.
-              .col-sm-3
-                h4(contenteditable='true') Instagram Feed
-                div
-                  // LightWidget WIDGET
-                  script(src='//lightwidget.com/widgets/lightwidget.js')
-                  iframe.lightwidget-widget(src='//lightwidget.com/widgets/3ffba35e93f75718836990d834d66458.html', scrolling='no', allowtransparency='true', style='width: 100%; border: 0; overflow: hidden;')
-              .col-sm-3
-                h4 Nuestras Oficinas
-                p
-                  | Nos encontramos en We Are Todos, un espacio de coworking ubicado en la Ciudad de México.
-                .contact-info-box.address.clearfix
-                  p
-                    i.icon-map-marker
-                    |  Dirección:
-                  p
-                    | Tabasco 242
-                    br
-                    | Roma Norte, Ciudad de México, 06700.
-                .contact-info-box.phone.clearfix
-                  p
-                    i.fa-phone
-                    |  Teléfono:
-                  p 55 22 59 68 98
+      div
+        section.megafooter
+          .section.section-primary
+            .container
+              .row
+                .col-sm-3
+                  img#padimg.img-responsive(src='img/animeishon_logo.png')
+                  p#loc-footer-about
+                .col-sm-3
+                  h4#loc-footer-whyus(contenteditable='true')
+                  p#loc-footer-whyus-1
+                  p#loc-footer-whyus-2
+                  p#loc-footer-whyus-3
+                .col-sm-3
+                  h4(contenteditable='true') Instagram Feed
+                  div
+                    // LightWidget WIDGET
+                    script(src='//lightwidget.com/widgets/lightwidget.js')
+                    iframe.lightwidget-widget(src='//lightwidget.com/widgets/3ffba35e93f75718836990d834d66458.html', scrolling='no', allowtransparency='true', style='width: 100%; border: 0; overflow: hidden;')
+                .col-sm-3
+                  h4#loc-footer-ouroff
+                  p Steed @ WE ARE TODOS
+                  .contact-info-box.address.clearfix
+                    p#loc-footer-address
+                    span
+                      | Tabasco 242
+                      br
+                      | Roma Norte, Ciudad de México, 06700.
+                  .contact-info-box.phone.clearfix
+                    p#loc-footer-phone
+                    span 55 22 59 68 98
     script(type='text/javascript').
       $(document).ready(function(e) {
       $('#test').scrollToFixed();
