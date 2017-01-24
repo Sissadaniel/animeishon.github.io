@@ -30,6 +30,10 @@ jQuery(document).ready(function() {
     $('#loc-packs-pack2-feature2').text($.i18n('packs-pack2-feature2'));
     $('#loc-packs-pack2-feature3').text($.i18n('packs-pack2-feature3'));
     $('#loc-packs-pack2-feature4').text($.i18n('packs-pack2-feature4'));
+    /* CLIENTS */
+    $('#loc-client1-text').text($.i18n('client1-text'));
+    $('#loc-client2-text').text($.i18n('client2-text'));
+    $('#loc-client3-text').text($.i18n('client3-text'));
     /* CONTACT SECTION */
     $('#loc-section-contact').text($.i18n('section-contact'));
     $('#loc-section-contact-address').text($.i18n('section-contact-address'));
@@ -156,6 +160,10 @@ jQuery(document).ready(function() {
       'packs-pack2-feature2': 'VR Videos & Animations',
       'packs-pack2-feature3': 'Web Content for Social Networks',
       'packs-pack2-feature4': 'Kinetic Typography & E-cards',
+      /* CLIENTS */
+      'client1-text': '"After working with the team, I got sure that Animeshion Studio is one of the most trustworthy agencies in the market. The design and dev teams get the work done efficiently. I recommend their services."',
+      'client2-text': '"I\'m really impressed by Animeishon\'s work. They understood the problem by asking several questions and offered a great solution. Animeishon Studion helped us define our brand\'s communication strategy."',
+      'client3-text': '"Animeishon Studio helped us with our website. Since the beginning they sent us a proposal and stood by it. A great team with awesome skills in both design and programming."',
       /* CONTACT SECTION */
       'section-contact': 'Contact Us',
       'section-contact-address': '🏡 Address',
@@ -266,6 +274,10 @@ jQuery(document).ready(function() {
       'packs-pack2-feature2': 'Videos y animaciones de realidad Virtual',
       'packs-pack2-feature3': 'Contenido Web para Redes',
       'packs-pack2-feature4': 'Tipografía cinética y E-cards ',
+      /* CLIENTS */
+      'client1-text': '"Después de trabajar un tiempo con el equipo, encontré que Animeishon Studio es una de las Agencias de diseño más confiables en el mercado actual. Su equipo de diseñadores e ingenieros realizan el trabajo de la manera más eficiente. Recomiendo ampliamente sus servicios."',
+      'client2-text': '"Estoy impresionado con el servicio de Animeishon. A diferencia de otras Agencias de Diseño, ellos en realidad entienden el problema preguntando lo necesario para ofrecer la mejor solución. Trabajar con Animeishon Studio nos ayudó a definir la comunicación de nuestra recien creada empresa."',
+      'client3-text': '"Animeishon Studio nos ayudó con nuestro sitio Web. Desde un principio nos enviaron una propuesta y la respetaron. Un gran equipo con grandes habilidades de diseño y programación. Tuvimos completa atención desde el inicio hasta el final del proyecto."',
       /* CONTACT SECTION */
       'section-contact': 'Contáctanos',
       'section-contact-address': '🏡 Dirección',
