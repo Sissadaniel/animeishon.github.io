@@ -35,6 +35,15 @@ html
     script(src='js/i18n/jquery.i18n.emitter.js')
     script(src='js/i18n/jquery.i18n.emitter.bidi.js')
     script(src='js/i18n/landing-i18n.js')
+    // Google Tag Manager
+    script.
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-5MV45NR');
+    // End Google Tag Manager
+
     // Heatmap Code
     script.
       (function(h, e, a, t, m, p) {
@@ -122,7 +131,6 @@ html
           a.lang-switch#lang-switch-es(href='#', data-locale='es') 🌮 español
           #telefono.col-xs-8.wow.fadeInRight.delay-03s
             div#loc-navbar-callus
-
     // main-nav-end
     header#header.header
       // header-start
@@ -210,14 +218,13 @@ html
                   img#padimg.img-responsive.wow.fadeInLeft.delay-03s(src='img/80_logo.png')
                 .col-sm-8.wow.fadeInRight.delay-05s
                   h1#loc-packs-title
-                  p.who-we-are
-                    | Animeishon Studio es una Agencia digital ubicada en la Ciudad de México especializada en diseño y animación. Proveemos servicios enfocados a la creatividad, con fundamentos técnicos y experiencia en distintos campos
+                  p.who-we-are#loc-packs-desc
           .section
             .container
               .row
                 .col-md-5.col-md-offset-1.col-sm-6.col-xs-0.col-xs-offset-0.wow.fadeInLeft.delay-02s
                   figure.formaserv
-                    p Servicio de Diseño
+                    p#loc-packs-pack1-title
                     div
                       img.img-responsive(src='img/coche_diseno.png')
                     .stroke
@@ -226,8 +233,7 @@ html
                         i
                           img(src='img/icono-01.png', alt='')
                       .service-list-col2
-                        .title
-                          | Desarrollo Web y Hosting
+                        .title#loc-packs-pack1-feature1
                           br
                           br
                       .service-list
@@ -235,27 +241,26 @@ html
                           i
                             img(src='img/icono-03.png', alt='')
                         .service-list-col2
-                          .title
-                            | Desarrollo de Apps y plataformas 
+                          .title#loc-packs-pack1-feature2
                             br
                       .service-list
                         .service-list-col1
                           i
                             img(src='img/icono-05.png', alt='')
                         .service-list-col2
-                          .title Branding e identidad
+                          .title#loc-packs-pack1-feature3
                       .service-list
                         .service-list-col1
                           i
                             img(src='img/icono-02.png', alt='')
                         .service-list-col2
-                          .title Logotipos y elementos de marca
+                          .title#loc-packs-pack1-feature4
                   .botoncoti
                     .centerletter
-                      a(href='#header') COTIZA DE MANERA GRATUITA
+                      a(href='#header')#loc-packs-get-quote1
                 .col-md-5.col-sm-6.col-xs-0.col-xs-offset-0.wow.fadeInRight.delay-03s
                   figure.formaserv
-                    p Servicio de Animación
+                    p#loc-packs-pack2-title
                     div
                       img.img-responsive(src='img/tele_animacion.png')
                     .stroke
@@ -273,27 +278,26 @@ html
                           i
                             img(src='img/icono-03.png', alt='')
                         .service-list-col2
-                          .title
-                            | Videos y animaciones de realidad Virtual
+                          .title#loc-packs-pack2-feature2
                             br
                       .service-list
                         .service-list-col1
                           i
                             img(src='img/icono-05.png', alt='')
                         .service-list-col2
-                          .title Contenido Web para Redes
+                          .title#loc-packs-pack2-feature3
                       .service-list
                         .service-list-col1
                           i
                             img(src='img/icono-02.png', alt='')
                         .service-list-col2
-                          .title
-                            | Tipografía cinética y E-cards 
+                          .title#loc-packs-pack2-feature4
                             br
                             br
                   .botoncoti
                     .centerletter
-                      a(href='#header') COTIZA DE MANERA GRATUITA
+                      a(href='#header')#loc-packs-get-quote2
+
     .back_pattern
       h2#loc-intro-modal-packs
       .container
@@ -393,70 +397,19 @@ html
                     p#loc-intro-modal-quote4
                 .col-md-3
 
-      //
-        .container.quotes_padding.quotes
-          .row.padtop.wow.fadeInLeft.delay-02s
-            .col-xs-offset-1.col-xs-3
-              img(src='img/quote_isaac.png')
-            .col-xs-offset-1.col-xs-6
-              p
-                | "Después de trabajar un tiempo con el equipo, encontré que Animeishon Studio es una de las Agencias de diseño más confiables en el mercado actual. Su equipo de diseñadores e ingenieros realizan el trabajo de la manera más eficiente. Recomiendo ampliamente sus servicios."
-              p.quote_author
-                | Isaac Cherem,
-                br
-                |  Productor Ejecutivo, Fosforescente
-          .col-xs-offset-2.col-xs-8.stroke_quote
-          .row.padtop.wow.fadeInLeft.delay-03s
-            .col-xs-offset-1.col-xs-3
-              img(src='img/quote_juan.png')
-            .col-xs-offset-1.col-xs-6
-              p
-                | "Estoy impresionado con el servicio de Animeishon. A diferencia de otras Agencias de Diseño, ellos en realidad entienden el problema preguntando lo necesario para ofrecer la mejor solución. Trabajar con Animeishon Studio nos ayudó a definir la comunicación de nuestra recien creada empresa."
-              p.quote_author
-                | Juan Perez Burgos,
-                br
-                | Sumerte INC
-          .col-xs-offset-2.col-xs-8.stroke_quote
-          .row.padtop.wow.fadeInLeft.delay-04s
-            .col-xs-offset-1.col-xs-3
-              img(src='img/quote_stephy.png')
-            .col-xs-offset-1.col-xs-6
-              p
-                | "Animeishon Studio nos ayudó con nuestro sitio Web. Desde un principio nos enviaron una propuesta y la respetaron.  Un gran equipo con grandes habilidades de diseño y programación. Tuvimos completa atención desde el inicio hasta el final del proyecto."
-              p.quote_author
-                | Stephy Cruz,
-                br
-                | UltimumNews
-          .col-xs-offset-2.col-xs-8.stroke_quote
     div
       section.megafooter
         .section.section-primary
           .container
             .row
               .col-sm-3
-                img.img-responsive.img_center(src='img/footer-logo.png')
-                p
-                  | Animeishon Studio es una Agencia especializada en Diseño digital y animación. Proveemos distintos servicios enfocados a la creatividad, con fundamentos técnicos sólidos y experiencia.
-                  br
-                  br
-                  | hello@animeishon.studio 
-                  br
-                  br
-                  a(href='https://www.facebook.com/animeishonstudio/?fref=ts', target='_blank')
-                    i.fa-facebook-square.fa_prop.nottoday
-                  a(href='https://www.facebook.com/animeishonstudio/?fref=ts', target='_blank')
-                    i.fa-instagram.fa_prop.nottoday
-                  a(href='https://www.facebook.com/animeishonstudio/?fref=ts', target='_blank')
-                    i.fa-behance.fa_prop.nottoday
+                img#padimg.img-responsive(src='img/animeishon_logo.png')
+                p#loc-footer-about
               .col-sm-3
-                h4(contenteditable='true') ¿Por qué con nosotros?
-                p
-                  | Hemos trabajado con todo tiempo de clientes; desde instancias gubernamentales hasta industrias creativas.
-                p Conjuga diseño y tecnología para lograr un producto completo.
-                p Soporte Técnico 24/7
-                p
-                  | Para cualquiera de nuestros servicios, ofrecemos soporte técnico 24/7. Descuida, nosotros te cuidamos.
-                p Baila Tu cuerpo alegría macarena.
+                h4#loc-footer-whyus(contenteditable='true')
+                p#loc-footer-whyus-1
+                p#loc-footer-whyus-2
+                p#loc-footer-whyus-3
               .col-sm-3
                 h4(contenteditable='true') Instagram Feed
                 div
@@ -464,22 +417,17 @@ html
                   script(src='//lightwidget.com/widgets/lightwidget.js')
                   iframe.lightwidget-widget(src='//lightwidget.com/widgets/3ffba35e93f75718836990d834d66458.html', scrolling='no', allowtransparency='true', style='width: 100%; border: 0; overflow: hidden;')
               .col-sm-3
-                h4 Nuestras Oficinas
-                p
-                  | Nos encontramos en We Are Todos, un espacio de coworking ubicado en la Ciudad de México.
+                h4#loc-footer-ouroff
+                p Steed @ WE ARE TODOS
                 .contact-info-box.address.clearfix
-                  p
-                    i.icon-map-marker
-                    |  Dirección:
-                  p
+                  p#loc-footer-address
+                  span
                     | Tabasco 242
                     br
                     | Roma Norte, Ciudad de México, 06700.
                 .contact-info-box.phone.clearfix
-                  p
-                    i.fa-phone
-                    |  Teléfono:
-                  p 55 22 59 68 98
+                  p#loc-footer-phone
+                  span 55 22 59 68 98
     script(type='text/javascript').
       $(document).ready(function(e) {
       $('#test').scrollToFixed();
