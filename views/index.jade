@@ -117,8 +117,9 @@ html
             p.col-md-7#loc-action-form-text
             p.col-md-5#loc-action-form-tel 55 35 22 16 81
           .form-group
-            input#email.form-control.input-text(type='text', name='email', placeholder='E-Mail o teléfono', data-rule='minlen:4', data-msg='Please enter a valid email')
-            .validation
+            input#email.form-control.input-text(type='text', name='email', placeholder='E-Mail')
+          .form-group
+            input#subject.form-control.input-text(type='text', name='subject', placeholder='Teléfono (opcional)')
           .form-group
             select#service.form-control.input-text(name='service', required='')
               option Servicio
@@ -126,9 +127,6 @@ html
               option Animación
               option Diseño
               option Paquete
-          .form-group
-            input#subject.form-control.input-text(type='text', name='subject', placeholder='Cupón (opcional)', data-rule='minlen:4', data-msg='Please enter at least 8 chars of subject')
-            .validation
           .text-center
             button.input-btn(type='submit') Enviar
       div
@@ -409,17 +407,13 @@ html
               #errormessage
               form.contactForm#contact_mobile(action='/contacto_mobile', method='post', role='form')
                 .form-group
-                  input#name.form-control.input-text(type='text', name='name', placeholder='Nombre', data-rule='minlen:4', data-msg='Please enter at least 4 chars')
-                  .validation
+                  input#name.form-control.input-text(type='text', name='name', placeholder='Nombre')
                 .form-group
-                  input#email.form-control.input-text(type='email', name='email', placeholder='E-Mail', data-rule='email', data-msg='Please enter a valid email')
-                  .validation
+                  input#email.form-control.input-text(type='email', name='email', placeholder='E-Mail')
                 .form-group
-                  input#subject.form-control.input-text(type='text', name='subject', placeholder='Título', data-rule='minlen:4', data-msg='Please enter at least 8 chars of subject')
-                  .validation
+                  input#subject.form-control.input-text(type='text', name='subject', placeholder='Teléfono')
                 .form-group
-                  textarea.form-control.input-text.text-area(name='message', rows='5', data-rule='required', data-msg='Please write something for us', placeholder='Cuéntanos tu idea')
-                  .validation
+                  textarea.form-control.input-text.text-area(name='message', rows='5', placeholder='Cuéntanos tu idea')
                 .text-center
                   button.input-btn(type='submit') Enviar
     div

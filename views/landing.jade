@@ -115,20 +115,20 @@ html
     // header-end
     nav
       .backlp.wow.fadeInLeft.delay-01s
-        .section
-          .container
-            a(href='/', target='_blank')
-              img.shrink.wow.flipInX.delay-02s(src='img/small_logo2.png')
-            #telefono.col-xs-8.wow.fadeInRight.delay-03s
-              div#loc-navbar-callus
-            a.lang-switch#lang-switch-en(href='#', data-locale='en') 🍔 english
-            a.lang-switch#lang-switch-es(href='#', data-locale='es') 🌮 español
+        .container
+          a(href='/', target='_blank')
+            img.shrink.wow.flipInX.delay-02s(src='img/small_logo2.png')
+          a.lang-switch#lang-switch-en(href='#', data-locale='en') 🍔 english
+          a.lang-switch#lang-switch-es(href='#', data-locale='es') 🌮 español
+          #telefono.col-xs-8.wow.fadeInRight.delay-03s
+            div#loc-navbar-callus
+
     // main-nav-end
     header#header.header
       // header-start
-      div#lang-switch-container
-        a.lang-switch(href='#', data-locale='en') 🍔
-        a.lang-switch(href='#', data-locale='es') 🌮
+        div#lang-switch-container
+          a.lang-switch(href='#', data-locale='en') 🍔
+          a.lang-switch(href='#', data-locale='es') 🌮
     header#header.header.whitefont.backhero.padtop
       // main-section-start
       .container.animated-form
@@ -171,7 +171,9 @@ html
                 .form-group
                   input#name.form-control.input-text(type='text', name='name', placeholder='Nombre', required='')
                 .form-group
-                  input#email.form-control.input-text(type='email', name='email', placeholder='E-Mail o Teléfono', required='')
+                  input#email.form-control.input-text(type='email', name='email', placeholder='E-Mail', required='')
+                .form-group
+                  input#mobile.form-control.input-text(type='tel', name='mobile', placeholder='Teléfono', required='')
                 select#service.form-group.input-text(name='service', required='')
                   option Servicio
                   option Branding
@@ -183,18 +185,6 @@ html
                 .text-center
                   button.input-btn(onclick="goog_report_conversion('')", type='submit') Cotiza gratis
             .padtop20.explainerform Al realizar una cotización te enviaremos una sorpresa a tu correo ;)
-
-    //
-      <div id="floating-info">
-      <a href="#contact">
-      <p>Contáctanos</p>
-      <p>Tabasco 242, Roma Norte
-      <br>info@steed.mx
-      <br> 55<span class="num-divisor">-</span>2259<span class="num-divisor">-</span>6898
-      <a target="_blank" href="http://blog.animeishon.studio">Blog</a>
-      </p>
-      </a>
-      </div>
     #clientes_back.autoplay
       div
         img.img_center(src='img/sep_logo.png')
