@@ -134,7 +134,6 @@ h2 {
     margin: 0 0 15px 0;
     text-align: center;
     color: #ff00ff;
-    padding-bottom: 15px;
 }
 #padtop h2 {
     font-size: 60px;
@@ -1456,6 +1455,12 @@ padding: 20px 40px 50px 20px
 
 /* Bundles modal styles
 ---------------------------------*/
+#loc-intro-modal-packs-welcome {
+    margin-bottom: 15px;
+    color: #000;
+    font-family: 'montserrat', sans-serif;
+}
+
 #myModal2 .modal-body {
     padding: 0 20px;
 }
@@ -1501,6 +1506,7 @@ padding: 20px 40px 50px 20px
 .bundles__pricing {
     background: #00c1ff;
     border-radius: 10px;
+    margin-left: 15px;
     padding: 5px;
     text-align: center;
     box-shadow: 0 4px 2px -2px gray;

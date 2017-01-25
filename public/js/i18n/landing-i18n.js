@@ -1,4 +1,7 @@
 jQuery(document).ready(function() {
+  $.i18n({
+    locale: 'es' // default locale spanish
+  });
   var update_texts = function() {
     $('body').i18n();
     $('#loc-action-form-text').text($.i18n('action-form-text'));
@@ -46,6 +49,7 @@ jQuery(document).ready(function() {
     $('#loc-section-contact-time-weekend-desc').text($.i18n('section-contact-time-weekend-desc'));
     /* SERVICES SECTION */
     $('#loc-intro-modal-packs').text($.i18n('intro-packs'));
+    $('#loc-intro-modal-packs-welcome').text($.i18n('intro-packs-welcome'));
     $('#loc-intro-modal-bundle1').text($.i18n('intro-modal-bundle1'));
     $('#loc-intro-modal-bundle1-bullet1').text($.i18n('intro-modal-bundle1-bullet1'));
     $('#loc-intro-modal-bundle1-bullet2').text($.i18n('intro-modal-bundle1-bullet2'));
@@ -59,6 +63,8 @@ jQuery(document).ready(function() {
     $('#loc-intro-modal-bundle1-bullet10').text($.i18n('intro-modal-bundle1-bullet10'));
     $('#loc-intro-modal-bundle1-bullet11').text($.i18n('intro-modal-bundle1-bullet11'));
     $('#loc-intro-modal-bundle1-bullet12').text($.i18n('intro-modal-bundle1-bullet12'));
+    $('#loc-intro-modal-bundle1-common1').text($.i18n('intro-modal-bundle-common1'));
+    $('#loc-intro-modal-bundle1-common2').text($.i18n('intro-modal-bundle-common2'));
     $('#loc-intro-modal-bundle2').text($.i18n('intro-modal-bundle2'));
     $('#loc-intro-modal-bundle2-bullet1').text($.i18n('intro-modal-bundle2-bullet1'));
     $('#loc-intro-modal-bundle2-bullet2').text($.i18n('intro-modal-bundle2-bullet2'));
@@ -72,6 +78,9 @@ jQuery(document).ready(function() {
     $('#loc-intro-modal-bundle2-bullet10').text($.i18n('intro-modal-bundle2-bullet10'));
     $('#loc-intro-modal-bundle2-bullet11').text($.i18n('intro-modal-bundle2-bullet11'));
     $('#loc-intro-modal-bundle2-bullet12').text($.i18n('intro-modal-bundle2-bullet12'));
+    $('#loc-intro-modal-bundle2-common1').text($.i18n('intro-modal-bundle-common1'));
+    $('#loc-intro-modal-bundle2-common2').text($.i18n('intro-modal-bundle-common2'));
+    $('#loc-intro-modal-bundle2-common3').text($.i18n('intro-modal-bundle-common3'));
     $('#loc-intro-modal-bundle3').text($.i18n('intro-modal-bundle3'));
     $('#loc-intro-modal-bundle3-bullet1').text($.i18n('intro-modal-bundle3-bullet1'));
     $('#loc-intro-modal-bundle3-bullet2').text($.i18n('intro-modal-bundle3-bullet2'));
@@ -90,6 +99,9 @@ jQuery(document).ready(function() {
     $('#loc-intro-modal-bundle3-bullet15').text($.i18n('intro-modal-bundle3-bullet15'));
     $('#loc-intro-modal-bundle3-bullet16').text($.i18n('intro-modal-bundle3-bullet16'));
     $('#loc-intro-modal-bundle3-bullet17').text($.i18n('intro-modal-bundle3-bullet17'));
+    $('#loc-intro-modal-bundle3-common1').text($.i18n('intro-modal-bundle-common1'));
+    $('#loc-intro-modal-bundle3-common2').text($.i18n('intro-modal-bundle-common2'));
+    $('#loc-intro-modal-bundle3-common3').text($.i18n('intro-modal-bundle-common3'));
     $('#loc-intro-modal-bundle4').text($.i18n('intro-modal-bundle4'));
     $('#loc-intro-modal-bundle4-bullet1').text($.i18n('intro-modal-bundle4-bullet1'));
     $('#loc-intro-modal-bundle4-bullet2').text($.i18n('intro-modal-bundle4-bullet2'));
@@ -108,6 +120,9 @@ jQuery(document).ready(function() {
     $('#loc-intro-modal-bundle4-bullet15').text($.i18n('intro-modal-bundle4-bullet15'));
     $('#loc-intro-modal-bundle4-bullet16').text($.i18n('intro-modal-bundle4-bullet16'));
     $('#loc-intro-modal-bundle4-bullet17').text($.i18n('intro-modal-bundle4-bullet17'));
+    $('#loc-intro-modal-bundle4-common1').text($.i18n('intro-modal-bundle-common1'));
+    $('#loc-intro-modal-bundle4-common2').text($.i18n('intro-modal-bundle-common2'));
+    $('#loc-intro-modal-bundle4-common3').text($.i18n('intro-modal-bundle-common3'));
     $('#loc-intro-modal-quote1').text($.i18n('intro-modal-quote'));
     $('#loc-intro-modal-quote2').text($.i18n('intro-modal-quote'));
     $('#loc-intro-modal-quote3').text($.i18n('intro-modal-quote'));
@@ -175,8 +190,9 @@ jQuery(document).ready(function() {
       'section-contact-time-weekend': 'Saturday and Sunday:',
       'section-contact-time-weekend-desc': 'Don\'t even try it',
       /* SERVICES */
-      'intro-packs': 'Servicios Web',
-      'intro-modal-quote': 'Cotiza',
+      'intro-packs': 'Web services',
+      'intro-packs-welcome': 'The best design for the best price. Each of our package includes all you need to attain the serious online presence your business needs: what changes is the power, speed, and strength as you need it. We start off making a strategic plan to raise your business\' goals, then focusing all our design &  programming efforts to make them real.',
+      'intro-modal-quote': 'Request a quote',
       'intro-modal-bundle1': 'Personal',
       'intro-modal-bundle1-bullet1': 'Up to 5  static pages',
       'intro-modal-bundle1-bullet2': 'Responsive design (smartphones, tablets & desktops)',
@@ -237,6 +253,10 @@ jQuery(document).ready(function() {
       'intro-modal-bundle4-bullet8': '1.5GB storage',
       'intro-modal-bundle4-bullet14': 'User manual',
       'intro-modal-bundle4-bullet9': '2 rounds of changes to the site',
+      /* COMMON ACROSS SERVICES: */
+      'intro-modal-bundle-common1': 'Google Maps Integration',
+      'intro-modal-bundle-common2': 'Visual Website Analytics and Heatmaps',
+      'intro-modal-bundle-common3': 'Social media widgets integration',
       /* FOOTER */
       'footer-about': 'Animeishon Studio is a creative agency focused on digital design and animation. We provide different creative services with a solid technical experience. hello@animeishon.studio',
       'footer-whyus': 'Why us?',
@@ -289,10 +309,11 @@ jQuery(document).ready(function() {
       'section-contact-time-weekend': 'Sábado y Domingo:',
       'section-contact-time-weekend-desc': 'No preguntes',
       /* SERVICES SECTION */
-      'intro-packs': 'Web services',
+      'intro-packs': 'Servicios Web',
+      'intro-packs-welcome': 'El mejor diseño por el mejor precio. Cada uno de nuestros paquetes incluye lo necesario para emitir presencia en línea de primera, cambiando solamente el tamaño, velocidad, y poder según lo necesites. Primero realizamos un plan estratégico para entender cuáles son las metas de tu negocio, y luego concentramos nuestros esfuerzos de diseño y programación para que las alcances.',
       'intro-modal-quote': 'Cotiza',
       'intro-modal-bundle1': 'Personal',
-      'intro-modal-bundle1-bullet1': 'Hasta milochomil páginas estáticas',
+      'intro-modal-bundle1-bullet1': 'Hasta 5 páginas estáticas',
       'intro-modal-bundle1-bullet2': 'Diseño adaptable (smartphones, tabletas y computadoras)',
       'intro-modal-bundle1-bullet3': 'Diseño  100% personalizado',
       'intro-modal-bundle1-bullet4': '1 año de hospedaje web gratis',
@@ -350,6 +371,10 @@ jQuery(document).ready(function() {
       'intro-modal-bundle4-bullet8': '1.5GB de almacenamiento',
       'intro-modal-bundle4-bullet14': 'Manual de usuario',
       'intro-modal-bundle4-bullet9': '2 rondas de cambios al aspecto y estructura del sitio antes de la entrega final',
+      /* COMMON ACROSS SERVICES: */
+      'intro-modal-bundle-common1': 'Integración con Google Maps',
+      'intro-modal-bundle-common2': 'Analíticas visuales y mapa de calor',
+      'intro-modal-bundle-common3': 'Links y widgets a redes sociales',
       /* FOOTER */
       'footer-about': 'Animeishon Studio es una agencia especializada en diseño digital y animación. Proveemos distintos servicios enfocados a la creatividad, con fundamentos técnicos sólidos y experiencia. hello@animeishon.studio ',
       'footer-whyus': '¿Por qué nosotros?',
