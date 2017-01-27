@@ -113,6 +113,13 @@
     header .service-list:first-child {
         background: none;
     }
+    video#bgvid {
+        min-width: 100%;
+        max-width: 100%;
+        -webkit-filter: blur(1px);
+        /* Safari */
+        filter: blur(1px);
+    }
     header .service-list {
         font-size: 12px;
         margin-bottom: 20px;
@@ -269,8 +276,14 @@
     .shrink {
         min-width: 80%;
     }
-    #telefono {
-        font-size: 250%;
+    /*
+    * Landing pseudo navbar
+    */
+    nav .lang-switch {
+        position: relative;
+    }
+    #loc-navbar-callus {
+        font-size: x-large;
     }
     .formalp {
         margin: 10px;

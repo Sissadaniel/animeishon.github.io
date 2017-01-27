@@ -113,7 +113,6 @@ html
     })();
   // End of Tawk.to Script
   
-  
   body
 
     // Google Tag Manager (noscript)
@@ -121,17 +120,22 @@ html
       iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-5MV45NR', height='0', width='0', style='display:none;visibility:hidden')
     // End Google Tag Manager (noscript)
 
+    // Language switcher
+    .container
+      a.lang-switch#lang-switch-en(href='#', data-locale='en') 🍔 english
+      a.lang-switch#lang-switch-es(href='#', data-locale='es') 🌮 español
     // header-end
     nav
       .backlp.wow.fadeInLeft.delay-01s
         // < Matias'language switcher
         .container
-          a(href='/', target='_blank')
-            img.shrink.wow.flipInX.delay-02s(src='img/small_logo2.png')
-          a.lang-switch#lang-switch-en(href='#', data-locale='en') 🍔 english
-          a.lang-switch#lang-switch-es(href='#', data-locale='es') 🌮 español
-          #telefono.col-xs-8.wow.fadeInRight.delay-03s
-            div#loc-navbar-callus
+          .row
+            .col-xs-5.col-md-4
+              a(href='/', target='_blank')
+                img.shrink.wow.flipInX.delay-02s(src='img/small_logo2.png')
+            .col-xs-0.col-md-4
+            .col-xs-7.col-md-4
+              #loc-navbar-callus
         // Matias' language switcher >
 
         // < Zura's language switcher

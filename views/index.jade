@@ -90,9 +90,9 @@ html
     header#header.header
       // header-start
       .container.lang-switch-container
-        div#lang-switch-container
-          a.lang-switch#lang-switch-en(href='#', data-locale='en') 🍔 english
-          a.lang-switch#lang-switch-es(href='#', data-locale='es') 🌮 español
+        a.lang-switch#lang-switch-en(href='#', data-locale='en') 🍔 english
+        a.lang-switch#lang-switch-es(href='#', data-locale='es') 🌮 español
+        button.closeform(type='button', data-toggle='collapse', data-target='#header-form') X 
       a(href='#explanatory')
       if expressFlash.length > 0
         .flash__message
@@ -129,9 +129,6 @@ html
               option Paquete
           .text-center
             button.input-btn(type='submit') Enviar
-      div
-        button.closeform(type='button', data-toggle='collapse', data-target='#header-form')  X 
-        #header-form.collapse.in
     // header-end
     nav#test.main-nav-outer
       // main-nav-start

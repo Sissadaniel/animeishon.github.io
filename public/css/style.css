@@ -31,20 +31,25 @@ nav .lang-switch {
   right: 0;
 }
 
+/*
 #lang-switch-container {
   position: absolute;
   left: 0;
 }
+*/
 
 .lang-switch {
+  position: fixed;
+  z-index: 999;
   color: #00ffff;
   background-color: rgba(0, 0, 0, .7);
   padding: 1rem;
+  bottom: -10px;
   margin: 1rem;
   text-align: center;
   vertical-align: sub;
   font-size: 2rem;
-  border-radius: 15px;
+  border-radius: 15px 15px 0 0;
   -moz-box-shadow: 0 0 15px #00ffff;
   -webkit-box-shadow: 0 0 15px #00ffff;
   box-shadow: 0px 0px 15px #00ffff;
@@ -393,7 +398,7 @@ video#bgvid {
     border-radius: 15px;
     left: 0%;
     right: 0%;
-    bottom: 5%;
+    bottom: 7%;
     z-index: 1001;
     -moz-box-shadow: 0 0 15px #00ffff;
     -webkit-box-shadow: 0 0 15px #00ffff;
@@ -1186,10 +1191,10 @@ cont {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-color: #00ffff;
-    right: 5%;
+    right: 15%;
     bottom: 0%;
     z-index: 1001;
-    background-color: black
+    background-color: black;
 }
 button {
     color: #00ffff;
@@ -1221,7 +1226,7 @@ button {
     color: #212121;
     font-family: 'Montserrat', sans-serif;
 }
-#telefono {
+#loc-navbar-callus {
     text-align: right;
     font-size: 33px;
     font-family: 'montserrat';
