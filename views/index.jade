@@ -81,6 +81,19 @@ html
   script.
     fbq('track', 'Search');
   // End Facebook Pixel Code
+
+  // Start of Tawk.to Script
+  script(type='text/javascript').
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/5850784f3d413a0ca0a544ce/default';
+    s1.charset='UTF-8';
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+  // End of Tawk.to Script
+  
   body
     // Google Tag Manager (noscript)
     noscript
@@ -92,7 +105,7 @@ html
       .container.lang-switch-container
         a.lang-switch#lang-switch-en(href='#', data-locale='en') 🍔 english
         a.lang-switch#lang-switch-es(href='#', data-locale='es') 🌮 español
-        button.closeform(type='button', data-toggle='collapse', data-target='#header-form') X 
+        //button.closeform(type='button', data-toggle='collapse', data-target='#header-form') X 
       a(href='#explanatory')
       if expressFlash.length > 0
         .flash__message
@@ -111,24 +124,25 @@ html
         video#bgvid(playsinline='', autoplay='', muted='', loop='', poster='img/animeishon_hero2.gif')
           source(src='img/animeishon_hero.webm', type='video/webm')
           source(src='img/animeishon_hero.mov', type='video/mp4')
-      .container#header-form.collapse.in
-        form.contactForm#contact_floater(action='/contacto', method='post', role='form')
-          .row.header-text
-            p.col-md-7#loc-action-form-text
-            p.col-md-5#loc-action-form-tel 55 35 22 16 81
-          .form-group
-            input#email.form-control.input-text(type='text', name='email', placeholder='E-Mail')
-          .form-group
-            input#subject.form-control.input-text(type='text', name='subject', placeholder='Teléfono')
-          .form-group
-            select#service.form-control.input-text(name='service', required='')
-              option Servicio
-              option Branding
-              option Animación
-              option Diseño
-              option Paquete
-          .text-center
-            button.input-btn(type='submit') Enviar
+      //
+        .container#header-form.collapse.in
+          form.contactForm#contact_floater(action='/contacto', method='post', role='form')
+            .row.header-text
+              p.col-md-7#loc-action-form-text
+              p.col-md-5#loc-action-form-tel 55 35 22 16 81
+            .form-group
+              input#email.form-control.input-text(type='text', name='email', placeholder='E-Mail')
+            .form-group
+              input#subject.form-control.input-text(type='text', name='subject', placeholder='Teléfono')
+            .form-group
+              select#service.form-control.input-text(name='service', required='')
+                option Servicio
+                option Branding
+                option Animación
+                option Diseño
+                option Paquete
+            .text-center
+              button.input-btn(type='submit') Enviar
     // header-end
     nav#test.main-nav-outer
       // main-nav-start

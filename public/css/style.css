@@ -885,9 +885,6 @@ img {
     font-size: 42px;
     color: #fff;
 }
-.business-talking-contact {
-    display: none;
-}
 /* Contact
 ---------------------------------*/
 
@@ -1401,9 +1398,6 @@ h8 {
 
   }
 
-  .contacto_mobile {
-    display: none;
-  }
   .redes {
     position: absolute;
     color: white;
