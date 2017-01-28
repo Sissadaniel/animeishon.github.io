@@ -194,21 +194,22 @@ html
               #errormessage
               form.contactForm#contact_landing(action='/contacto_landing', method='post', role='form')
                 .form-group
-                  input#name.form-control.input-text(type='text', name='name', placeholder='Nombre', required='')
+                  input#name.form-control.input-text(type='text', name='name', placeholder='Name / Nombre', required='')
                 .form-group
                   input#email.form-control.input-text(type='email', name='email', placeholder='E-Mail', required='')
                 .form-group
-                  input#mobile.form-control.input-text(type='tel', name='mobile', placeholder='Teléfono', required='')
+                  input#mobile.form-control.input-text(type='tel', name='mobile', placeholder='Tel.', required='')
                 select#service.form-group.input-text(name='service', required='')
-                  option Servicio
-                  option Branding
-                  option Animación
-                  option Diseño
-                  option Paquete
+                  option(value='', selected='', disabled='') Selec. Serv.
+                  option(value='') Branding
+                  option(value='') Animation/Animeishon
+                  option(value='') Animation/Animación
+                  option(value='') Design/Diseño
+                  option(value='') Bundle/Paquete
                 .form-group
-                  textarea#message.form-control.input-text.text-area(name='message', rows='5', placeholder='Agrega algún detalle', required='')
+                  textarea#message.form-control.input-text.text-area(name='message', rows='5', placeholder='Details / Detalles', required='')
                 .text-center
-                  button.input-btn(onclick="goog_report_conversion('')", type='submit') Cotiza gratis
+                  button.input-btn#loc-form-button(onclick="goog_report_conversion('')", type='submit')
             .padtop20.explainerform Al realizar una cotización te enviaremos una sorpresa a tu correo ;)
     #clientes_back.autoplay
       div
@@ -245,21 +246,19 @@ html
                     div
                       img.img-responsive(src='img/coche_diseno.png')
                     .stroke
-                    .service-list.text_center
-                      .service-list-col1
-                        i
-                          img(src='img/icono-01.png', alt='')
-                      .service-list-col2
-                        .title#loc-packs-pack1-feature1
-                          br
-                          br
+                      br
+                      .service-list
+                        .service-list-col1
+                          i
+                            img(src='img/icono-01.png', alt='')
+                        .service-list-col2
+                          .title#loc-packs-pack1-feature1
                       .service-list
                         .service-list-col1
                           i
                             img(src='img/icono-03.png', alt='')
                         .service-list-col2
                           .title#loc-packs-pack1-feature2
-                            br
                       .service-list
                         .service-list-col1
                           i
@@ -272,6 +271,7 @@ html
                             img(src='img/icono-02.png', alt='')
                         .service-list-col2
                           .title#loc-packs-pack1-feature4
+                      br
                   .botoncoti
                     .centerletter
                       a(href='#header')#loc-packs-get-quote1
@@ -281,22 +281,19 @@ html
                     div
                       img.img-responsive(src='img/tele_animacion.png')
                     .stroke
-                    .service-list.text_center
-                      .service-list-col1
-                        i
-                          img(src='img/icono-01.png', alt='')
-                      .service-list-col2
-                        .title
-                          | Explainer Videos
-                          br
-                          br
+                      br
+                      .service-list
+                        .service-list-col1
+                          i
+                            img(src='img/icono-01.png', alt='')
+                        .service-list-col2
+                          .title Explainer Videos
                       .service-list
                         .service-list-col1
                           i
                             img(src='img/icono-03.png', alt='')
                         .service-list-col2
                           .title#loc-packs-pack2-feature2
-                            br
                       .service-list
                         .service-list-col1
                           i
@@ -309,8 +306,6 @@ html
                             img(src='img/icono-02.png', alt='')
                         .service-list-col2
                           .title#loc-packs-pack2-feature4
-                            br
-                            br
                   .botoncoti
                     .centerletter
                       a(href='#header')#loc-packs-get-quote2
@@ -320,7 +315,7 @@ html
       .container
         p#loc-intro-modal-packs-welcome
         .row
-          div.col-sm-3.wow.fadeInLeft.delay-03s
+          div.col-lg-3.col-sm-6.wow.fadeInLeft.delay-03s
             .bundles__header
               h2#loc-intro-modal-bundle1
             .bundles__body
@@ -346,7 +341,7 @@ html
                   a(href='#telefono')
                     p#loc-intro-modal-quote1
                 .col-md-3
-          div.col-sm-3.wow.fadeInLeft.delay-03s
+          div.col-lg-3.col-sm-6.wow.fadeInLeft.delay-03s
             .bundles__header
               h2#loc-intro-modal-bundle2
             .bundles__body
@@ -372,7 +367,7 @@ html
                   a(href='landing', target='_blank')
                     p#loc-intro-modal-quote2
                 .col-md-3
-          div.col-sm-3.wow.fadeInRight.delay-03s
+          div.col-lg-3.col-sm-6.wow.fadeInRight.delay-03s
             .bundles__header
               h2#loc-intro-modal-bundle3
             .bundles__body
@@ -398,7 +393,7 @@ html
                   a(href='landing', target='_blank')
                     p#loc-intro-modal-quote3
                 .col-md-3
-          div.col-sm-3.wow.fadeInRight.delay-03s
+          div.col-lg-3.col-sm-6.wow.fadeInRight.delay-03s
             .bundles__header
                 h2#loc-intro-modal-bundle4
             .bundles__body
@@ -433,7 +428,8 @@ html
           .container
             .row
               .col-sm-3
-                img#padimg.img-responsive(src='img/animeishon_logo.png')
+                a(href='http://animeishon.studio')
+                  img#padimg.img-responsive(src='img/animeishon_logo.png', style='margin:-15px 0 15px 0;')
                 p#loc-footer-about
               .col-sm-3
                 h4#loc-footer-whyus(contenteditable='true')
