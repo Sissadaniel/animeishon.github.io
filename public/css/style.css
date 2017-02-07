@@ -1271,6 +1271,12 @@ h8 {
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
+.backlogohero {
+    background: url("../img/back_landing_logos.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
   .formalp {
     background: #212121;
     /* For browsers that do not support gradients */
