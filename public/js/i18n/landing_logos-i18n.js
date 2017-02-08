@@ -275,7 +275,7 @@ jQuery(document).ready(function() {
       'hero-desc2': 'Obtén un Presupuesto Gratis y Rápido',
       'hero-desc3': 'Entregas de Logotipos en 48 Horas',
       'hero-desc4': 'Luce profesional y confiable',
-      'hero-desc5': 'Un gran logo incorpora todos los elementos de tu negocio en una sola imagen. Evoca a la personalidad y actitud de una manera comprensible. El Logotipo debe de ser unico y memorable, profesional pero con caracter. Nosotros podemos hacerlo por ti.',
+      'hero-desc5': 'Un gran logo incorpora todos los elementos de tu negocio en una sola imagen. Evoca a la personalidad y actitud de una manera comprensible. El Logotipo debe de ser único y memorable, profesional pero con caracter. Nosotros podemos hacerlo por ti.',
       /* FORM */
       'form-title': 'Cuéntanos tu proyecto, un experto te atenderá',
       'form-desc': 'Para una cotización gratuita, llena la siguiente forma o llámanos.',
