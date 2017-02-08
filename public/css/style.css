@@ -195,6 +195,7 @@ p {
     padding-bottom: 8%;
 }
 
+
 .quotes p {
     font-size: 17px;
     font-weight: 100;
@@ -1271,6 +1272,12 @@ h8 {
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
+.backlogohero {
+    background: url("../img/back_landing_logos.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
   .formalp {
     background: #212121;
     /* For browsers that do not support gradients */
@@ -1490,9 +1497,9 @@ padding: 20px 40px 50px 20px
 
 .bundles__body {
     background: rgb(167,234,253); /* Old browsers */
-    background: -moz-linear-gradient(top,  rgba(0,255,255,1) 0%, rgba(252,252,252,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(0,255,255,1) 0%,rgba(252,252,252,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(0,255,255,1) 0%,rgba(252,252,252,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -moz-linear-gradient(bottom,  rgba(0,255,255,1) 0%, rgba(252,252,252,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(bottom,  rgba(0,255,255,1) 0%,rgba(252,252,252,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to top,  rgba(0,255,255,1) 0%,rgba(252,252,252,1) 70%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7eafd', endColorstr='#fcfcfc',GradientType=0 ); /* IE6-9 */
     border-radius: 5px;
     padding: 15px 15px 15px 0;
