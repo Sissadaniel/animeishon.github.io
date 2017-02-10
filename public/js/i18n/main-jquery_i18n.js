@@ -276,7 +276,7 @@ jQuery(document).ready(function() {
       'contact': 'Contact',
       /* INTRO SECTION */
       'intro-title': 'Design and animation with a strong technical background',
-      'intro-desc': 'Animeishon Studio is Mexico City-based digital agency specialized in design and animation. We provide creative services with a strong experience in different fields.',
+      'intro-desc': 'Animeishon Studio is a Mexico City-based digital agency specialized in design and animation. We provide creative services with a strong experience in different fields.',
       'intro-action': 'SEE MORE',
       /* SERVICES */
       'intro-packs': 'Web services',
