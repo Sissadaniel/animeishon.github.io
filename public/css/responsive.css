@@ -90,10 +90,17 @@
     #animacion>div>div>div {
         margin-left: 15vw;
     }
+    
+    .bebas_title{
+        font-size: 40px;
+        }
+    .margin_top {
+margin-top: 0%;
+}
 }
 @media only screen and (max-width: 767px) {
     /****Mobile Landscape 480 Container 100% ****/
-    
+                
     body {
         font-size: 12px;
     }
@@ -325,7 +332,20 @@
         background-position:top;
         background-attachment: fixed;
     }
+    .bebas_title {
+font-size: 35px
 }
+            .margin_top {
+margin-top: 0%;
+}
+    .padresp{
+        padding-left: 60px;
+        }
+
+}
+
+
+
 @media only screen and (max-width: 479px) {
     /****Mobile Portrait 320 ****/
     .ver__desktop {
@@ -383,4 +403,6 @@
     #explanatory h1 {
         font-size: 24px;
     }
+
+    
 }

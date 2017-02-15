@@ -1,0 +1,576 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, maximum-scale=1')
+    title Animeishon Studio
+    link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600', rel='stylesheet', type='text/css')
+    link(href='css/bootstrap.css', rel='stylesheet', type='text/css')
+    link(href='css/style.css', rel='stylesheet', type='text/css')
+    link(href='css/font-awesome.css', rel='stylesheet', type='text/css')
+    link(href='css/responsive.css', rel='stylesheet', type='text/css')
+    link(href='css/animate.css', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', type='text/css', href='/js/slick/slick.css')
+    link(rel='stylesheet', type='text/css', href='/js/slick/slick-theme.css')
+    //if IE
+      style(type='text/css').
+        .pie {behavior:url(PIE.htc);}
+    script(type='text/javascript', src='js/jquery.1.8.3.min.js')
+    script(type='text/javascript', src='js/bootstrap.js')
+    script(type='text/javascript', src='js/jquery-scrolltofixed.js')
+    script(type='text/javascript', src='js/jquery.easing.1.3.js')
+    script(type='text/javascript', src='js/jquery.isotope.js')
+    script(type='text/javascript', src='js/main.js')
+    script(type='text/javascript', src='js/wow.js')
+    script(type='text/javascript', src='js/classie.js')
+    script(type='text/javascript', src='js/collapse.js')
+    //
+    script(src='js/i18n/CLDRPluralRuleParser.js')
+    script(src='js/i18n/jquery.i18n.js')
+    script(src='js/i18n/jquery.i18n.messagestore.js')
+    script(src='js/i18n/jquery.i18n.fallbacks.js')
+    script(src='js/i18n/jquery.i18n.language.js')
+    script(src='js/i18n/jquery.i18n.parser.js')
+    script(src='js/i18n/jquery.i18n.emitter.js')
+    script(src='js/i18n/jquery.i18n.emitter.bidi.js')
+    script(src='js/i18n/landing_free-i18n.js')
+    // Google Tag Manager
+    script.
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-5MV45NR');
+    // End Google Tag Manager
+
+    // Heatmap Code
+    script.
+      (function(h, e, a, t, m, p) {
+      m = e.createElement(a);
+      m.async = !0;
+      m.src = t;
+      p = e.getElementsByTagName(a)[0];
+      p.parentNode.insertBefore(m, p);
+      })(window, document, 'script', 'https://u.heatmap.it/log.js');
+    // DO NOT MODIFY
+    // End Heatmap Code
+    // Facebook Pixel Code
+    script.
+      ! function(f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function() {
+      n.callMethod ?
+      n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+      }(window,
+      document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1600163683625330'); // Insert your pixel ID here.
+      fbq('track', 'PageView');
+    noscript
+      img(height='1', width='1', style='display:none', src='https://www.facebook.com/tr?id=1600163683625330&ev=PageView&noscript=1')
+    // DO NOT MODIFY
+    // End Facebook Pixel Code
+    // Google Analytics Code
+    script.
+      (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+      (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-87301560-1', 'auto');
+      ga('send', 'pageview');
+  // Facebook Pixel Code
+  script.
+    fbq('track', 'Search');
+  // End Facebook Pixel Code
+  
+  // Start of Tawk.to Script
+  script(type='text/javascript').
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/5850784f3d413a0ca0a544ce/default';
+    s1.charset='UTF-8';
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+  // End of Tawk.to Script
+  
+  body
+
+    // Google Tag Manager (noscript)
+    noscript
+      iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-5MV45NR', height='0', width='0', style='display:none;visibility:hidden')
+    // End Google Tag Manager (noscript)
+
+    // Language switcher
+            .container
+              a.lang-switch#lang-switch-en(href='#', data-locale='en') 🍔 english
+              a.lang-switch#lang-switch-es(href='#', data-locale='es') 🌮 español
+    // header-end
+    nav
+      .backlp.wow.fadeInLeft.delay-01s
+        // < Matias'language switcher
+        .container
+          .row
+            .col-xs-5.col-md-4
+              a(href='/', target='_blank')
+                img.shrink.wow.flipInX.delay-02s(src='img/small_logo2.png')
+            .col-xs-0.col-md-4
+            .col-xs-7.col-md-4
+              div.bebasbold
+               #loc-navbar-callus
+        // Matias' language switcher >
+
+        // < Zura's language switcher
+          .section
+            .container
+              .row
+                .col-xs-4
+                  a(href='/', target='_blank')
+                    img.shrink.wow.flipInX.delay-02s(src='img/small_logo2.png')
+                #telefono.col-xs-8.wow.fadeInRight.delay-03s
+                  div#loc-navbar-callus
+        // Zura's language switcher >
+    // main-nav-end
+    header#header.header
+      // header-start
+        div#lang-switch-container
+          a.lang-switch(href='#', data-locale='en') 🍔
+          a.lang-switch(href='#', data-locale='es') 🌮
+    header#header.header.whitefont.backhero.padtop
+      // main-section-start
+      .container.animated-form
+        .row
+          .col-lg-6.col-md-6.col-sm-6.wow.fadeInLeft.delay-05s
+            .service-list
+              .frase#loc-hero-title
+            .service-list
+              .service-list-col1
+                i
+                  img.nomobile(src='img/icono-01.png', alt='')
+              .service-list-col2
+                .title#loc-hero-desc1
+            .service-list
+              .service-list-col1
+                i
+                  img.nomobile(src='img/icono-02.png', alt='')
+              .service-list-col2
+                .title#loc-hero-desc2
+            .service-list
+              .service-list-col1
+                i
+                  img.nomobile(src='img/icono-03.png', alt='')
+              .service-list-col2
+                .title#loc-hero-desc3
+            .service-list
+              .service-list-col1
+                i
+                  img.nomobile(src='img/icono-04.png', alt='')
+              .service-list-col2
+                .title#loc-hero-desc4
+          .col-lg-2.col-md-1.col-sm-1.col-xs-3
+          figure.col-lg-4.col-md-5.col-sm-6.col-xs-0.formalp.wow.tada.delay-06s
+            .tituloform#loc-form-title
+            .explainerform#loc-form-desc
+            .form.pad
+              #sendmessage Tu mensaje ha sido enviado. Gracias!
+              #errormessage
+              form.contactForm#contact_landing(action='/contacto_landing', method='post', role='form')
+                .form-group
+                  input#name.form-control.input-text(type='text', name='name', placeholder='Name / Nombre', required='')
+                .form-group
+                  input#email.form-control.input-text(type='email', name='email', placeholder='E-Mail', required='')
+                .form-group
+                  input#mobile.form-control.input-text(type='tel', name='mobile', placeholder='Tel.', required='')
+                select#service.form-group.input-text(name='service', required='')
+                  option(value='', selected='', disabled='') Selec. Serv.
+                  option(value='') Branding
+                  option(value='') E-commerce
+                  option(value='') CMS
+                  option(value='') Blog
+                  option(value='') Animation/Animación
+                  option(value='') Design/Diseño
+                  option(value='') Bundle/Paquete
+                .form-group
+                  textarea#message.form-control.input-text.text-area(name='message', rows='5', placeholder='Details / Detalles', required='')
+                .text-center
+                  button.input-btn#loc-form-button(onclick="goog_report_conversion('')", type='submit')
+            .padtop20.explainerform Al realizar una cotización te enviaremos una sorpresa a tu correo ;)
+    #clientes_back.autoplay
+      div
+        img.img_center(src='img/sep_logo.png')
+      div
+        img.img_center(src='img/mattel_logo.png')
+      div
+        img.img_center(src='img/se_logo.png')
+      div
+        img.img_center(src='img/servifacil_logo.png')
+      div
+        img.img_center(src='img/imtt_logo.png')
+      div
+        img.img_center(src='img/itesm_logo.png')
+      div
+        img.img_center(src='img/robotix_logo.png')
+    .back_pattern
+      .container
+        .row
+          div.col-sm-offset-1.col-sm-4.img-responsive.wow.fadeInLeft.delay-03s
+            div.bebasbold.center_text.bebas_title ¿Qué Incluye?
+            div
+             img(src='img/free_package.png')
+          div.col-sm-offset-1.col-sm-6.img-responsive.wow.fadeInLeft.delay-03s.bebasregular
+            div.margin_top.bebas_title.padresp Solo necesitas:
+             div.bebas_body
+              div Cubrir costo anual de hosting y mantenimiento de 1,750 MXN*
+              div Dar Like a animeishon studio  en Facebook 
+              div Compartir en Facebook la foto que te proporcionaremos 
+              div Proporcionar la información de tu empresa
+              a(data-toggle='modal', data-target='#myModal')
+               div.bebasbold.detalles_modal Ver detalles
+
+            
+    #explanatory
+      #padtop.gradientback
+        .section
+          .section
+            .container
+              .row
+                .col-sm-4
+                  img#padimg.img-responsive.wow.fadeInLeft.delay-03s(src='img/80_logo.png')
+                .col-sm-8.wow.fadeInRight.delay-05s
+                  h1#loc-packs-title
+                  p.who-we-are#loc-packs-desc
+          .section
+            .container
+              .row
+                .col-md-5.col-md-offset-1.col-sm-6.col-xs-0.col-xs-offset-0.wow.fadeInLeft.delay-02s
+                  figure.formaserv
+                    p#loc-packs-pack1-title
+                    div
+                      img.img-responsive(src='img/coche_diseno.png')
+                    .stroke
+                      br
+                      .service-list
+                        .service-list-col1
+                          i
+                            img(src='img/icono-01.png', alt='')
+                        .service-list-col2
+                          .title#loc-packs-pack1-feature1
+                      .service-list
+                        .service-list-col1
+                          i
+                            img(src='img/icono-03.png', alt='')
+                        .service-list-col2
+                          .title#loc-packs-pack1-feature2
+                      .service-list
+                        .service-list-col1
+                          i
+                            img(src='img/icono-05.png', alt='')
+                        .service-list-col2
+                          .title#loc-packs-pack1-feature3
+                      .service-list
+                        .service-list-col1
+                          i
+                            img(src='img/icono-02.png', alt='')
+                        .service-list-col2
+                          .title#loc-packs-pack1-feature4
+                      br
+                  .botoncoti
+                    .centerletter
+                      a(href='#header')#loc-packs-get-quote1
+                .col-md-5.col-sm-6.col-xs-0.col-xs-offset-0.wow.fadeInRight.delay-03s
+                  figure.formaserv
+                    p#loc-packs-pack2-title
+                    div
+                      img.img-responsive(src='img/tele_animacion.png')
+                    .stroke
+                      br
+                      .service-list
+                        .service-list-col1
+                          i
+                            img(src='img/icono-01.png', alt='')
+                        .service-list-col2
+                          .title Explainer Videos
+                      .service-list
+                        .service-list-col1
+                          i
+                            img(src='img/icono-03.png', alt='')
+                        .service-list-col2
+                          .title#loc-packs-pack2-feature2
+                      .service-list
+                        .service-list-col1
+                          i
+                            img(src='img/icono-05.png', alt='')
+                        .service-list-col2
+                          .title#loc-packs-pack2-feature3
+                      .service-list
+                        .service-list-col1
+                          i
+                            img(src='img/icono-02.png', alt='')
+                        .service-list-col2
+                          .title#loc-packs-pack2-feature4
+                  .botoncoti
+                    .centerletter
+                      a(href='#header')#loc-packs-get-quote2
+    div
+      section.megafooter
+        .section.section-primary
+          .container
+            .row
+              .col-sm-3
+                a(href='http://animeishon.studio')
+                  img#padimg.img-responsive(src='img/animeishon_logo.png', style='margin:-15px 0 15px 0;')
+                p#loc-footer-about
+              .col-sm-3
+                h4#loc-footer-whyus(contenteditable='true')
+                p#loc-footer-whyus-1
+                p#loc-footer-whyus-2
+                p#loc-footer-whyus-3
+              .col-sm-3
+                h4(contenteditable='true') Instagram Feed
+                div
+                  // LightWidget WIDGET
+                  script(src='//lightwidget.com/widgets/lightwidget.js')
+                  iframe.lightwidget-widget(src='//lightwidget.com/widgets/3ffba35e93f75718836990d834d66458.html', scrolling='no', allowtransparency='true', style='width: 100%; border: 0; overflow: hidden;')
+              .col-sm-3
+                h4#loc-footer-ouroff
+                p Steed @ WE ARE TODOS
+                .contact-info-box.address.clearfix
+                  p#loc-footer-address
+                  span
+                    | Tabasco 242
+                    br
+                    | Roma Norte, Ciudad de México, 06700.
+                .contact-info-box.phone.clearfix
+                  p#loc-footer-phone
+                  span 55 22 59 68 98
+                  
+                  
+     #myModal.modal.fade(role='dialog')
+      .modal-dialog
+        // Modal content
+        .modal-content.back_pattern
+          .modal-header(style="border-bottom:none;")
+            button.close(type='button', data-dismiss='modal') ×
+            h2#loc-section-animation-modal.modal-title
+          .modal-body
+            .row
+              .col-md-12.bebasbold.bebas_title
+                div Solicitud de Información
+            .row.bebasregular
+              .col-md-12.bebasregular.bebas_body
+                div Nombre del dominio elegido
+            .row
+              .col-md-12.bebasregular.bebas_body
+                div Nombre, dirección y teléfono de la empresa
+            .row
+              .col-md-12.bebasregular.bebas_body
+                div Información de tu Empresa
+            .row
+              .col-md-12.bebasregular.bebas_body
+                div Descripción de tus Servicios
+            .row
+              .col-md-12.bebasregular.bebas_body
+                div Fotos para la Galería
+            .row
+              .col-md-12.bebasbold
+                div.bebasregular.text_center.bebas_body Envía esta información a hello@animeishon.studio
+            form.text_center(action='https://www.paypal.com/cgi-bin/webscr', method='post', target='_top')
+             input(type='hidden', name='cmd', value='_s-xclick')
+             input(type='hidden', name='hosted_button_id', value='SQMSR6ESJY9JL')
+             table(style="margin:0 auto;")
+              tr
+               td
+                input(type='hidden', name='on0', value='Anualidad')
+                | Anualidad
+              tr
+               td
+                select(name='os0')
+                 option(value='Pagar') Pagar $1,750.00 MXN
+             input(type='hidden', name='currency_code', value='MXN')
+             input(type='image', src='https://www.paypalobjects.com/es_XC/MX/i/btn/btn_buynowCC_LG.gif', border='0', name='submit', alt='PayPal, la forma más segura y rápida de pagar en línea.')
+             img(alt='', border='0', src='https://www.paypalobjects.com/es_XC/i/scr/pixel.gif', width='1', height='1')
+
+          .modal-footer(style="border-top:none;")
+            button.btn.btn-default(type='button', data-dismiss='modal') Close
+                  
+    script(type='text/javascript').
+      $(document).ready(function(e) {
+      $('#test').scrollToFixed();
+      $('.main-nav li a').click(function() {
+      $('.main-nav').slideToggle();
+      return false
+      });
+      $('.res-nav_click').click(function() {
+      $('.main-nav').slideToggle();
+      return false
+      });
+      });
+    script(type='text/javascript').
+      $('#lang-switch-es').click(function() {
+        $('#lang-switch-en').css({
+          'display': 'block'
+        });
+        $('#lang-switch-es').css({
+          'display': 'none'
+        });
+      });
+    script(type='text/javascript').
+      $('#lang-switch-en').click(function() {
+        $('#lang-switch-en').css({
+          'display': 'none'
+        });
+        $('#lang-switch-es').css({
+          'display': 'block'
+        });
+      });
+    script.
+      wow = new WOW({
+      animateClass: 'animated',
+      offset: 100
+      });
+      wow.init();
+    script(type='text/javascript').
+      $(window).load(function() {
+      $('header a').bind('click', function(event) {
+      var $anchor = $(this);
+      $('html, body').stop().animate({
+      scrollTop: $($anchor.attr('href')).offset().top - 102
+      }, 1500, 'easeInOutExpo');
+      /*
+      if you don't want to use the easing effects:
+      $('html, body').stop().animate({
+      scrollTop: $($anchor.attr('href')).offset().top
+      }, 1000);
+      */
+      event.preventDefault();
+      });
+      $('#floating-info a').bind('click', function(event) {
+      var $anchor = $(this);
+      $('html, body').stop().animate({
+      scrollTop: $($anchor.attr('href')).offset().top - 102
+      }, 1500, 'easeInOutExpo');
+      /*
+      if you don't want to use the easing effects:
+      $('html, body').stop().animate({
+      scrollTop: $($anchor.attr('href')).offset().top
+      }, 1000);
+      */
+      event.preventDefault();
+      });
+      $('.main-nav li a').bind('click', function(event) {
+      var $anchor = $(this);
+      $('html, body').stop().animate({
+      scrollTop: $($anchor.attr('href')).offset().top - 102
+      }, 1500, 'easeInOutExpo');
+      /*
+      if you don't want to use the easing effects:
+      $('html, body').stop().animate({
+      scrollTop: $($anchor.attr('href')).offset().top
+      }, 1000);
+      */
+      event.preventDefault();
+      });
+      })
+    script(type='text/javascript').
+      $(window).load(function() {
+      var $container = $('.portfolioContainer'),
+      $body = $('body'),
+      colW = 375,
+      columns = null;
+      $container.isotope({
+      // disable window resizing
+      resizable: true,
+      masonry: {
+      columnWidth: colW
+      }
+      });
+      $(window).smartresize(function() {
+      // check if columns has changed
+      var currentColumns = Math.floor(($body.width() - 30) / colW);
+      if (currentColumns !== columns) {
+      // set new column count
+      columns = currentColumns;
+      // apply width to container manually, then trigger relayout
+      $container.width(columns * colW)
+      .isotope('reLayout');
+      }
+      }).smartresize(); // trigger resize to set container width
+      $('.portfolioFilter a').click(function() {
+      $('.portfolioFilter .current').removeClass('current');
+      $(this).addClass('current');
+      var selector = $(this).attr('data-filter');
+      $container.isotope({
+      filter: selector,
+      });
+      return false;
+      });
+      });
+    // slick carousel
+    script(type='text/javascript', src='/js/slick/slick.min.js')
+    script(type='text/javascript').
+      $(document).ready(function() {
+      $('.autoplay').slick({
+      edgeFriction: 0.15,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      autoplay: true,
+      arrows: false,
+      dots: false,
+      prevArrow: false,
+      nextArrow: false,
+      autoplaySpeed: 700,
+      dots: false,
+      prevArrow: false,
+      nextArrow: false,
+      responsive: [{
+      breakpoint: 1980,
+      settings: {
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      infinite: true
+      }
+      }, {
+      breakpoint: 1024,
+      settings: {
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      infinite: true
+      }
+      }, {
+      breakpoint: 600,
+      settings: {
+      slidesToShow: 2,
+      slidesToScroll: 1
+      }
+      }, {
+      breakpoint: 480,
+      settings: {
+      slidesToShow: 2,
+      slidesToScroll: 1
+      }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+      ]
+      });
+      });

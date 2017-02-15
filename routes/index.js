@@ -20,6 +20,10 @@ router.get('/landing_logos', function(req, res) {
   res.render('landing_logos', { title: 'Animeishon Studio'});
 });
 
+router.get('/landing_free', function(req, res) {
+  res.render('landing_free', { title: 'Animeishon Studio'});
+});
+
 router.post('/contacto', function(req, res) {
   sendMail('contacto', req.body);
   console.log('RESPONSE: ', res);
@@ -35,6 +39,8 @@ router.post('/contacto_landing', function(req, res) {
   res.redirect(301, '/');
   //res.redirect(req.get('origin'));
 });
+
+
 
 router.post('/contacto_mobile', function(req, res) {
   sendMail('contacto_mobile', req.body);
