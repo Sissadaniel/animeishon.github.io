@@ -251,9 +251,9 @@ jQuery(document).ready(function() {
       'section-contact-time': '🕖 Horario',
       'section-contact-time-montue': 'Lunes - Jueves:',
       'section-contact-time-fri': 'Viernes:',
-      'section-contact-time-fri-desc': '¿Trabajas los viernes?',
+      'section-contact-time-fri-desc': '8am-6pm',
       'section-contact-time-weekend': 'Sábado y Domingo:',
-      'section-contact-time-weekend-desc': 'No preguntes',
+      'section-contact-time-weekend-desc': 'Solo a través de e-mail',
       /* FOOTER */
       'footer-about': 'Animeishon Studio es una agencia especializada en diseño digital y animación. Proveemos distintos servicios enfocados a la creatividad, con fundamentos técnicos sólidos y experiencia. hello@animeishon.studio ',
       'footer-whyus': '¿Por qué nosotros?',
@@ -276,7 +276,7 @@ jQuery(document).ready(function() {
       'contact': 'Contact',
       /* INTRO SECTION */
       'intro-title': 'Design and animation with a strong technical background',
-      'intro-desc': 'Animeishon Studio is Mexico City-based digital agency specialized in design and animation. We provide creative services with a strong experience in different fields.',
+      'intro-desc': 'Animeishon Studio is a Mexico City-based digital agency specialized in design and animation. We provide creative services with a strong experience in different fields.',
       'intro-action': 'SEE MORE',
       /* SERVICES */
       'intro-packs': 'Web services',
@@ -374,9 +374,9 @@ jQuery(document).ready(function() {
       'section-contact-time': '🕖 Working Hours',
       'section-contact-time-montue': 'Monday - Tuesday:',
       'section-contact-time-fri': 'Friday:',
-      'section-contact-time-fri-desc': 'Do you really work on Fridays?',
+      'section-contact-time-fri-desc': '8am-6pm',
       'section-contact-time-weekend': 'Saturday and Sunday:',
-      'section-contact-time-weekend-desc': 'Don\'t even try it',
+      'section-contact-time-weekend-desc': 'Contact us by mail',
       /* FOOTER */
       'footer-about': 'Animeishon Studio is a creative agency focused on digital design and animation. We provide different creative services with a solid technical experience. hello@animeishon.studio',
       'footer-whyus': 'Why us?',

@@ -66,6 +66,7 @@ jQuery(document).ready(function() {
     $('#loc-intro-modal-bundle1-bullet12').text($.i18n('intro-modal-bundle1-bullet12'));
     $('#loc-intro-modal-bundle1-common1').text($.i18n('intro-modal-bundle-common1'));
     $('#loc-intro-modal-bundle1-common2').text($.i18n('intro-modal-bundle-common2'));
+    $('#loc-intro-modal-bundle1-common3').text($.i18n('intro-modal-bundle-common3'));
     $('#loc-intro-modal-bundle2').text($.i18n('intro-modal-bundle2'));
     $('#loc-intro-modal-bundle2-bullet1').text($.i18n('intro-modal-bundle2-bullet1'));
     $('#loc-intro-modal-bundle2-bullet2').text($.i18n('intro-modal-bundle2-bullet2'));
@@ -196,16 +197,14 @@ jQuery(document).ready(function() {
       'intro-packs-welcome': 'The best design for the best price. Each of our package includes all you need to attain the serious online presence your business needs: what changes is the power, speed, and strength as you need it. We start off making a strategic plan to raise your business\' goals, then focusing all our design &  programming efforts to make them real.',
       'intro-modal-quote': 'Request a quote',
       'intro-modal-bundle1': 'Personal',
-      'intro-modal-bundle1-bullet1': 'Up to 5  static pages',
+      'intro-modal-bundle1-bullet1': 'A single static page',
       'intro-modal-bundle1-bullet2': 'Responsive design (smartphones, tablets & desktops)',
-      'intro-modal-bundle1-bullet3': '100% custom design',
+      'intro-modal-bundle1-bullet3': 'Custom design',
       'intro-modal-bundle1-bullet4': 'Free web hosting for 1 year',
       'intro-modal-bundle1-bullet12': 'Up to 20 @your.domain mail accounts',
-      'intro-modal-bundle1-bullet10': 'Up to 5 contact forms',
+      'intro-modal-bundle1-bullet10': 'Custom contact form',
       'intro-modal-bundle1-bullet11': 'Google Analytics integration',
       'intro-modal-bundle1-bullet5': 'Free changes to banners, images & texts for 1 year',
-      'intro-modal-bundle1-bullet6': 'Free domain registration',
-      'intro-modal-bundle1-bullet7': 'Código optimizado haciendo que el sitio sea lo más veloz posible',
       'intro-modal-bundle1-bullet7': 'Optimized code making the page load faster',
       'intro-modal-bundle1-bullet8': '1.5GB Storage',
       'intro-modal-bundle1-bullet9': '2 rounds of changes to the site\'s structure & looks before launch',
@@ -315,20 +314,20 @@ jQuery(document).ready(function() {
       'intro-packs': 'Servicios Web',
       'intro-packs-welcome': 'El mejor diseño por el mejor precio. Cada uno de nuestros paquetes incluye lo necesario para emitir presencia en línea de primera, cambiando solamente el tamaño, velocidad, y poder según lo necesites. Primero realizamos un plan estratégico para entender cuáles son las metas de tu negocio, y luego concentramos nuestros esfuerzos de diseño y programación para que las alcances.',
       'intro-modal-quote': 'Cotiza',
-      'intro-modal-bundle1': 'Personal',
-      'intro-modal-bundle1-bullet1': 'Hasta 5 páginas estáticas',
+      'intro-modal-bundle1': 'Página Web',
+      'intro-modal-bundle1-bullet1': '1 página estática',
       'intro-modal-bundle1-bullet2': 'Diseño adaptable (smartphones, tabletas y computadoras)',
-      'intro-modal-bundle1-bullet3': 'Diseño  100% personalizado',
+      'intro-modal-bundle1-bullet3': 'Diseño personalizado',
       'intro-modal-bundle1-bullet4': '1 año de hospedaje web gratis',
       'intro-modal-bundle1-bullet12': 'Hasta 20 cuentas de correo @tu.dominio',
-      'intro-modal-bundle1-bullet10': 'Hasta 5 formularios de contacto',
+      'intro-modal-bundle1-bullet10': 'Formulario de contacto',
       'intro-modal-bundle1-bullet11': 'Integración con Google Analytics',
       'intro-modal-bundle1-bullet5': '1 año de cambios a banners, imágenes, y textos',
       'intro-modal-bundle1-bullet6': 'Registro de dominio gratis',
       'intro-modal-bundle1-bullet7': 'Código optimizado haciendo que el sitio sea lo más veloz posible',
       'intro-modal-bundle1-bullet8': '1.5GB de almacenamiento',
       'intro-modal-bundle1-bullet9': '2 rondas de cambios al aspecto y estructura del sitio antes de la entrega final',
-      'intro-modal-bundle2': 'Negocio',
+      'intro-modal-bundle2': 'Sitio Web',
       'intro-modal-bundle2-bullet1': 'Hasta 15 páginas estáticas',
       'intro-modal-bundle2-bullet2': 'Diseño adaptable (smartphones, tabletas y computadoras)',
       'intro-modal-bundle2-bullet3': 'Diseño  100% personalizado',
