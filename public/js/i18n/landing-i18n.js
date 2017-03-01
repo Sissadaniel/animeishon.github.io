@@ -274,11 +274,11 @@ jQuery(document).ready(function() {
       /* NAVBAR */
       'navbar-callus': 'LLAMA AL (55)22596898',
       /* HERO */
-      'hero-title': 'Diseño y animación con una base tecnológica sólida',
+      'hero-title': 'Desarrollamos Sitios Web Profesionales para empresas y negocios.',
       'hero-desc1': 'Trabajo Ágil Con Entregas Rápidas Según El Proyecto',
       'hero-desc2': 'Obtén un Presupuesto Gratis y Rápido',
       'hero-desc3': 'Entrega De Sitios Web Con Diseño Responsivo En Menos De 3 Días',
-      'hero-desc4': 'Soporte 24/7',
+      'hero-desc4': 'Creamos tu Tienda Virtual',
       /* FORM */
       'form-title': 'Cuéntanos tu proyecto, un experto te atenderá',
       'form-desc': 'Para una cotización gratuita, llena la siguiente forma o llámanos.',
