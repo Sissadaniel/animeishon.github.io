@@ -1847,6 +1847,12 @@ h8 {
     width: 33%;
 }
 
+@media (max-width: 480px) {
+  .bundles__button {
+    width: 100%;
+  }
+}
+
 .text_center {
 text-align:center;
 }
