@@ -1836,6 +1836,17 @@ h8 {
     margin-bottom: 15px;
 }
 
+.bundles__button {
+    font-size: 30px;
+    background: #ff01ff;
+    border-radius: 6px;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    margin: 0 auto;
+    width: 33%;
+}
+
 .text_center {
 text-align:center;
 }

@@ -16,6 +16,11 @@ router.get('/landing', function(req, res) {
   res.render('landing', { title: 'Animeishon Studio'});
 });
 
+router.get('/landingen', function(req, res) {
+  res.render('landing', { title: 'Animeishon Studio', data-locale: "en"});
+});
+
+
 router.get('/landing_logos', function(req, res) {
   res.render('landing_logos', { title: 'Animeishon Studio'});
 });
